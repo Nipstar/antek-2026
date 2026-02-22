@@ -1,7 +1,4 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /.env*
 
-# Sitemap reference for search engines
 Sitemap: https://www.antekautomation.com/sitemap.xml

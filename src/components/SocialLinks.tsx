@@ -1,4 +1,4 @@
-import { Twitter, Youtube, Linkedin, MapPin, ExternalLink, Award } from 'lucide-react';
+import { Twitter, Youtube, Linkedin, Facebook, Instagram, MapPin, ExternalLink, Award } from 'lucide-react';
 
 interface SocialLink {
   name: string;
@@ -22,6 +22,16 @@ const socialLinks: SocialLink[] = [
     name: 'LinkedIn',
     url: 'https://linkedin.com/company/antek-automation',
     icon: <Linkedin className="w-5 h-5" />,
+  },
+  {
+    name: 'Facebook',
+    url: 'https://www.facebook.com/people/Antek-Automation-Intelligent-Voice-Ai-Chat-Agents/61587195202811/',
+    icon: <Facebook className="w-5 h-5" />,
+  },
+  {
+    name: 'Instagram',
+    url: 'https://www.instagram.com/antekautomation/',
+    icon: <Instagram className="w-5 h-5" />,
   },
   {
     name: 'Google Business',

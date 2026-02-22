@@ -1,4 +1,3 @@
-import { Button } from './Button';
 import type { CaseStudy } from '../data/caseStudies';
 
 interface CaseStudyCardProps {
@@ -119,14 +118,6 @@ export function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
         </p>
       </div>
 
-      {/* CTA Button */}
-      <Button
-        variant="primary"
-        onClick={() => window.navigate('/contact')}
-        className="w-full md:w-auto text-sm md:text-base font-bold uppercase tracking-wide"
-      >
-        READ FULL CASE STUDY →
-      </Button>
     </div>
   );
 }
