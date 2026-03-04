@@ -106,10 +106,19 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Social Links */}
+        {/* Social Links & FSB */}
         <div className="border-t-3 border-charcoal mt-16 pt-12">
           <h4 className="font-black uppercase text-off-white text-sm tracking-tight-lg mb-6">Connect With Us</h4>
-          <SocialLinks variant="footer" showLabels={false} />
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <SocialLinks variant="footer" showLabels={false} />
+            <a href="https://www.fsb.org.uk" target="_blank" rel="noopener noreferrer" className="shrink-0">
+              <img
+                src="/RS51463_FSB Member Logo_White.png"
+                alt="visit FSB's website"
+                className="h-16"
+              />
+            </a>
+          </div>
         </div>
 
         {/* Copyright */}
