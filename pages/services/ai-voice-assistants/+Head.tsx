@@ -83,6 +83,13 @@ export function Head() {
             },
             serviceType: 'AI Voice Agent',
             url: 'https://www.antekautomation.com/services/ai-voice-assistants',
+            author: {
+              '@type': 'Person',
+              '@id': 'https://www.antekautomation.com/#founder',
+              name: 'Andy Norman',
+              jobTitle: 'Founder & Director',
+              sameAs: ['https://www.linkedin.com/in/andy-norman-ab78443a1'],
+            },
           }),
         }}
       />

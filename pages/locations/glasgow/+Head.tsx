@@ -2,12 +2,12 @@ export function Head() {
   return (
     <>
       <title>AI Automation Glasgow | Voice Agents &amp; Chatbots</title>
-      <meta name="description" content="AI automation for Glasgow businesses. Voice agents, chatbots & workflow automation. UK-wide service. Free consultation." />
+      <meta name="description" content="AI automation for Glasgow businesses. Voice agents that answer every call, chatbots that convert visitors & automation that kills the admin. Free consultation." />
       <link rel="canonical" href="https://www.antekautomation.com/locations/glasgow" />
 
       {/* Open Graph */}
       <meta property="og:title" content="AI Automation Glasgow | Voice Agents & Chatbots" />
-      <meta property="og:description" content="AI automation for Glasgow businesses. Voice agents, chatbots & workflow automation. UK-wide service. Free consultation." />
+      <meta property="og:description" content="AI automation for Glasgow businesses. Voice agents that answer every call, chatbots that convert visitors & automation that kills the admin. Free consultation." />
       <meta property="og:url" content="https://www.antekautomation.com/locations/glasgow" />
       <meta property="og:type" content="website" />
 
@@ -51,7 +51,13 @@ export function Head() {
             '@type': 'LocalBusiness',
             name: 'Antek Automation Glasgow',
             url: 'https://www.antekautomation.com/locations/glasgow',
-            telephone: '+44-1234-567890',
+            telephone: '+44-3330-389960',
+            founder: {
+              '@type': 'Person',
+              '@id': 'https://www.antekautomation.com/#founder',
+              name: 'Andy Norman',
+              sameAs: ['https://www.linkedin.com/in/andy-norman-ab78443a1'],
+            },
             address: {
               '@type': 'PostalAddress',
               addressLocality: 'Glasgow',

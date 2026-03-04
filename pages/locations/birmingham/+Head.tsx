@@ -51,7 +51,13 @@ export function Head() {
             '@type': 'LocalBusiness',
             name: 'Antek Automation Birmingham',
             url: 'https://www.antekautomation.com/locations/birmingham',
-            telephone: '+44-1234-567890',
+            telephone: '+44-3330-389960',
+            founder: {
+              '@type': 'Person',
+              '@id': 'https://www.antekautomation.com/#founder',
+              name: 'Andy Norman',
+              sameAs: ['https://www.linkedin.com/in/andy-norman-ab78443a1'],
+            },
             address: {
               '@type': 'PostalAddress',
               addressLocality: 'Birmingham',

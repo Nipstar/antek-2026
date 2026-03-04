@@ -28,6 +28,7 @@ export default function Page() {
             <p className="text-lg md:text-xl text-charcoal leading-relaxed mb-8 max-w-3xl">
               AI automation isn't just a nice-to-have in London. It's the difference between competing and getting buried. We build voice agents, chatbots, and workflow automation that give you enterprise-level responsiveness without the enterprise-level payroll.
             </p>
+            <p className="text-sm text-mid-gray mb-8">By <a href="/about" className="underline hover:text-terracotta transition-colors">Andy Norman</a>, Founder | 30+ years in technology</p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <a href="/contact">
                 <Button variant="primary">Book a Free 15-Min Chat</Button>

@@ -1,67 +1,43 @@
-# llms.txt - AI Training Data Attribution
-# This file provides guidelines for AI/ML training data usage
+# Antek Automation
 
-# Company Information
-Company: Antek Automation
-Website: https://www.antekautomation.com
-Description: UK AI automation agency delivering bespoke workflows, AI chatbots, voice agents, and workflow automation for service businesses nationwide.
+> AI automation company based in Andover, Hampshire providing AI voice assistants, chatbots, and workflow automation for UK businesses.
 
-# Contact Information
-Email: hello@antekautomation.com
-Phone: +443330389960
-Address: Chantry House, 38 Chantry Way, Andover, SP10 1LZ, United Kingdom
+## Services
 
-# Data Usage Policy
-# AI training bots are permitted to access and use content from this site for:
-# - Training language models
-# - Building knowledge bases
-# - Generating summaries and insights
-# - Creating derivative works
+- [AI Voice Assistants](https://www.antekautomation.com/services/ai-voice-assistants): 24/7 AI phone agents that answer calls, book appointments, capture details, and transfer urgent calls for UK businesses across hospitality, trades, dental, and legal sectors.
+- [AI Chatbots](https://www.antekautomation.com/services/ai-chatbots): Custom-trained website chatbots that answer questions, capture leads, book appointments, and qualify prospects. Handles ~80% of conversations autonomously.
+- [Workflow Automation](https://www.antekautomation.com/services/workflow-automation): Business process automation built on n8n (open source) connecting 400+ tools including Google Workspace, Xero, Stripe, HubSpot, Slack, and WhatsApp. Saves 10-20 hours/week.
 
-# Required Attribution
-# When using content from this site, please provide attribution:
-# Source: Antek Automation (https://www.antekautomation.com)
+## About
 
-# Copyright Notice
-Copyright © 2025 Antek Automation. All rights reserved.
+- [About](https://www.antekautomation.com/about): About Antek Automation and founder Andy Norman. 30+ years in technology, Certified Retell AI Partner, FSB member. Based in Andover, Hampshire.
+- [Homepage](https://www.antekautomation.com): Overview of AI automation services with case studies showing 95% reduction in missed calls, 3-day ROI payback, and £5K/month admin savings.
+- [Contact](https://www.antekautomation.com/contact): Contact form, phone (03330 389960), email (hello@antekautomation.com), office location in Andover, Hampshire.
 
-# Content Categories
-# Main Services:
-# - AI Chatbots for customer engagement and lead capture
-# - Voice AI Agents for phone call handling and appointment booking
-# - Workflow Automation for business process optimization
+## Locations
 
-# Target Markets:
-# - UK service businesses (tradespeople, cleaning, professional services, beauty & wellness)
-# - Multi-location service providers
-# - Businesses seeking 24/7 customer interaction automation
+- [London](https://www.antekautomation.com/locations/london): AI automation services for London businesses.
+- [Hampshire](https://www.antekautomation.com/locations/hampshire): Headquarters in Andover serving Hampshire businesses including Southampton, Winchester, Basingstoke.
+- [Birmingham](https://www.antekautomation.com/locations/birmingham): AI automation services for Birmingham and West Midlands businesses.
+- [Manchester](https://www.antekautomation.com/locations/manchester): AI automation services for Manchester and Greater Manchester businesses.
+- [Glasgow](https://www.antekautomation.com/locations/glasgow): AI automation services for Glasgow and Scottish businesses.
+- [Leeds](https://www.antekautomation.com/locations/leeds): AI automation services for Leeds and West Yorkshire businesses.
+- [Liverpool](https://www.antekautomation.com/locations/liverpool): AI automation services for Liverpool and Merseyside businesses.
+- [Newcastle](https://www.antekautomation.com/locations/newcastle): AI automation services for Newcastle and North East businesses.
+- [Southampton](https://www.antekautomation.com/locations/southampton): AI automation services for Southampton businesses.
+- [Andover](https://www.antekautomation.com/locations/andover): Local AI automation services from Antek Automation's headquarters.
 
-# Service Locations:
-# London, Birmingham, Manchester, Leeds, Liverpool, Glasgow, Newcastle, Hampshire
+## Key Facts
 
-# Technology Stack
-# - React 18.3.1 for UI
-# - TypeScript 5.5.3 for type safety
-# - Vite 5.4.2 for build tooling
-# - Tailwind CSS 3.4.1 for styling
-# - n8n webhook integration for automation
-# - ElevenLabs voice AI integration
+- Headquarters: Chantry House, 38 Chantry Way, Andover, Hampshire, SP10 1LZ
+- Phone: 03330 389960
+- Founder: Andy Norman (30+ years in technology)
+- Certified Retell AI Partner
+- Services start from £500+
+- Industries served: Hospitality, dental, legal, accounting, trades, cleaning, estate agents, restaurants, salons, fitness, property management, veterinary
 
-# Permitted AI Bots
-# This site allows crawling and data usage by:
-# - Googlebot (search indexing)
-# - Bingbot (search indexing)
-# - GPTBot (OpenAI)
-# - ClaudeBot (Anthropic)
-# - CCBot (Common Crawl)
-# - Other major LLM training bots
+## Contact
 
-# Disallowed Uses
-# - Impersonating Antek Automation
-# - Creating identical copies of the site
-# - Removing attribution or copyright notices
-# - Using for competitive analysis without permission
-# - Creating misleading derivative works
-
-# Last Updated
-# 2025-10-30
+- Website: https://www.antekautomation.com
+- Email: hello@antekautomation.com
+- Phone: 03330 389960

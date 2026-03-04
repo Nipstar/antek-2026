@@ -19,9 +19,10 @@ export default function Page() {
             <h1 className="font-black text-5xl md:text-6xl uppercase tracking-tight-xl text-charcoal mb-6 leading-tight">
               A Website Chatbot That Actually Knows Your Business
             </h1>
-            <p className="text-xl text-charcoal leading-normal mb-8">
+            <p className="text-xl text-charcoal leading-normal mb-4">
               Not a generic FAQ widget. An AI trained on your services, prices, and availability that captures leads and books appointments around the clock.
             </p>
+            <p className="text-sm text-mid-gray mb-8">By <a href="/about" className="underline hover:text-terracotta transition-colors">Andy Norman</a>, Founder | 30+ years in technology</p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <Button variant="primary" onClick={openChatbot}>
                 Try the Chatbot Demo

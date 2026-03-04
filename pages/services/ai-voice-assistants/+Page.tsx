@@ -22,9 +22,10 @@ export default function Page() {
             <h1 className="font-black text-5xl md:text-6xl uppercase tracking-tight-xl text-charcoal mb-6 leading-tight">
               An AI Receptionist That Actually Sounds Like a Real Person
             </h1>
-            <p className="text-xl text-charcoal leading-normal mb-8">
+            <p className="text-xl text-charcoal leading-normal mb-4">
               It answers every call. Books appointments. Qualifies leads. Sends you the details. Works 24/7, costs less than a part-time hire.
             </p>
+            <p className="text-sm text-mid-gray mb-8">By <a href="/about" className="underline hover:text-terracotta transition-colors">Andy Norman</a>, Founder | 30+ years in technology</p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <Button variant="primary" onClick={() => setIsVoiceChatOpen(true)}>
                 Try the Demo Now

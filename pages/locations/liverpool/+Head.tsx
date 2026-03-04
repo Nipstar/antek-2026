@@ -2,12 +2,12 @@ export function Head() {
   return (
     <>
       <title>AI Automation Liverpool | Voice Agents &amp; Chatbots</title>
-      <meta name="description" content="AI automation for Liverpool businesses. Voice agents, chatbots & workflow automation. UK-wide service. Free consultation." />
+      <meta name="description" content="AI voice agents, chatbots & workflow automation for Liverpool businesses. From Dale Street to the Baltic Triangle, we catch the calls you miss. Free consultation." />
       <link rel="canonical" href="https://www.antekautomation.com/locations/liverpool" />
 
       {/* Open Graph */}
       <meta property="og:title" content="AI Automation Liverpool | Voice Agents & Chatbots" />
-      <meta property="og:description" content="AI automation for Liverpool businesses. Voice agents, chatbots & workflow automation. UK-wide service. Free consultation." />
+      <meta property="og:description" content="AI voice agents, chatbots & workflow automation for Liverpool businesses. From Dale Street to the Baltic Triangle, we catch the calls you miss. Free consultation." />
       <meta property="og:url" content="https://www.antekautomation.com/locations/liverpool" />
       <meta property="og:type" content="website" />
 
@@ -51,7 +51,13 @@ export function Head() {
             '@type': 'LocalBusiness',
             name: 'Antek Automation Liverpool',
             url: 'https://www.antekautomation.com/locations/liverpool',
-            telephone: '+44-1234-567890',
+            telephone: '+44-3330-389960',
+            founder: {
+              '@type': 'Person',
+              '@id': 'https://www.antekautomation.com/#founder',
+              name: 'Andy Norman',
+              sameAs: ['https://www.linkedin.com/in/andy-norman-ab78443a1'],
+            },
             address: {
               '@type': 'PostalAddress',
               addressLocality: 'Liverpool',

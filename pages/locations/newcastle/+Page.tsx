@@ -28,6 +28,7 @@ export default function Page() {
             <p className="text-lg md:text-xl text-charcoal leading-relaxed mb-8 max-w-3xl">
               That's exactly what our AI does. It answers every call, responds to every website visitor, and follows up on every lead &mdash; so you build the kind of reputation that keeps Jesmond, Gosforth, Gateshead, and the Quayside coming back. We build voice agents, chatbots, and workflow automation that make your business impossible to ignore.
             </p>
+            <p className="text-sm text-mid-gray mb-8">By <a href="/about" className="underline hover:text-terracotta transition-colors">Andy Norman</a>, Founder | 30+ years in technology</p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <a href="/contact">
                 <Button variant="primary">Book a Free 15-Min Chat</Button>
