@@ -84,7 +84,7 @@ export function Head() {
           "areaServed": "GB"
         }
       ],
-      "priceRange": "\u00a3500+",
+      "priceRange": "From \u00a3149",
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",

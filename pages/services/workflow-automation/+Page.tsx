@@ -18,7 +18,7 @@ export default function Page() {
             <p className="text-xl text-charcoal leading-normal mb-4">
               We connect your tools, automate your processes, and give you back the hours you're currently wasting on repetitive work. Built with n8n -- no lock-in, you own everything.
             </p>
-            <p className="text-sm text-mid-gray mb-8">By <a href="/about" className="underline hover:text-terracotta transition-colors">Andy Norman</a>, Founder | 30+ years in technology</p>
+            <p className="text-sm text-mid-gray mb-8">By <a href="/about" className="underline hover:text-terracotta transition-colors">Andy Norman</a>, Founder | 30+ years in technology | Last updated March 2026</p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <a href="/contact">
                 <Button variant="primary">
@@ -206,6 +206,66 @@ export default function Page() {
             <p>
               We've seen businesses try to automate chaos and end up with automated chaos. That's not what we do. We make sure the foundations are right before we build on top of them.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="bg-warm-beige border-y-3 border-charcoal py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-4xl md:text-5xl uppercase tracking-tight-lg text-charcoal mb-10">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                How much does workflow automation cost?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Automations start from £250. The exact cost depends on the number of workflows, integrations, and complexity. We offer a free automation audit to scope your needs and give you a clear quote.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                What's n8n and why do you use it instead of Zapier?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                n8n is open-source automation software. Unlike Zapier, you own your workflows — there's no per-task pricing and no vendor lock-in. If you stop working with us, your automations keep running. You're not renting them.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                What tools can you connect?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                400+ integrations out of the box — Google Workspace, Xero, Stripe, HubSpot, Slack, WhatsApp, Shopify, and more. If a tool has an API or webhook, we can connect it.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                How long does it take to set up automations?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Simple workflows take 1–2 days. Complex multi-step processes with multiple integrations take 1–2 weeks. Every project starts with an audit so we understand exactly what needs automating.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                What if my current process is a mess?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                That's fine — and common. We audit your processes first and recommend fixes before automating anything. We won't automate chaos. If something needs fixing first, we'll tell you honestly.
+              </div>
+            </details>
           </div>
         </div>
       </section>

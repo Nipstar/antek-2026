@@ -111,7 +111,7 @@ export function HomePage() {
           "areaServed": "GB"
         }
       ],
-      "priceRange": "£500+",
+      "priceRange": "From £149",
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",

@@ -25,6 +25,7 @@ export interface CaseStudy {
     author: string;
     business: string;
   };
+  source: string;
 }
 
 export const caseStudies: CaseStudy[] = [
@@ -70,7 +71,8 @@ export const caseStudies: CaseStudy[] = [
       quote: 'We thought it\'d take a month to see any ROI. It took three days. The AI doesn\'t just understand "Biryani"—it knows regional styles and asks better questions than we do.',
       author: 'Atif R., Owner',
       business: 'Deccan Grill'
-    }
+    },
+    source: 'Based on client phone system data over 3 months (2025)'
   },
   {
     id: 'financial-services',
@@ -114,7 +116,8 @@ export const caseStudies: CaseStudy[] = [
       quote: 'Natural language gave us opportunities we never thought possible. We broke the glass ceiling on containment and improved customer experience simultaneously.',
       author: 'Operations Director',
       business: 'Leading UK Financial Institution'
-    }
+    },
+    source: 'Based on internal performance data over 6 months post-deployment'
   },
   {
     id: 'cleaning-services',
@@ -158,6 +161,7 @@ export const caseStudies: CaseStudy[] = [
       quote: 'We were spending 20+ hours every week on admin—invoice chasing, booking emails, calendar updates. Antek built n8n workflows that eliminated 90% of it. Now data flows between systems automatically. Game-changer for a small team with big plans.',
       author: 'James K., Operations Manager',
       business: 'CleanRight Kent'
-    }
+    },
+    source: 'Based on client operational data over 4 months (2025)'
   }
 ];

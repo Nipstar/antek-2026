@@ -90,6 +90,76 @@ export function Head() {
               jobTitle: 'Founder & Director',
               sameAs: ['https://www.linkedin.com/in/andy-norman-ab78443a1'],
             },
+            knowsAbout: [
+              'Workflow automation',
+              'n8n automation',
+              'Business process automation',
+              'API integration',
+              'CRM automation',
+              'Invoice automation',
+            ],
+            potentialAction: {
+              '@type': 'ScheduleAction',
+              target: {
+                '@type': 'EntryPoint',
+                urlTemplate: 'https://www.antekautomation.com/contact',
+                actionPlatform: 'https://schema.org/DesktopWebPlatform',
+              },
+              description: 'Book a free consultation',
+            },
+          }),
+        }}
+      />
+
+      {/* FAQPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'How much does workflow automation cost?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Automations start from £250. The exact cost depends on the number of workflows, integrations, and complexity. We offer a free automation audit to scope your needs and give you a clear quote.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: "What's n8n and why do you use it instead of Zapier?",
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "n8n is open-source automation software. Unlike Zapier, you own your workflows — there's no per-task pricing and no vendor lock-in. If you stop working with us, your automations keep running. You're not renting them.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What tools can you connect?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: '400+ integrations out of the box — Google Workspace, Xero, Stripe, HubSpot, Slack, WhatsApp, Shopify, and more. If a tool has an API or webhook, we can connect it.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How long does it take to set up automations?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Simple workflows take 1–2 days. Complex multi-step processes with multiple integrations take 1–2 weeks. Every project starts with an audit so we understand exactly what needs automating.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What if my current process is a mess?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "That's fine — and common. We audit your processes first and recommend fixes before automating anything. We won't automate chaos. If something needs fixing first, we'll tell you honestly.",
+                },
+              },
+            ],
           }),
         }}
       />

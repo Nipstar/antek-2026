@@ -90,6 +90,76 @@ export function Head() {
               jobTitle: 'Founder & Director',
               sameAs: ['https://www.linkedin.com/in/andy-norman-ab78443a1'],
             },
+            knowsAbout: [
+              'AI chatbots',
+              'Website lead capture',
+              'Conversational AI',
+              'Live chat automation',
+              'Appointment booking chatbots',
+              'Customer service automation',
+            ],
+            potentialAction: {
+              '@type': 'ScheduleAction',
+              target: {
+                '@type': 'EntryPoint',
+                urlTemplate: 'https://www.antekautomation.com/contact',
+                actionPlatform: 'https://schema.org/DesktopWebPlatform',
+              },
+              description: 'Book a free consultation',
+            },
+          }),
+        }}
+      />
+
+      {/* FAQPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'How much does an AI chatbot cost?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Setup starts from £149, with monthly plans from £57/month. The exact pricing depends on features, integrations, and complexity. We offer a free consultation to scope your needs and give you a clear quote — no hidden fees.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can it integrate with my CRM or booking system?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. It connects to HubSpot, Google Calendar, Calendly, and most tools via API or webhook. Lead details flow straight into your existing systems without any manual copying.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What percentage of conversations can it handle?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'About 80% of conversations are handled autonomously — common questions, lead capture, appointment booking. The other 20% (complex queries, complaints, edge cases) get flagged for your team to follow up.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Will it sound like a generic bot?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "No. It's trained on your business — your services, pricing, availability, and tone of voice. It answers like someone who actually works there, not a generic FAQ widget.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can visitors still talk to a real person?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. During office hours the chatbot can hand over to your team for a live conversation. Outside hours it captures the visitor\'s details so you can call them back.',
+                },
+              },
+            ],
           }),
         }}
       />

@@ -25,7 +25,7 @@ export default function Page() {
             <p className="text-xl text-charcoal leading-normal mb-4">
               It answers every call. Books appointments. Qualifies leads. Sends you the details. Works 24/7, costs less than a part-time hire.
             </p>
-            <p className="text-sm text-mid-gray mb-8">By <a href="/about" className="underline hover:text-terracotta transition-colors">Andy Norman</a>, Founder | 30+ years in technology</p>
+            <p className="text-sm text-mid-gray mb-8">By <a href="/about" className="underline hover:text-terracotta transition-colors">Andy Norman</a>, Founder | 30+ years in technology | Last updated March 2026</p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <Button variant="primary" onClick={() => setIsVoiceChatOpen(true)}>
                 Try the Demo Now
@@ -194,6 +194,66 @@ export default function Page() {
                 The quality depends on how well it's trained on your business. That's why we spend time getting your services, prices, FAQs, and processes right. Rubbish in, rubbish out. We don't do rubbish.
               </p>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-4xl md:text-5xl uppercase tracking-tight-lg text-charcoal mb-10">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                How much does an AI voice agent cost?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Setup starts from £249, with monthly plans from £97/month. The exact cost depends on complexity, call volume, and what integrations you need (calendar, CRM, etc.). We offer a free consultation to scope your requirements and give you an honest quote.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                Will callers know they're talking to AI?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                About 1 in 20 callers notice. The voice sounds natural and conversational — most people assume they're speaking to a receptionist. If someone does ask for a real person, the AI can transfer them to you or take a message.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                Can it book appointments into my calendar?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Yes. It connects to Google Calendar, Outlook, Calendly, and other scheduling tools. It checks your real availability, books the caller in, and sends them a confirmation automatically.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                What happens if the AI can't answer a question?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                It takes the caller's details and flags it for you to follow up. It won't make things up or try to blag its way through something it shouldn't. You get a notification with the caller's name, number, and what they asked about.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                How long does it take to set up?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Typically 5–7 working days from kickoff. We spend that time training the AI on your business — your services, pricing, processes, and FAQs — so it handles calls properly from day one.
+              </div>
+            </details>
           </div>
         </div>
       </section>
