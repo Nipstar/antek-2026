@@ -129,11 +129,74 @@ export default function Page() {
         </div>
       </section>
 
+      {/* Comparison Table */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl uppercase tracking-tight-lg text-charcoal mb-4">
+            How Does an AI Chatbot Compare to a Contact Form or Live Chat?
+          </h2>
+          <p className="text-lg text-charcoal leading-normal mb-10">
+            An AI chatbot combines the always-on availability of a contact form with the conversational engagement of live chat — without needing a human sitting at a screen. It captures more leads because it answers questions in real time, 24/7, and guides visitors toward booking rather than just collecting an email address.
+          </p>
+
+          <div className="overflow-x-auto">
+            <table className="w-full border-3 border-charcoal text-left text-sm">
+              <thead>
+                <tr className="bg-charcoal text-off-white">
+                  <th className="p-4 font-black uppercase border-r-3 border-off-white/20"></th>
+                  <th className="p-4 font-black uppercase border-r-3 border-off-white/20">AI Chatbot</th>
+                  <th className="p-4 font-black uppercase border-r-3 border-off-white/20">Live Chat</th>
+                  <th className="p-4 font-black uppercase">Contact Form</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-t-3 border-charcoal bg-white">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Availability</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">24/7/365</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Office hours only</td>
+                  <td className="p-4 text-charcoal">24/7 but no instant response</td>
+                </tr>
+                <tr className="border-t-3 border-charcoal bg-peach">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Response Time</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Instant</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Minutes (if someone's available)</td>
+                  <td className="p-4 text-charcoal">Hours to days</td>
+                </tr>
+                <tr className="border-t-3 border-charcoal bg-white">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Answers Questions</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Yes, trained on your business</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Yes, but needs a human</td>
+                  <td className="p-4 text-charcoal">No</td>
+                </tr>
+                <tr className="border-t-3 border-charcoal bg-peach">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Captures Leads</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Naturally during conversation</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">If agent remembers to ask</td>
+                  <td className="p-4 text-charcoal">Yes, but high abandonment rate</td>
+                </tr>
+                <tr className="border-t-3 border-charcoal bg-white">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Books Appointments</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Yes, directly into your calendar</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Manual booking by agent</td>
+                  <td className="p-4 text-charcoal">No</td>
+                </tr>
+                <tr className="border-t-3 border-charcoal bg-peach">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Monthly Cost</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">From £57/month</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">£500+/month (staff costs)</td>
+                  <td className="p-4 text-charcoal">Free</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* What It Won't Do */}
       <section className="bg-warm-beige border-b-3 border-charcoal py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
           <h2 className="font-black text-4xl md:text-5xl uppercase tracking-tight-lg text-charcoal mb-8">
-            Keeping It Real
+            What Are the Limits of an AI Chatbot?
           </h2>
           <p className="text-lg text-charcoal leading-normal mb-10">
             We'd rather be upfront than oversell you. Here's what a chatbot can and can't do:

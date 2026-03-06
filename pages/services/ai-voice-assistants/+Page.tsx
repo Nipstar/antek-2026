@@ -154,11 +154,74 @@ export default function Page() {
         </div>
       </section>
 
+      {/* Comparison Table */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl uppercase tracking-tight-lg text-charcoal mb-4">
+            How Does an AI Voice Agent Compare to Other Options?
+          </h2>
+          <p className="text-lg text-charcoal leading-normal mb-10">
+            An AI voice agent handles calls autonomously using natural conversation, unlike voicemail which callers ignore or answering services that cost significantly more per hour. Here's how the options stack up for a typical UK small business.
+          </p>
+
+          <div className="overflow-x-auto">
+            <table className="w-full border-3 border-charcoal text-left text-sm">
+              <thead>
+                <tr className="bg-charcoal text-off-white">
+                  <th className="p-4 font-black uppercase border-r-3 border-off-white/20"></th>
+                  <th className="p-4 font-black uppercase border-r-3 border-off-white/20">AI Voice Agent</th>
+                  <th className="p-4 font-black uppercase border-r-3 border-off-white/20">Answering Service</th>
+                  <th className="p-4 font-black uppercase">Voicemail</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-t-3 border-charcoal bg-white">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Availability</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">24/7/365</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Business hours only (usually)</td>
+                  <td className="p-4 text-charcoal">24/7 but callers rarely leave messages</td>
+                </tr>
+                <tr className="border-t-3 border-charcoal bg-peach">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Monthly Cost</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">From £97/month</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">£200-£800/month</td>
+                  <td className="p-4 text-charcoal">Free</td>
+                </tr>
+                <tr className="border-t-3 border-charcoal bg-white">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Books Appointments</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Yes, directly into your calendar</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Sometimes, depends on provider</td>
+                  <td className="p-4 text-charcoal">No</td>
+                </tr>
+                <tr className="border-t-3 border-charcoal bg-peach">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Knows Your Business</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Trained on your services, pricing, FAQs</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Basic script only</td>
+                  <td className="p-4 text-charcoal">N/A</td>
+                </tr>
+                <tr className="border-t-3 border-charcoal bg-white">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Caller Experience</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Natural conversation, answers questions</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Takes a message</td>
+                  <td className="p-4 text-charcoal">Recorded greeting</td>
+                </tr>
+                <tr className="border-t-3 border-charcoal bg-peach">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Scales With You</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Handles unlimited concurrent calls</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Cost increases with volume</td>
+                  <td className="p-4 text-charcoal">One at a time</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
       {/* What It Won't Do */}
       <section className="bg-warm-beige border-b-3 border-charcoal py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
           <h2 className="font-black text-4xl md:text-5xl uppercase tracking-tight-lg text-charcoal mb-8">
-            Let's Be Straight
+            What Are the Limits of an AI Voice Agent?
           </h2>
           <p className="text-lg text-charcoal leading-normal mb-10">
             We're not going to pretend this is magic. It's brilliant technology, but it has limits. Here's what you should know:

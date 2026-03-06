@@ -185,11 +185,74 @@ export default function Page() {
         </div>
       </section>
 
-      {/* What It Won't Do */}
+      {/* Comparison Table */}
       <section className="py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl uppercase tracking-tight-lg text-charcoal mb-4">
+            How Does n8n Compare to Zapier and Make?
+          </h2>
+          <p className="text-lg text-charcoal leading-normal mb-10">
+            n8n is an open-source workflow automation platform that gives you full ownership of your automations without per-task pricing. Unlike Zapier and Make, your workflows keep running even if you stop paying a subscription — because you own them. Here's how the three platforms compare for a typical small business.
+          </p>
+
+          <div className="overflow-x-auto">
+            <table className="w-full border-3 border-charcoal text-left text-sm">
+              <thead>
+                <tr className="bg-charcoal text-off-white">
+                  <th className="p-4 font-black uppercase border-r-3 border-off-white/20"></th>
+                  <th className="p-4 font-black uppercase border-r-3 border-off-white/20">n8n</th>
+                  <th className="p-4 font-black uppercase border-r-3 border-off-white/20">Zapier</th>
+                  <th className="p-4 font-black uppercase">Make</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr className="border-t-3 border-charcoal bg-white">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Ownership</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">You own everything</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Rented (stop paying, it stops)</td>
+                  <td className="p-4 text-charcoal">Rented</td>
+                </tr>
+                <tr className="border-t-3 border-charcoal bg-peach">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Pricing Model</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Flat fee, unlimited tasks</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Per task (costs grow with usage)</td>
+                  <td className="p-4 text-charcoal">Per operation (cheaper than Zapier)</td>
+                </tr>
+                <tr className="border-t-3 border-charcoal bg-white">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Integrations</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">400+ built-in, any API/webhook</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">6,000+ built-in</td>
+                  <td className="p-4 text-charcoal">1,800+ built-in</td>
+                </tr>
+                <tr className="border-t-3 border-charcoal bg-peach">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Complexity</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Handles complex multi-step logic</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Best for simple A-to-B automations</td>
+                  <td className="p-4 text-charcoal">Good for moderate complexity</td>
+                </tr>
+                <tr className="border-t-3 border-charcoal bg-white">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Self-Hostable</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Yes (your server, your data)</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">No</td>
+                  <td className="p-4 text-charcoal">No</td>
+                </tr>
+                <tr className="border-t-3 border-charcoal bg-peach">
+                  <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Best For</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Businesses wanting ownership and scale</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal">Quick, simple integrations</td>
+                  <td className="p-4 text-charcoal">Budget-conscious teams</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* What It Won't Do */}
+      <section className="bg-soft-sage border-y-3 border-charcoal py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
           <h2 className="font-black text-4xl md:text-5xl uppercase tracking-tight-lg text-charcoal mb-8">
-            What Automation Won't Fix
+            What Are the Limits of Workflow Automation?
           </h2>
           <div className="space-y-6 text-lg text-charcoal leading-normal">
             <p>
