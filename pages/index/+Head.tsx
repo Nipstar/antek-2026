@@ -265,7 +265,11 @@ export function Head() {
       "sameAs": [
         "https://x.com/AntekAutomation",
         "https://www.youtube.com/@AntekAutomation",
-        "http://linkedin.com/company/antek-automation",
+        "https://www.linkedin.com/company/antek-automation",
+        "https://www.facebook.com/people/Antek-Automation-Intelligent-Voice-Ai-Chat-Agents/61587195202811/",
+        "https://www.instagram.com/antekautomation/",
+        "https://www.retellai.com/partner/antek-automation",
+        "https://www.crunchbase.com/organization/antek-automation",
         "https://www.google.com/search?kgmid=/g/11yt2ybv_c",
         "https://www.google.com/maps?cid=17451278745729112685",
         "https://local.google.com/place?id=17451278745729112685&use=srp"
