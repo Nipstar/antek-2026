@@ -41,6 +41,11 @@ export function Footer() {
                   Automation
                 </a>
               </li>
+              <li>
+                <a href="https://blog.antekautomation.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-terracotta transition-colors text-sm">
+                  Blog
+                </a>
+              </li>
             </ul>
           </div>
 
