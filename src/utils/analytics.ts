@@ -3,31 +3,39 @@
  * Handles initialization and page view tracking
  */
 
-// Initialize Google Analytics with gtag script
+// Initialize Google Analytics with gtag script — deferred until browser is idle
 export const initializeGoogleAnalytics = (gtagId: string) => {
   if (!gtagId || gtagId === 'G-XXXXXXXXXX') {
     console.warn('Google Analytics ID not configured');
     return;
   }
 
-  // Load gtag script
-  const script1 = document.createElement('script');
-  script1.async = true;
-  script1.src = `https://www.googletagmanager.com/gtag/js?id=${gtagId}`;
-  document.head.appendChild(script1);
+  const loadGA = () => {
+    // Load gtag script
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = `https://www.googletagmanager.com/gtag/js?id=${gtagId}`;
+    document.head.appendChild(script1);
 
-  // Initialize gtag
-  const script2 = document.createElement('script');
-  script2.innerHTML = `
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', '${gtagId}', {
-      'page_path': window.location.pathname,
-      'anonymize_ip': true
-    });
-  `;
-  document.head.appendChild(script2);
+    // Initialize gtag
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '${gtagId}', {
+        'page_path': window.location.pathname,
+        'anonymize_ip': true
+      });
+    `;
+    document.head.appendChild(script2);
+  };
+
+  if ('requestIdleCallback' in window) {
+    window.requestIdleCallback(loadGA);
+  } else {
+    setTimeout(loadGA, 2000);
+  }
 };
 
 // Track page views (call this when route changes)

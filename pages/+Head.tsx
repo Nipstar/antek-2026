@@ -17,15 +17,11 @@ export function Head() {
 
       {/* Performance */}
       <link rel="preload" as="image" href="/logo.svg" type="image/svg+xml" />
-      <link rel="preconnect" href="https://api.elevenlabs.io" />
-      <link rel="dns-prefetch" href="https://api.elevenlabs.io" />
-      <link rel="preconnect" href="https://cdn.elevenlabs.io" />
-      <link rel="dns-prefetch" href="https://cdn.elevenlabs.io" />
 
-      {/* Meta Pixel Code */}
+      {/* Meta Pixel Code — deferred until after page load */}
       <script
         dangerouslySetInnerHTML={{
-          __html: `!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1430686008694674');fbq('track','PageView');`,
+          __html: `window.addEventListener('load',function(){!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','1430686008694674');fbq('track','PageView');});`,
         }}
       />
     </>

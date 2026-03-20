@@ -64,7 +64,7 @@ export default function Page() {
               <p className="text-charcoal leading-relaxed mb-6">
                 24/7 call handling. No missed emergencies. No lost revenue.
               </p>
-              <a href="/services/ai-voice-assistants">
+              <a href="/services/ai-voice-assistants" aria-label="Learn more about AI Voice Assistants">
                 <Button variant="primary" className="w-full">Learn More</Button>
               </a>
             </Card>
@@ -81,7 +81,7 @@ export default function Page() {
               <p className="text-charcoal leading-relaxed mb-6">
                 Convert browsers into bookings while Birmingham sleeps.
               </p>
-              <a href="/services/ai-chatbots">
+              <a href="/services/ai-chatbots" aria-label="Learn more about AI Chatbots">
                 <Button variant="primary" className="w-full">Learn More</Button>
               </a>
             </Card>
@@ -98,7 +98,7 @@ export default function Page() {
               <p className="text-charcoal leading-relaxed mb-6">
                 Stop drowning in admin. Start scaling.
               </p>
-              <a href="/services/workflow-automation">
+              <a href="/services/workflow-automation" aria-label="Learn more about Workflow Automation">
                 <Button variant="primary" className="w-full">Learn More</Button>
               </a>
             </Card>

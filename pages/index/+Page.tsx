@@ -88,7 +88,7 @@ export default function Page() {
               <p className="text-charcoal leading-relaxed mb-6">
                 No more missed calls. No more lost leads. No more "sorry I missed you" voicemails that never get returned.
               </p>
-              <a href="/services/ai-voice-assistants">
+              <a href="/services/ai-voice-assistants" aria-label="Learn more about AI Voice Assistants">
                 <Button variant="primary" className="w-full">Learn More</Button>
               </a>
             </Card>
@@ -105,7 +105,7 @@ export default function Page() {
               <p className="text-charcoal leading-relaxed mb-6">
                 Works while you sleep. Turns browsers into booked appointments.
               </p>
-              <a href="/services/ai-chatbots">
+              <a href="/services/ai-chatbots" aria-label="Learn more about AI Chatbots">
                 <Button variant="primary" className="w-full">Learn More</Button>
               </a>
             </Card>
@@ -122,7 +122,7 @@ export default function Page() {
               <p className="text-charcoal leading-relaxed mb-6">
                 Less admin. Fewer mistakes. More time for the work that actually pays.
               </p>
-              <a href="/services/workflow-automation">
+              <a href="/services/workflow-automation" aria-label="Learn more about Workflow Automation">
                 <Button variant="primary" className="w-full">Learn More</Button>
               </a>
             </Card>
