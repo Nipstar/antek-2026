@@ -5,6 +5,7 @@ export interface ContactFormData {
   email: string;
   serviceType: string;
   interests: string[];
+  websiteUrl?: string;
   message?: string;
   preferredContact: 'phone' | 'email' | 'either';
   timestamp: string;

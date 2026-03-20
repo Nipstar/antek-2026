@@ -14,6 +14,7 @@ export default function Page() {
     email: '',
     serviceType: '',
     interests: [] as string[],
+    websiteUrl: '',
     message: '',
     preferredContact: 'either' as 'phone' | 'email' | 'either',
   });
@@ -67,6 +68,7 @@ export default function Page() {
             email: '',
             serviceType: '',
             interests: [],
+            websiteUrl: '',
             message: '',
             preferredContact: 'either',
           });
@@ -85,6 +87,7 @@ export default function Page() {
           email: '',
           serviceType: '',
           interests: [],
+          websiteUrl: '',
           message: '',
           preferredContact: 'either',
         });
@@ -196,6 +199,7 @@ export default function Page() {
                   { value: 'chatbot', label: 'AI Chatbot for Website' },
                   { value: 'voice', label: 'Voice AI Phone Agent' },
                   { value: 'automation', label: 'Workflow Automation' },
+                  { value: 'geo_audit', label: 'GEO Audit (AI Search Visibility)' },
                   { value: 'not_sure', label: "Not Sure - Need Guidance" },
                 ].map((option) => (
                   <label key={option.value} className="flex items-center space-x-3 cursor-pointer">
@@ -210,6 +214,23 @@ export default function Page() {
                 ))}
               </div>
             </div>
+
+            {formData.interests.includes('geo_audit') && (
+              <div>
+                <label className="font-black text-charcoal mb-2 block uppercase text-sm">
+                  Website URL *
+                </label>
+                <input
+                  type="url"
+                  required={formData.interests.includes('geo_audit')}
+                  value={formData.websiteUrl}
+                  onChange={(e) => setFormData({ ...formData, websiteUrl: e.target.value })}
+                  className="w-full border-3 border-charcoal bg-white px-4 py-3 focus:border-terracotta focus:outline-none text-charcoal"
+                  placeholder="https://www.yourbusiness.co.uk"
+                />
+                <p className="text-sm text-mid-gray mt-1">The website we'll audit for AI search visibility</p>
+              </div>
+            )}
 
             <div>
               <label className="font-black text-charcoal mb-2 block uppercase text-sm">

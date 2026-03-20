@@ -64,9 +64,18 @@ export function Head() {
               addressRegion: 'Tyne and Wear',
               addressCountry: 'GB',
             },
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: 54.9783,
+              longitude: -1.6174,
+            },
             areaServed: {
               '@type': 'City',
               name: 'Newcastle upon Tyne',
+            },
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', 'h2', '.text-lg'],
             },
             makesOffer: [
               {
@@ -88,6 +97,51 @@ export function Head() {
                 itemOffered: {
                   '@type': 'Service',
                   name: 'Workflow Automation',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* FAQPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Can the AI handle Geordie accents?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Yes, pet. Modern speech recognition handles Geordie and North East accents accurately — we test with real Newcastle callers during setup. The AI's own voice is configurable too, so it matches the tone of your business.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Do you cover Gateshead, Sunderland, and Durham too?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes — Newcastle, Gateshead, Sunderland, Durham, North and South Tyneside, and Northumberland. The AI runs on cloud infrastructure, so it works identically regardless of postcode.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Why use a southern agency for my North East business?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Because AI doesn't care about the North-South divide — it cares about being built properly. You get the same quality at better value, direct access to the founder, and support that's a phone call away. No Grey Street office rent baked into your invoice. Newcastle businesses value fair pricing and straight talking — that's exactly what you get.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How quickly can you get my AI live?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Most voice agents and chatbots are live within 5-7 working days. Workflow automation typically 1-2 weeks depending on how many tools we're connecting. Everything is done remotely over video call — nee need to clear your diary.",
                 },
               },
             ],

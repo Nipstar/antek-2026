@@ -26,7 +26,7 @@ export default function Page() {
               Leeds has quietly become one of the UK's strongest business cities. A hub for professional services, a growing digital economy, and a thriving SMB scene that runs on hard work and word of mouth. From solicitors around Park Square to personal trainers in Headingley, from accountants in Chapel Allerton to cleaning firms covering Roundhay &mdash; the businesses here don't mess about.
             </p>
             <p className="text-lg md:text-xl text-charcoal leading-relaxed mb-8 max-w-3xl">
-              Neither do we. We build AI voice agents, chatbots, and workflow automation that catch the calls you're missing, convert the website visitors you're losing, and handle the admin that eats your evenings.
+              Neither do we. We build AI voice agents, chatbots, and workflow automation that catch the calls you're missing, convert the website visitors you're losing, and handle the admin that eats your evenings. We also work with businesses in <a href="/locations/manchester" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Manchester</a> and <a href="/locations/liverpool" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Liverpool</a>.
             </p>
             <p className="text-sm text-mid-gray mb-8">By <a href="/about" className="underline hover:text-terracotta transition-colors">Andy Norman</a>, Founder | 30+ years in technology</p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
@@ -59,7 +59,7 @@ export default function Page() {
                 AI Voice Agents
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                In a professional services city like Leeds, your phone manner matters. Our AI voice agents answer calls in a natural, professional voice &mdash; handling enquiries, booking consultations, and capturing details. Perfect for law firms that can't take calls during client meetings or trades firms that can't answer mid-job.
+                A solicitor near Call Lane gets a new-client enquiry at 4:30 pm &mdash; they&rsquo;re in a meeting that won&rsquo;t finish until six. Our AI voice agent picks up, takes the caller&rsquo;s details, confirms the type of case, and books a consultation for Thursday morning. That lead would have gone to the firm down the road. Instead, it&rsquo;s booked in before the meeting&rsquo;s even over. Whether you&rsquo;re a trades firm in Kirkstall or an accountant in Leeds Dock, every missed call is money left on the table.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
                 Every call answered. Every lead captured. Every time.
@@ -76,10 +76,10 @@ export default function Page() {
                 AI Chatbots
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                Leeds' growing digital economy means your customers are researching online before they pick up the phone. Our AI chatbots engage them on your website instantly &mdash; answering their questions, qualifying their needs, and booking them in. Works just as well at 11pm as it does at 11am.
+                A homeowner in Roundhay is comparing three electricians at 9 pm. Your chatbot answers &ldquo;Do you cover LS8?&rdquo;, confirms your availability, and books an estimate &mdash; while the other two electricians&rsquo; websites sit there with a contact form nobody checks until morning. In a city with the largest financial centre outside London, the professional services and trades businesses that respond fastest win. Full stop.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
-                Turn your website into your hardest-working salesperson.
+                Your 24/7 lead converter that never takes a day off.
               </p>
               <a href="/services/ai-chatbots">
                 <Button variant="primary" className="w-full">Learn More</Button>
@@ -93,7 +93,7 @@ export default function Page() {
                 Workflow Automation
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                Whether you're running a consultancy in the city centre or a service business in the suburbs, the admin is the same: quotes, follow-ups, invoices, and the constant nagging feeling you've forgotten something. We connect your existing tools and automate the lot.
+                Headingley, Horsforth, Morley, Pudsey &mdash; if you&rsquo;re covering West Yorkshire, your admin is scattered across emails, calendars, and half-finished spreadsheets. We connect your CRM, calendar, invoicing, and job-management tools so a new enquiry gets logged, confirmed, scheduled, and invoiced without you touching a thing. Leeds professional services firms and tradespeople tell us they save 8&ndash;10 hours a week on admin.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
                 Professional operations. Without the professional overheads.
@@ -125,6 +125,98 @@ export default function Page() {
             <p className="text-lg text-charcoal leading-relaxed">
               Leeds businesses earn their reputation through results, not promises. We work the same way.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── LEEDS BY THE NUMBERS ── */}
+      <section className="bg-peach border-y-3 border-charcoal py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl lg:text-5xl uppercase tracking-tight-lg text-charcoal mb-12 text-center">
+            Leeds by the Numbers
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">28,000+</div>
+              <p className="text-charcoal font-bold">Registered SMEs across the Leeds City Region</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">#1</div>
+              <p className="text-charcoal font-bold">Largest financial and professional services centre outside London</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">&pound;29bn</div>
+              <p className="text-charcoal font-bold">GVA output for the Leeds City Region economy (ONS)</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">780K+</div>
+              <p className="text-charcoal font-bold">Working-age population across Leeds &mdash; a deep talent pool and customer base</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* ── GEO CROSS-SELL ── */}
+      <section className="bg-warm-beige border-y-3 border-charcoal py-16 md:py-20">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl uppercase tracking-tight-lg text-charcoal mb-6">
+            Is AI Search Recommending Your Leeds Business?
+          </h2>
+          <p className="text-lg text-charcoal leading-relaxed mb-6">
+            When someone asks ChatGPT &ldquo;best accountant in Leeds city centre&rdquo; or tells Perplexity to &ldquo;find an emergency plumber in Headingley&rdquo;, is your business in the answer? In a city built on professional services, the firms that get cited by AI search have a serious edge. Our <a href="/services/geo-audit" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">GEO Audit</a> checks your visibility across ChatGPT, Perplexity, Google AI Overviews and Claude &mdash; and gives you a clear plan to get found. Starting from &pound;247.
+          </p>
+          <a href="/services/geo-audit">
+            <Button variant="primary">Check Your AI Visibility &rarr;</Button>
+          </a>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl lg:text-5xl uppercase tracking-tight-lg text-charcoal mb-12">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                Do I need a Leeds-based agency for AI automation?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                No. AI runs on cloud infrastructure &mdash; it works identically whether the builder is in Leeds or Hampshire. What matters is the quality of the build, the reliability of the support, and whether you can get hold of someone when you need them. We deliver on all three, and you deal directly with the founder.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                What types of Leeds businesses do you work with?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Professional services (solicitors, accountants, consultants), trades (plumbers, electricians, builders), dental and medical practices, cleaning companies, estate agents, and hospitality businesses. If you take calls, book appointments, or chase invoices &mdash; we can automate it. We also serve businesses in <a href="/locations/manchester" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Manchester</a> and <a href="/locations/liverpool" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Liverpool</a>.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                Do you cover all of West Yorkshire?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Yes &mdash; Leeds, Bradford, Wakefield, Huddersfield, Halifax, and everywhere in between. The AI doesn&rsquo;t care about postcodes. It answers your calls and books your appointments whether the caller&rsquo;s in LS1 or HD1.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                How quickly can you set things up?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Most voice agents and chatbots are live within 5&ndash;7 working days from our first call. Workflow automation depends on complexity but typically 1&ndash;2 weeks. Everything is set up remotely over video call &mdash; no need to block out a day for meetings.
+              </div>
+            </details>
           </div>
         </div>
       </section>

@@ -64,9 +64,18 @@ export function Head() {
               addressRegion: 'West Yorkshire',
               addressCountry: 'GB',
             },
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: 53.8008,
+              longitude: -1.5491,
+            },
             areaServed: {
               '@type': 'City',
               name: 'Leeds',
+            },
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', 'h2', '.text-lg'],
             },
             makesOffer: [
               {
@@ -88,6 +97,51 @@ export function Head() {
                 itemOffered: {
                   '@type': 'Service',
                   name: 'Workflow Automation',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* FAQPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Do I need a Leeds-based agency for AI automation?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "No. AI runs on cloud infrastructure — it works identically whether the builder is in Leeds or Hampshire. What matters is the quality of the build, the reliability of the support, and whether you can get hold of someone when you need them. We deliver on all three, and you deal directly with the founder.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What types of Leeds businesses do you work with?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Professional services (solicitors, accountants, consultants), trades (plumbers, electricians, builders), dental and medical practices, cleaning companies, estate agents, and hospitality businesses. If you take calls, book appointments, or chase invoices — we can automate it.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Do you cover all of West Yorkshire?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Yes — Leeds, Bradford, Wakefield, Huddersfield, Halifax, and everywhere in between. The AI doesn't care about postcodes. It answers your calls and books your appointments whether the caller's in LS1 or HD1.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How quickly can you set things up?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Most voice agents and chatbots are live within 5-7 working days from our first call. Workflow automation depends on complexity but typically 1-2 weeks. Everything is set up remotely over video call — no need to block out a day for meetings.',
                 },
               },
             ],

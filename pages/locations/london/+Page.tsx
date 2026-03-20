@@ -59,10 +59,10 @@ export default function Page() {
                 AI Voice Agents
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                In London, a missed call doesn't just cost you a lead &mdash; it costs you a lead worth two or three times what it would anywhere else. Our AI voice agents pick up every call, answer questions, book appointments, and capture details. They sound natural, they work 24/7, and they never take a sick day.
+                A Croydon boiler-repair firm gets a call at 7 am on a freezing Monday. The owner&rsquo;s already under a boiler in Bromley. Our AI voice agent picks up, confirms the caller&rsquo;s postcode is in range, books a slot for Wednesday, and texts the owner a summary &mdash; all before the kettle&rsquo;s boiled. That&rsquo;s a &pound;300&ndash;500 job that would have gone to a competitor. Multiply that by 47 inbound enquiries a week (the London average for established trades firms) and you see why voice AI pays for itself in the first month.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
-                The financial case is a no-brainer when you compare it to London receptionist salaries.
+                Every missed call in London is worth more. Make sure you catch them all.
               </p>
               <a href="/services/ai-voice-assistants">
                 <Button variant="primary" className="w-full">Learn More</Button>
@@ -76,10 +76,10 @@ export default function Page() {
                 AI Chatbots
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                London customers do their research at all hours &mdash; on the tube, during lunch, at midnight. Our AI chatbots engage them the instant they land on your site, answering questions and booking appointments before they bounce to the next Google result.
+                A London customer finds your site at 11 pm. They&rsquo;ve got 15 browser tabs open &mdash; yours and fourteen competitors. Our chatbot engages them in under two seconds, answers &ldquo;Do you cover E14?&rdquo;, confirms pricing ballpark, and books a callback for 9 am. The other fourteen tabs get closed. In a market where attention spans are measured in seconds, being first isn&rsquo;t an advantage &mdash; it&rsquo;s the entire game.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
-                In a market this saturated, speed of response is everything.
+                Convert night-owl Londoners while you sleep.
               </p>
               <a href="/services/ai-chatbots">
                 <Button variant="primary" className="w-full">Learn More</Button>
@@ -93,10 +93,10 @@ export default function Page() {
                 Workflow Automation
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                Time is money, and in London it's a lot of money. Every hour you spend on data entry, follow-up emails, and invoice chasing is an hour you're not billing. We connect your tools and automate the admin &mdash; so new leads get acknowledged, quotes get followed up, and nothing falls through the cracks.
+                ULEZ charges, congestion-charge zones, parking permits &mdash; London adds layers of admin that businesses elsewhere don&rsquo;t deal with. We connect your calendar, CRM, invoicing, and job-management tools so a new lead gets logged, a confirmation goes out, the job hits your schedule with the right zone notes, and the invoice fires the moment you mark it complete. No copy-pasting, no forgotten follow-ups, no end-of-month invoice panic.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
-                Reclaim the hours that London's pace steals from you.
+                Automate the London-specific admin that eats your margins.
               </p>
               <a href="/services/workflow-automation">
                 <Button variant="primary" className="w-full">Learn More</Button>
@@ -114,7 +114,7 @@ export default function Page() {
               Not Based in London. That's the Point.
             </h2>
             <p className="text-lg text-charcoal leading-relaxed mb-6">
-              We're based in Hampshire, and we're not going to pretend otherwise. But here's what that means for you: you get the same quality work without the London agency price tag. No Shoreditch office rent baked into your invoice. No overheads that exist purely to impress other agencies.
+              We&rsquo;re based in <a href="/locations/hampshire" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Hampshire</a>, and we&rsquo;re not going to pretend otherwise. But here's what that means for you: you get the same quality work without the London agency price tag. No Shoreditch office rent baked into your invoice. No overheads that exist purely to impress other agencies.
             </p>
             <p className="text-lg text-charcoal leading-relaxed mb-6">
               Whether your business is in the City, Camden, Croydon, or anywhere in between, the AI we build works the same. Setup, testing, and ongoing support all happen over video call and screen share &mdash; which, let's be honest, is how most London business gets done these days anyway.
@@ -125,6 +125,98 @@ export default function Page() {
             <p className="text-lg text-charcoal leading-relaxed">
               You'll deal directly with Andy &mdash; 30+ years in tech, no account managers, no juniors, no runaround.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── LONDON BY THE NUMBERS ── */}
+      <section className="bg-peach border-y-3 border-charcoal py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl lg:text-5xl uppercase tracking-tight-lg text-charcoal mb-12 text-center">
+            London by the Numbers
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">1M+</div>
+              <p className="text-charcoal font-bold">Registered businesses in Greater London &mdash; the most competitive market in the UK</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">5.6M</div>
+              <p className="text-charcoal font-bold">Working-age population, with a service economy that never sleeps</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">&pound;150&ndash;250/hr</div>
+              <p className="text-charcoal font-bold">Average London agency rate &mdash; we charge a fraction with no drop in quality</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">47</div>
+              <p className="text-charcoal font-bold">Average weekly inbound enquiries for established London trades firms (industry benchmark)</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* ── GEO CROSS-SELL ── */}
+      <section className="bg-warm-beige border-y-3 border-charcoal py-16 md:py-20">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl uppercase tracking-tight-lg text-charcoal mb-6">
+            Is AI Search Recommending Your London Business?
+          </h2>
+          <p className="text-lg text-charcoal leading-relaxed mb-6">
+            When someone asks ChatGPT &ldquo;best emergency plumber in South London&rdquo; or tells Perplexity to &ldquo;find me a reliable accountant in Canary Wharf&rdquo;, is your business in the answer? With a million competitors, standing out in AI search results is make-or-break. Our <a href="/services/geo-audit" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">GEO Audit</a> checks your visibility across ChatGPT, Perplexity, Google AI Overviews and Claude &mdash; and gives you a clear plan to get cited. Starting from &pound;247.
+          </p>
+          <a href="/services/geo-audit">
+            <Button variant="primary">Check Your AI Visibility &rarr;</Button>
+          </a>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl lg:text-5xl uppercase tracking-tight-lg text-charcoal mb-12">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                Why would I use a Hampshire agency instead of a London one?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Because ours works the same and costs less. You&rsquo;re not paying for a Shoreditch office, a 12-person &ldquo;innovation team&rdquo;, or Friday drinks. You&rsquo;re paying for AI that answers your phone, books your appointments, and handles your admin. We deliver that from <a href="/locations/hampshire" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Hampshire</a> at a fraction of the London rate, and you deal directly with the founder &mdash; not a junior account manager.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                Will the AI voice agent sound right for London callers?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Yes. We configure the voice, tone, and vocabulary to match your brand and your clientele. A Mayfair dental practice gets a different voice profile from a South London roofing company. We test with real scenarios before go-live and tweak until it&rsquo;s spot-on.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                What types of London businesses do you work with?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Trades (plumbers, electricians, roofers, builders), dental and medical practices, cleaning companies, estate agents, accountants, solicitors, restaurants, salons, and fitness studios. If you take bookings, answer phone calls, or chase invoices &mdash; we can automate it. We also work with businesses in <a href="/locations/birmingham" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Birmingham</a> and other UK cities.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                How do your prices compare to London AI agencies?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Significantly lower. London agencies typically charge &pound;150&ndash;250/hr for the same services we deliver at a fixed project price. Our voice agents start from a one-off setup fee plus a monthly subscription &mdash; no hourly billing, no scope creep, no surprises. You can see our <a href="/services/geo-audit" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">GEO Audit pricing</a> as an example of how we keep things transparent.
+              </div>
+            </details>
           </div>
         </div>
       </section>

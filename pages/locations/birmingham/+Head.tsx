@@ -64,9 +64,18 @@ export function Head() {
               addressRegion: 'West Midlands',
               addressCountry: 'GB',
             },
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: 52.4862,
+              longitude: -1.8904,
+            },
             areaServed: {
               '@type': 'City',
               name: 'Birmingham',
+            },
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', 'h2', '.text-lg'],
             },
             makesOffer: [
               {
@@ -88,6 +97,51 @@ export function Head() {
                 itemOffered: {
                   '@type': 'Service',
                   name: 'Workflow Automation',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* FAQPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Can the AI handle Birmingham accents and local dialect?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Yes. Modern speech recognition handles Brummie accents and Black Country dialect accurately — we test with real local callers during setup. The AI's own voice is configurable too, so it matches the tone and personality of your business.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Do you cover the whole West Midlands?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes — Birmingham, Solihull, Wolverhampton, Walsall, Dudley, Sandwell, and Coventry. The AI runs on cloud infrastructure, so it works identically regardless of location.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Which Birmingham industries do you specialise in?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Construction and trades (14% of the local workforce), dental and medical, hospitality, cleaning, estate agents, legal, and professional services. If your business takes calls, books appointments, or sends invoices — we can automate it.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Why use a Hampshire agency for my Birmingham business?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Because AI doesn't need a local postcode — it needs someone who builds it properly. You get the same technology a Birmingham agency would charge double for, direct access to the founder (not a junior), and support that's a phone call away. No Brindleyplace office rent baked into your invoice.",
                 },
               },
             ],

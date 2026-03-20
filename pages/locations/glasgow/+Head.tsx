@@ -64,9 +64,18 @@ export function Head() {
               addressRegion: 'Scotland',
               addressCountry: 'GB',
             },
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: 55.8642,
+              longitude: -4.2518,
+            },
             areaServed: {
               '@type': 'City',
               name: 'Glasgow',
+            },
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', 'h2', '.text-lg'],
             },
             makesOffer: [
               {
@@ -88,6 +97,51 @@ export function Head() {
                 itemOffered: {
                   '@type': 'Service',
                   name: 'Workflow Automation',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* FAQPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Can the AI handle Scottish accents?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Aye. Modern speech recognition handles Scottish accents — including Glaswegian — accurately. We test with real Glasgow callers during setup and fine-tune until it's spot-on. The AI's own voice is configurable too.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Do you cover all of Greater Glasgow?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes — Glasgow, Paisley, East Kilbride, Clydebank, Rutherglen, and the surrounding areas. The AI runs on cloud infrastructure, so it works identically anywhere.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Why use an English agency for my Scottish business?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Fair question. Because AI doesn't care about borders — it cares about being built properly. You get the same quality at a competitive price, direct access to the founder, and support that's a phone call away. No George Square office rent on your invoice.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How quickly can you get things set up?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Most voice agents and chatbots are live within 5-7 working days. Workflow automation typically 1-2 weeks depending on complexity. All done remotely over video call — nae need to block out your diary.",
                 },
               },
             ],

@@ -59,10 +59,10 @@ export default function Page() {
                 AI Voice Agents
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                Southampton's service businesses are busy &mdash; out on jobs, on the water, in meetings. Our AI voice agents pick up every call you can't, answering in a natural voice that sounds like a real receptionist. They take details, answer questions, and book appointments round the clock.
+                Your phone rings while you&rsquo;re mid-job on a site near the SO postcode. A port worker needs emergency repairs. A cruise terminal hospitality business is drowning in seasonal enquiries. Tradespeople covering Eastleigh to the New Forest who miss calls on the M27 &mdash; our AI picks up on the first ring, books the job, and sends you the details.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
-                Stop losing jobs to unanswered calls. It's that simple.
+                No more missed calls. No more chasing voicemails at 9pm.
               </p>
               <a href="/services/ai-voice-assistants">
                 <Button variant="primary" className="w-full">Learn More</Button>
@@ -76,10 +76,10 @@ export default function Page() {
                 AI Chatbots
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                With two major universities, Southampton has a tech-savvy customer base that expects instant online responses. Our AI chatbots sit on your website and engage every visitor &mdash; answering questions, collecting details, and booking appointments before they click away to the next option.
+                Two major universities means 40,000+ tech-savvy consumers who expect instant online responses. Hospitality businesses in Ocean Village competing for bookings. Potential customers comparison-shopping at midnight &mdash; your chatbot is the one that&rsquo;s actually engaging them while every other website shows a &ldquo;we&rsquo;ll call you back&rdquo; form.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
-                Your website works as hard as you do. Finally.
+                Turns browsers into booked appointments while you sleep.
               </p>
               <a href="/services/ai-chatbots">
                 <Button variant="primary" className="w-full">Learn More</Button>
@@ -93,10 +93,10 @@ export default function Page() {
                 Workflow Automation
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                From quotes and invoices to follow-ups and data entry, the admin never stops. We connect the tools you're already using and automate the repetitive tasks that eat your time. New enquiry? Acknowledged, logged, and followed up &mdash; without you doing a thing.
+                Southampton&rsquo;s maritime logistics businesses managing complex scheduling. Lettings agents juggling property viewings across the city. Service businesses with enquiries coming from every direction &mdash; we connect your tools and automate the repetitive bits so a new enquiry gets handled without you lifting a finger.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
-                Run a tighter ship. Without working longer hours.
+                Less admin. Fewer mistakes. More time for paying work.
               </p>
               <a href="/services/workflow-automation">
                 <Button variant="primary" className="w-full">Learn More</Button>
@@ -114,17 +114,109 @@ export default function Page() {
               Just Up the Road. Properly Local.
             </h2>
             <p className="text-lg text-charcoal leading-relaxed mb-6">
-              We're based in Andover &mdash; about 30 minutes up the A3057. That makes us one of the closest AI automation agencies to Southampton, and definitely the most accessible. While the big London agencies charge London rates and treat you like a line item on a spreadsheet, we're right here in <a href="/locations/hampshire" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Hampshire</a>, building bespoke AI solutions for local businesses.
+              We&rsquo;re based in <a href="/locations/andover" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Andover</a> &mdash; about 30 minutes up the A3057. That makes us one of the closest AI automation agencies to Southampton, and definitely the most accessible. While the big London agencies charge London rates and treat you like a line item on a spreadsheet, we&rsquo;re right here in <a href="/locations/hampshire" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Hampshire</a>, building bespoke AI solutions for local businesses.
             </p>
             <p className="text-lg text-charcoal leading-relaxed mb-6">
-              That said, you don't need to drive up the A303 to work with us. Everything runs perfectly over video calls and screen share &mdash; which is how most of our Southampton clients prefer it anyway. The setup, testing, and ongoing support all happen remotely. Your AI voice agent doesn't need a parking space in Ocean Village to answer your calls.
+              That said, you don&rsquo;t need to drive up the A303 to work with us. Everything runs perfectly over video calls and screen share &mdash; which is how most of our Southampton clients prefer it anyway. The setup, testing, and ongoing support all happen remotely. Your AI voice agent doesn&rsquo;t need a parking space in Ocean Village to answer your calls.
             </p>
             <p className="text-lg text-charcoal leading-relaxed mb-6">
-              We've worked with tradespeople covering the SO postcode, lettings agents in the city centre, health and wellness businesses in Portswood, and service companies that cover everything from Eastleigh to the New Forest. The AI doesn't care about geography &mdash; it just works.
+              We&rsquo;ve worked with tradespeople covering the SO postcode, lettings agents in the city centre, health and wellness businesses in Portswood, and service companies that cover everything from Eastleigh to the New Forest. The AI doesn&rsquo;t care about geography &mdash; it just works.
             </p>
             <p className="text-lg text-charcoal leading-relaxed">
-              You'll deal with Andy directly. 30+ years in tech, no account managers, no handoffs. When something needs doing, it gets done. That's the Hampshire way.
+              You&rsquo;ll deal with Andy directly. 30+ years in tech, no account managers, no handoffs. When something needs doing, it gets done. That&rsquo;s the <a href="/locations/hampshire" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Hampshire</a> way.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SOUTHAMPTON BY THE NUMBERS ── */}
+      <section className="bg-peach border-y-3 border-charcoal py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl lg:text-5xl uppercase tracking-tight-lg text-charcoal mb-12 text-center">
+            Southampton by the Numbers
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">&pound;7.5bn</div>
+              <p className="text-charcoal font-bold">GVA economy</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">18,000+</div>
+              <p className="text-charcoal font-bold">Registered businesses</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">40,000+</div>
+              <p className="text-charcoal font-bold">Students across two major universities driving digital-first consumer behaviour</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">1.5M</div>
+              <p className="text-charcoal font-bold">Cruise passengers annually, supporting a hospitality sector that needs 24/7 responsiveness</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* ── GEO CROSS-SELL ── */}
+      <section className="bg-warm-beige border-y-3 border-charcoal py-16 md:py-20">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl uppercase tracking-tight-lg text-charcoal mb-6">
+            Is AI Search Recommending Your Southampton Business?
+          </h2>
+          <p className="text-lg text-charcoal leading-relaxed mb-6">
+            When someone asks ChatGPT &ldquo;best electrician in Southampton&rdquo; or searches Perplexity for &ldquo;reliable cleaning company near Ocean Village&rdquo;, is your business showing up? Our <a href="/services/geo-audit" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">GEO Audit</a> starts from &pound;247.
+          </p>
+          <a href="/services/geo-audit">
+            <Button variant="primary">Check Your AI Visibility &rarr;</Button>
+          </a>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl lg:text-5xl uppercase tracking-tight-lg text-charcoal mb-12">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                You&rsquo;re based in Andover &mdash; why should I choose you over a Southampton agency?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                We&rsquo;re 30 minutes up the A3057 &mdash; closer than most London agencies that target Southampton businesses. More importantly, AI automation runs on cloud infrastructure. Your voice agent doesn&rsquo;t need a local office. What matters is the quality of the build and the speed of support, and we deliver both.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                Do your AI voice agents work for hospitality businesses near the cruise terminals?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Yes. We&rsquo;ve built voice agents that handle high-volume seasonal enquiries &mdash; exactly the pattern cruise terminal hospitality businesses deal with. The AI handles the peaks so your staff can focus on service.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                Can your chatbot handle enquiries in multiple languages?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Yes. Southampton&rsquo;s diverse population and international port traffic means multilingual capability matters. Our chatbots can be configured to handle conversations in multiple languages.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                What&rsquo;s the typical ROI for a Southampton service business?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                A Southampton trades business missing just 5 calls per week at an average job value of &pound;200 is losing &pound;4,000/month in potential revenue. Our AI voice agents start from &pound;197/month &mdash; the maths speaks for itself.
+              </div>
+            </details>
           </div>
         </div>
       </section>

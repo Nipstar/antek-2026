@@ -15,6 +15,7 @@ export function Navigation() {
     { label: 'AI Chatbots', href: '/services/ai-chatbots' },
     { label: 'AI Voice Assistants', href: '/services/ai-voice-assistants' },
     { label: 'Workflow Automation', href: '/services/workflow-automation' },
+    { label: 'GEO Audit', href: '/services/geo-audit' },
   ]
 
   return (

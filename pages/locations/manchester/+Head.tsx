@@ -64,9 +64,18 @@ export function Head() {
               addressRegion: 'Greater Manchester',
               addressCountry: 'GB',
             },
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: 53.4808,
+              longitude: -2.2426,
+            },
             areaServed: {
               '@type': 'City',
               name: 'Manchester',
+            },
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', 'h2', '.text-lg'],
             },
             makesOffer: [
               {
@@ -88,6 +97,51 @@ export function Head() {
                 itemOffered: {
                   '@type': 'Service',
                   name: 'Workflow Automation',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* FAQPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Do I need a Manchester-based agency?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "No. AI automation runs on cloud infrastructure — it doesn't matter whether the person who built it is in Salford or Southampton. What matters is that it works, that it's built properly, and that you can get hold of someone when you need support. We tick all three boxes.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How does your pricing compare to Manchester agencies?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Lower, because we don't have Northern Quarter office rent or a team of twelve. You get the same technology, the same quality build, and direct access to the founder — at a price that makes sense for Manchester SMEs, not enterprise budgets.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can the AI voice agent handle Manchester accents?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Yes. Modern speech recognition handles regional accents extremely well — we test with real Manchester callers during setup. The voice agent's own voice is configurable too, so it matches the tone of your business.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Do you cover all of Greater Manchester?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "All ten boroughs: Manchester, Salford, Trafford, Stockport, Tameside, Oldham, Rochdale, Bury, Bolton, and Wigan. The AI doesn't care about postcodes — it works anywhere.",
                 },
               },
             ],

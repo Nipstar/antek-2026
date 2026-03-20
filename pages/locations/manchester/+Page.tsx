@@ -26,7 +26,7 @@ export default function Page() {
               Manchester moves fast. It's the beating heart of the Northern Powerhouse, with one of the fastest-growing business scenes in the UK. From media agencies in Salford to plumbing firms in Trafford, from estate agents along Deansgate to cleaning companies covering Stockport &mdash; everyone's fighting for the same customers, and the businesses that respond fastest win.
             </p>
             <p className="text-lg md:text-xl text-charcoal leading-relaxed mb-8 max-w-3xl">
-              We build AI voice agents, chatbots, and workflow automation that make sure you're always the first to respond &mdash; even when you're mid-job, mid-meeting, or fast asleep.
+              We build AI voice agents, chatbots, and workflow automation that make sure you're always the first to respond &mdash; even when you're mid-job, mid-meeting, or fast asleep. We also work with businesses in <a href="/locations/leeds" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Leeds</a> and <a href="/locations/liverpool" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Liverpool</a>.
             </p>
             <p className="text-sm text-mid-gray mb-8">By <a href="/about" className="underline hover:text-terracotta transition-colors">Andy Norman</a>, Founder | 30+ years in technology</p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
@@ -59,10 +59,10 @@ export default function Page() {
                 AI Voice Agents
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                Manchester's a tech-forward city, and your customers expect instant responses. Our AI voice agents answer every call in a natural, human-sounding voice &mdash; handling enquiries, booking appointments, and capturing details. They don't take lunch breaks and they don't clock off at five.
+                A plumber in Chorlton gets a call while they&rsquo;re elbow-deep in a boiler in Didsbury. Our AI voice agent answers in a natural, human-sounding voice, confirms the caller&rsquo;s postcode, gives a ballpark for the job, and books a slot &mdash; all while the plumber finishes the job in hand. Across Greater Manchester&rsquo;s 67,000 SMEs, the businesses that respond fastest win the work. Full stop.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
-                In a city this competitive, the business that answers first gets the job.
+                Never lose a job to a missed call again.
               </p>
               <a href="/services/ai-voice-assistants">
                 <Button variant="primary" className="w-full">Learn More</Button>
@@ -76,10 +76,10 @@ export default function Page() {
                 AI Chatbots
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                Manchester's digital economy is booming, and your customers are online at all hours. Our AI chatbots sit on your website and engage every visitor &mdash; answering questions, qualifying leads, and booking appointments whether it's Tuesday afternoon or Saturday night.
+                Northern Quarter bar owners, Altrincham estate agents, Stockport dental practices &mdash; their customers are browsing at all hours. Our chatbot sits on your website and engages every visitor the moment they land: answering &ldquo;Do you cover M21?&rdquo;, qualifying the lead, and booking an appointment before they click back to Google. In a city with 67,000 competing businesses, two seconds of hesitation loses you the customer.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
-                Convert visitors while your competitors are still checking their emails.
+                Your 24/7 sales team that never calls in sick.
               </p>
               <a href="/services/ai-chatbots">
                 <Button variant="primary" className="w-full">Learn More</Button>
@@ -93,10 +93,10 @@ export default function Page() {
                 Workflow Automation
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                Growing fast in Manchester means your admin grows with you. We connect the tools you're already using &mdash; calendar, email, CRM, invoicing &mdash; and automate the bits that don't need a human. Enquiries get acknowledged, follow-ups get sent, and invoices get chased &mdash; automatically.
+                Stockport, Trafford, Salford, Oldham, Bury &mdash; if you&rsquo;re covering Greater Manchester, your admin is scattered across postcodes, tools, and half-finished spreadsheets. We connect your calendar, CRM, invoicing, and job-management tools so a new enquiry gets logged, confirmed, scheduled, and invoiced without you touching a thing. The average Manchester tradesperson spends 8&ndash;10 hours a week on admin. We cut that to near-zero.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
-                Scale your business without scaling your admin.
+                Spend your time earning, not admin-ing.
               </p>
               <a href="/services/workflow-automation">
                 <Button variant="primary" className="w-full">Learn More</Button>
@@ -125,6 +125,98 @@ export default function Page() {
             <p className="text-lg text-charcoal leading-relaxed">
               We've worked with Manchester trades firms, professional services companies, and hospitality businesses. The common thread? They all wanted something that actually works, without the waffle. That's what we deliver.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── MANCHESTER BY THE NUMBERS ── */}
+      <section className="bg-peach border-y-3 border-charcoal py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl lg:text-5xl uppercase tracking-tight-lg text-charcoal mb-12 text-center">
+            Manchester by the Numbers
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">67,000</div>
+              <p className="text-charcoal font-bold">Registered SMEs across Greater Manchester</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">#1</div>
+              <p className="text-charcoal font-bold">Fastest-growing tech and digital economy outside London</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">&pound;24bn</div>
+              <p className="text-charcoal font-bold">Service-sector output across Greater Manchester (ONS)</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">10</div>
+              <p className="text-charcoal font-bold">Local authority areas covered &mdash; from MediaCity in Salford to Trafford Park and beyond</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* ── GEO CROSS-SELL ── */}
+      <section className="bg-warm-beige border-y-3 border-charcoal py-16 md:py-20">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl uppercase tracking-tight-lg text-charcoal mb-6">
+            Is AI Search Recommending Your Manchester Business?
+          </h2>
+          <p className="text-lg text-charcoal leading-relaxed mb-6">
+            When someone asks ChatGPT &ldquo;best plumber in Chorlton&rdquo; or tells Perplexity to &ldquo;find an emergency electrician in Stockport&rdquo;, is your business in the answer? In a city with 67,000 SMEs, the businesses that get cited by AI search have a massive edge. Our <a href="/services/geo-audit" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">GEO Audit</a> checks your visibility across ChatGPT, Perplexity, Google AI Overviews and Claude &mdash; and gives you a clear plan to get found. Starting from &pound;247.
+          </p>
+          <a href="/services/geo-audit">
+            <Button variant="primary">Check Your AI Visibility &rarr;</Button>
+          </a>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl lg:text-5xl uppercase tracking-tight-lg text-charcoal mb-12">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                Do I need a Manchester-based agency?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                No. AI automation runs on cloud infrastructure &mdash; it doesn&rsquo;t matter whether the person who built it is in Salford or Southampton. What matters is that it works, that it&rsquo;s built properly, and that you can get hold of someone when you need support. We tick all three boxes.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                How does your pricing compare to Manchester agencies?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Lower, because we don&rsquo;t have Northern Quarter office rent or a team of twelve. You get the same technology, the same quality build, and direct access to the founder &mdash; at a price that makes sense for Manchester SMEs, not enterprise budgets.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                Can the AI voice agent handle Manchester accents?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Yes. Modern speech recognition handles regional accents extremely well &mdash; we test with real Manchester callers during setup. The voice agent&rsquo;s own voice is configurable too, so it matches the tone of your business.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                Do you cover all of Greater Manchester?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                All ten boroughs: Manchester, Salford, Trafford, Stockport, Tameside, Oldham, Rochdale, Bury, Bolton, and Wigan. The AI doesn&rsquo;t care about postcodes &mdash; it works anywhere. We also serve businesses in <a href="/locations/leeds" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Leeds</a> and <a href="/locations/liverpool" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Liverpool</a>.
+              </div>
+            </details>
           </div>
         </div>
       </section>

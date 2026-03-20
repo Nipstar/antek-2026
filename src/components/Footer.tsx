@@ -42,6 +42,11 @@ export function Footer() {
                 </a>
               </li>
               <li>
+                <a href="/services/geo-audit" className="text-gray-300 hover:text-terracotta transition-colors text-sm">
+                  GEO Audit
+                </a>
+              </li>
+              <li>
                 <a href="https://blog.antekautomation.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-terracotta transition-colors text-sm">
                   Blog
                 </a>
@@ -52,6 +57,12 @@ export function Footer() {
           {/* Locations Grid */}
           <div>
             <h4 className="font-black uppercase text-off-white text-sm tracking-tight-lg mb-6">Locations</h4>
+            <a
+              href="/locations"
+              className="text-gray-300 hover:text-terracotta transition-colors text-sm font-bold block mb-4"
+            >
+              All Locations
+            </a>
             <div className="grid grid-cols-2 gap-x-6 gap-y-4">
               {cities.map((city) => (
                 <a

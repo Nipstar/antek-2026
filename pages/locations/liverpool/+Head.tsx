@@ -64,9 +64,18 @@ export function Head() {
               addressRegion: 'Merseyside',
               addressCountry: 'GB',
             },
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: 53.4084,
+              longitude: -2.9916,
+            },
             areaServed: {
               '@type': 'City',
               name: 'Liverpool',
+            },
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', 'h2', '.text-lg'],
             },
             makesOffer: [
               {
@@ -88,6 +97,51 @@ export function Head() {
                 itemOffered: {
                   '@type': 'Service',
                   name: 'Workflow Automation',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* FAQPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Can the AI handle Scouse accents?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Yes. Modern speech recognition handles regional accents well — including Scouse. We test with real Liverpool callers during setup and tweak until it's spot-on. The AI's own voice is configurable too, so it matches the tone of your business.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Do you cover all of Merseyside?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes — Liverpool, Wirral, Sefton, Knowsley, St Helens, and Halton. The AI runs on cloud infrastructure, so it works identically regardless of postcode.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Why use a Hampshire agency for my Liverpool business?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Because AI doesn't need a local postcode — it needs someone who builds it properly. You get the same technology at a lower price point, direct access to the founder, and support that's a phone call away. No Bold Street office rent baked into your invoice.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How quickly can you get my AI live?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Most voice agents and chatbots are live within 5-7 working days. Workflow automation typically takes 1-2 weeks depending on how many tools we're connecting. Everything is done remotely — no need to clear your diary.",
                 },
               },
             ],

@@ -26,7 +26,7 @@ export default function Page() {
               Newcastle's got something a lot of cities don't: fierce local loyalty. When a Geordie finds a business they trust, they stick with it and tell their mates. But that loyalty has to be earned &mdash; and you earn it by being reliable, responsive, and not messing people about.
             </p>
             <p className="text-lg md:text-xl text-charcoal leading-relaxed mb-8 max-w-3xl">
-              That's exactly what our AI does. It answers every call, responds to every website visitor, and follows up on every lead &mdash; so you build the kind of reputation that keeps Jesmond, Gosforth, Gateshead, and the Quayside coming back. We build voice agents, chatbots, and workflow automation that make your business impossible to ignore.
+              That's exactly what our AI does. It answers every call, responds to every website visitor, and follows up on every lead &mdash; so you build the kind of reputation that keeps Jesmond, Gosforth, Gateshead, and the Quayside coming back. We build voice agents, chatbots, and workflow automation that make your business impossible to ignore. We also work with businesses in <a href="/locations/glasgow" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Glasgow</a> and <a href="/locations/leeds" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Leeds</a>.
             </p>
             <p className="text-sm text-mid-gray mb-8">By <a href="/about" className="underline hover:text-terracotta transition-colors">Andy Norman</a>, Founder | 30+ years in technology</p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
@@ -59,10 +59,10 @@ export default function Page() {
                 AI Voice Agents
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                The North East runs on word of mouth, and word of mouth starts with a good first impression. Our AI voice agents answer your calls with a natural, professional voice &mdash; taking details, answering questions, and booking appointments. No voicemail, no hold music, no "please try again later."
+                An electrician in Ouseburn gets an emergency call at 6 pm &mdash; power&rsquo;s gone in a flat near the Quayside. He&rsquo;s finishing a rewire in Jesmond and can&rsquo;t pick up. Our AI voice agent answers, confirms the caller&rsquo;s address, explains that the next available slot is 7:30 pm, and books it in. That&rsquo;s a &pound;150+ callout that would have gone to whoever answered first. Across the North East, the tradespeople that respond fastest earn the loyalty &mdash; and the repeat business.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
-                Every call answered means another chance to earn that Geordie loyalty.
+                Every call answered. Every Geordie customer sorted.
               </p>
               <a href="/services/ai-voice-assistants">
                 <Button variant="primary" className="w-full">Learn More</Button>
@@ -76,10 +76,10 @@ export default function Page() {
                 AI Chatbots
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                Your website visitors want answers now, not tomorrow morning. Our AI chatbots engage them the instant they arrive &mdash; answering questions about your services, checking availability, and booking them in. Works at midnight after the match, works during Sunday lunch, works while you're on a job in Tynemouth.
+                A homeowner in Gosforth is comparing three roofers at 10 pm after a storm. Your chatbot answers &ldquo;Do you cover NE3?&rdquo;, confirms emergency availability, and books a next-morning inspection &mdash; while the other two roofers&rsquo; websites offer a contact form and silence. From Newcastle Helix to Gateshead Quays, the North East&rsquo;s service economy rewards the businesses that show up first.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
-                Always open. Always responsive. Always working for you.
+                Always open. Always responsive. Proper canny.
               </p>
               <a href="/services/ai-chatbots">
                 <Button variant="primary" className="w-full">Learn More</Button>
@@ -93,7 +93,7 @@ export default function Page() {
                 Workflow Automation
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                Running a service business in Newcastle means wearing every hat at once &mdash; quoting, booking, invoicing, following up, and somehow finding time to do the actual work. We automate the admin by connecting your existing tools so enquiries get logged, quotes get followed up, and nothing gets forgotten.
+                Jesmond, Gateshead, Sunderland, Durham &mdash; if you&rsquo;re covering the North East, your admin is scattered across emails, calendars, and that notebook you keep losing. We connect your CRM, calendar, invoicing, and job-management tools so a new enquiry gets logged, confirmed, scheduled, and invoiced automatically. North East trades businesses tell us they save 8&ndash;10 hours a week. That&rsquo;s a full day back on paying work.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
                 All the professionalism. None of the late-night spreadsheets.
@@ -125,6 +125,98 @@ export default function Page() {
             <p className="text-lg text-charcoal leading-relaxed">
               Newcastle businesses value straight-talking and fair pricing. That's exactly what you'll get from us. No surprises, no hidden costs, no waffle. Just AI that works and a bloke who picks up the phone when you need him.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── NEWCASTLE BY THE NUMBERS ── */}
+      <section className="bg-peach border-y-3 border-charcoal py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl lg:text-5xl uppercase tracking-tight-lg text-charcoal mb-12 text-center">
+            Newcastle by the Numbers
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">15,000+</div>
+              <p className="text-charcoal font-bold">Registered businesses across Tyne and Wear</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">Newcastle Helix</div>
+              <p className="text-charcoal font-bold">24-acre innovation hub &mdash; the North East&rsquo;s answer to the tech corridor, creating digital-first demand</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">1.1M</div>
+              <p className="text-charcoal font-bold">Tyne and Wear population &mdash; a loyal customer base that values reliability</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">Gateshead Quays</div>
+              <p className="text-charcoal font-bold">Major regeneration bringing new residents, businesses, and service demand to both sides of the Tyne</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* ── GEO CROSS-SELL ── */}
+      <section className="bg-warm-beige border-y-3 border-charcoal py-16 md:py-20">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl uppercase tracking-tight-lg text-charcoal mb-6">
+            Is AI Search Recommending Your Newcastle Business?
+          </h2>
+          <p className="text-lg text-charcoal leading-relaxed mb-6">
+            When someone asks ChatGPT &ldquo;best electrician near the Quayside&rdquo; or tells Perplexity to &ldquo;find a reliable plumber in Jesmond&rdquo;, is your business in the answer? In a city where word of mouth matters more than anywhere, AI search is becoming the new recommendation engine. Our <a href="/services/geo-audit" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">GEO Audit</a> checks your visibility across ChatGPT, Perplexity, Google AI Overviews and Claude &mdash; and gives you a clear plan to get cited. Starting from &pound;247.
+          </p>
+          <a href="/services/geo-audit">
+            <Button variant="primary">Check Your AI Visibility &rarr;</Button>
+          </a>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl lg:text-5xl uppercase tracking-tight-lg text-charcoal mb-12">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                Can the AI handle Geordie accents?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Yes, pet. Modern speech recognition handles Geordie and North East accents accurately &mdash; we test with real Newcastle callers during setup. The AI&rsquo;s own voice is configurable too, so it matches the tone of your business.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                Do you cover Gateshead, Sunderland, and Durham too?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Yes &mdash; Newcastle, Gateshead, Sunderland, Durham, North and South Tyneside, and Northumberland. The AI runs on cloud infrastructure, so it works identically regardless of postcode. We also serve businesses in <a href="/locations/glasgow" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Glasgow</a> and <a href="/locations/leeds" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Leeds</a>.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                Why use a southern agency for my North East business?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Because AI doesn&rsquo;t care about the North-South divide &mdash; it cares about being built properly. You get the same quality at better value, direct access to the founder, and support that&rsquo;s a phone call away. No Grey Street office rent baked into your invoice. Newcastle businesses value fair pricing and straight talking &mdash; that&rsquo;s exactly what you get.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                How quickly can you get my AI live?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Most voice agents and chatbots are live within 5&ndash;7 working days. Workflow automation typically 1&ndash;2 weeks depending on how many tools we&rsquo;re connecting. Everything is done remotely over video call &mdash; nee need to clear your diary.
+              </div>
+            </details>
           </div>
         </div>
       </section>

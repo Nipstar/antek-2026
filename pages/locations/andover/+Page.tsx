@@ -59,10 +59,10 @@ export default function Page() {
                 AI Voice Agents
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                You're on a job, hands covered in whatever, phone buzzing in your pocket. By the time you call back, they've already rung someone else. My AI voice agents answer your calls in a natural, human-sounding voice &mdash; taking messages, answering questions, and booking appointments 24/7.
+                Augusta Park and Picket Piece have added thousands of new homes to Andover &mdash; and every new homeowner needs a reliable plumber, electrician, or builder. When they call and you&rsquo;re on a job in Weyhill, Thruxton, or Hurstbourne &mdash; rural areas where mobile signal drops &mdash; our AI picks up on the first ring, books the job, and sends you the details.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
-                Every missed call is a missed job. Let's fix that.
+                No more missed calls. No more chasing voicemails at 9pm.
               </p>
               <a href="/services/ai-voice-assistants">
                 <Button variant="primary" className="w-full">Learn More</Button>
@@ -76,10 +76,10 @@ export default function Page() {
                 AI Chatbots
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                Your website gets visitors at all hours. Without a chatbot, they look around, maybe fill in a form, probably just leave. My AI chatbots engage visitors instantly &mdash; answering questions and booking appointments whether it's lunchtime or midnight.
+                Andover&rsquo;s growing population means new residents who don&rsquo;t have established tradespeople yet &mdash; they&rsquo;re searching online, comparing options at 10pm after the kids are in bed. Your chatbot is the one that&rsquo;s actually engaging them, answering their specific questions, and getting them booked in while your competitors show a contact form.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
-                Stop losing website visitors. Start converting them.
+                Turns browsers into booked appointments while you sleep.
               </p>
               <a href="/services/ai-chatbots">
                 <Button variant="primary" className="w-full">Learn More</Button>
@@ -93,10 +93,10 @@ export default function Page() {
                 Workflow Automation
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                Every evening spent updating spreadsheets, sending follow-up emails, and chasing invoices is an evening you don't get back. I connect your existing tools and automate the repetitive tasks that eat your time.
+                Sole traders and small teams in the Walworth Business Park and across Test Valley who are doing everything themselves &mdash; quoting, invoicing, chasing, booking &mdash; and drowning in admin. We connect your tools and automate the repetitive bits so a new enquiry gets handled without you lifting a finger.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
-                Your business runs smoother. You get your evenings back.
+                Less admin. Fewer mistakes. More time for paying work.
               </p>
               <a href="/services/workflow-automation">
                 <Button variant="primary" className="w-full">Learn More</Button>
@@ -125,6 +125,115 @@ export default function Page() {
             <p className="text-lg text-charcoal leading-relaxed">
               And if you want to see the broader <a href="/locations/hampshire" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Hampshire</a> picture, we cover the whole county too.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── ANDOVER BY THE NUMBERS ── */}
+      <section className="bg-peach border-y-3 border-charcoal py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl lg:text-5xl uppercase tracking-tight-lg text-charcoal mb-12 text-center">
+            Andover by the Numbers
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">4,200+</div>
+              <p className="text-charcoal font-bold">Registered small businesses in Test Valley</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">2,000+</div>
+              <p className="text-charcoal font-bold">New homes added by Augusta Park, with every homeowner needing reliable local trades</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">1,200+</div>
+              <p className="text-charcoal font-bold">Additional homes at Picket Piece, further growing demand for local services</p>
+            </Card>
+            <Card>
+              <div className="text-4xl font-black text-terracotta mb-2">12%</div>
+              <p className="text-charcoal font-bold">Of Test Valley&rsquo;s local economy is construction and building trades</p>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* ── WHY WE'RE BASED HERE ── */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="font-black text-3xl md:text-4xl lg:text-5xl uppercase tracking-tight-lg text-charcoal mb-8">
+              Why We&rsquo;re Based Here
+            </h2>
+            <p className="text-lg text-charcoal leading-relaxed mb-6">
+              Our office is at Chantry House, 38 Chantry Way &mdash; right in the middle of town. I chose Andover as a base because it&rsquo;s perfectly positioned for serving <a href="/locations/hampshire" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Hampshire</a> businesses, it&rsquo;s got a growing local economy, and it&rsquo;s home.
+            </p>
+            <p className="text-lg text-charcoal leading-relaxed">
+              If you&rsquo;re local, I&rsquo;m genuinely happy to meet for a coffee and talk through what AI could do for your business. No pitch deck, no PowerPoint &mdash; just two people having a chat about whether this makes sense for you.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── GEO CROSS-SELL ── */}
+      <section className="bg-warm-beige border-y-3 border-charcoal py-16 md:py-20">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl uppercase tracking-tight-lg text-charcoal mb-6">
+            Is AI Search Recommending Your Andover Business?
+          </h2>
+          <p className="text-lg text-charcoal leading-relaxed mb-6">
+            When someone asks ChatGPT &ldquo;Who&rsquo;s the best plumber in Andover?&rdquo; or tells Perplexity to &ldquo;find me a reliable electrician in Test Valley&rdquo;, is your business in the answer? Our <a href="/services/geo-audit" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">GEO Audit</a> checks your visibility across ChatGPT, Perplexity, Google AI Overviews and Claude &mdash; and gives you a clear plan to get cited. Starting from &pound;247.
+          </p>
+          <a href="/services/geo-audit">
+            <Button variant="primary">Check Your AI Visibility &rarr;</Button>
+          </a>
+        </div>
+      </section>
+
+      {/* ── FAQ ── */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl lg:text-5xl uppercase tracking-tight-lg text-charcoal mb-12">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-4">
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                Can I come to your office?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Yes &mdash; we&rsquo;re at Chantry House, 38 Chantry Way, Andover SP10 1LZ. Happy to have you round for a demo. Most clients prefer a video call, but the door&rsquo;s always open if you&rsquo;re local.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                Do you work with businesses outside Andover?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Absolutely. We serve all of <a href="/locations/hampshire" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Hampshire</a> and the UK. Andover is our base, but AI automation works remotely &mdash; we&rsquo;ve got clients from <a href="/locations/glasgow" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Glasgow</a> to <a href="/locations/southampton" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Southampton</a>. That said, we do have a soft spot for local businesses and can usually meet face-to-face within the week.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                I&rsquo;m a tradesperson in Andover &mdash; is AI really for someone like me?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Especially for someone like you. You&rsquo;re probably a one-person band or a small team, out on jobs all day, missing calls you can&rsquo;t afford to miss. An AI voice agent costs less than a part-time receptionist and works 24/7. It&rsquo;s built for exactly your situation.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                How much does it cost?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                AI voice agents start from &pound;197/month. For an Andover tradesperson missing even 3&ndash;4 calls a week, the return on investment is usually clear within the first couple of weeks.
+              </div>
+            </details>
           </div>
         </div>
       </section>

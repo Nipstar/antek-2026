@@ -64,6 +64,15 @@ export function Head() {
               addressRegion: 'Hampshire',
               addressCountry: 'GB',
             },
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: 51.2114,
+              longitude: -1.4901,
+            },
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', 'h2', '.text-lg'],
+            },
             areaServed: {
               '@type': 'City',
               name: 'Andover',
@@ -88,6 +97,51 @@ export function Head() {
                 itemOffered: {
                   '@type': 'Service',
                   name: 'Workflow Automation',
+                },
+              },
+            ],
+          }),
+        }}
+      />
+
+      {/* FAQPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Can I come to your office?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Yes — we're at Chantry House, 38 Chantry Way, Andover SP10 1LZ. Happy to have you round for a demo. Most clients prefer a video call, but the door's always open if you're local.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Do you work with businesses outside Andover?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Absolutely. We serve all of Hampshire and the UK. Andover is our base, but AI automation works remotely — we've got clients from Glasgow to Southampton. That said, we do have a soft spot for local businesses and can usually meet face-to-face within the week.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: "I'm a tradesperson in Andover — is AI really for someone like me?",
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Especially for someone like you. You're probably a one-person band or a small team, out on jobs all day, missing calls you can't afford to miss. An AI voice agent costs less than a part-time receptionist and works 24/7. It's built for exactly your situation.",
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How much does it cost?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'AI voice agents start from £197/month. For an Andover tradesperson missing even 3-4 calls a week, the return on investment is usually clear within the first couple of weeks.',
                 },
               },
             ],

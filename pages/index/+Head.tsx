@@ -672,10 +672,6 @@ export function Head() {
           "@type": "Rating",
           "ratingValue": 5,
           "bestRating": 5
-        },
-        "itemReviewed": {
-          "@type": "Service",
-          "@id": "https://www.antekautomation.com/#service-voice-ai"
         }
       },
       {
@@ -689,10 +685,6 @@ export function Head() {
           "@type": "Rating",
           "ratingValue": 5,
           "bestRating": 5
-        },
-        "itemReviewed": {
-          "@type": "Service",
-          "@id": "https://www.antekautomation.com/#service-voice-ai"
         }
       },
       {
@@ -706,10 +698,6 @@ export function Head() {
           "@type": "Rating",
           "ratingValue": 5,
           "bestRating": 5
-        },
-        "itemReviewed": {
-          "@type": "Service",
-          "@id": "https://www.antekautomation.com/#service-workflow-automation"
         }
       }
     ],
