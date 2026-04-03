@@ -281,6 +281,11 @@ export function Head() {
         "sameAs": ["https://www.linkedin.com/in/andy-norman-ab78443a1"]
       },
       "logo": { "@id": "https://www.antekautomation.com/#logo" },
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "certification",
+        "name": "Certified Retell AI Partner"
+      },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
         "@id": "https://www.antekautomation.com/#services",
@@ -655,6 +660,95 @@ export function Head() {
     ]
   };
 
+  const voiceAgentServiceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.antekautomation.com/#service-voice-agents",
+    "name": "AI Voice Agents",
+    "description": "AI-powered voice agents that answer calls, book appointments, qualify leads, and handle customer enquiries 24/7 for UK service businesses.",
+    "provider": { "@id": "https://www.antekautomation.com/#organization" },
+    "serviceType": "AI Voice Agent Development",
+    "areaServed": {
+      "@type": "Country",
+      "name": "United Kingdom"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "AI Voice Agent Pricing",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "AI Voice Agent Setup",
+          "price": "2997",
+          "priceCurrency": "GBP",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "2997",
+            "priceCurrency": "GBP",
+            "unitText": "one-time"
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "AI Voice Agent Retainer",
+          "price": "297",
+          "priceCurrency": "GBP",
+          "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "297",
+            "priceCurrency": "GBP",
+            "unitText": "month",
+            "billingIncrement": 1,
+            "billingDuration": {
+              "@type": "QuantitativeValue",
+              "value": 1,
+              "unitCode": "MON"
+            }
+          }
+        }
+      ]
+    }
+  };
+
+  const workflowAutomationServiceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.antekautomation.com/#service-n8n-workflow",
+    "name": "n8n Workflow Automation",
+    "description": "Self-hosted n8n workflow automation for UK businesses \u2014 no per-task fees, full data ownership, and custom integrations with your existing tools.",
+    "provider": { "@id": "https://www.antekautomation.com/#organization" },
+    "serviceType": "Workflow Automation",
+    "areaServed": {
+      "@type": "Country",
+      "name": "United Kingdom"
+    }
+  };
+
+  const geoServiceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": "https://www.antekautomation.com/#service-geo",
+    "name": "Generative Engine Optimisation (GEO)",
+    "description": "Generative Engine Optimisation ensures your business appears in AI-generated search results from ChatGPT, Claude, Gemini, and Perplexity \u2014 not just traditional Google results.",
+    "provider": { "@id": "https://www.antekautomation.com/#organization" },
+    "serviceType": "Generative Engine Optimisation",
+    "areaServed": {
+      "@type": "Country",
+      "name": "United Kingdom"
+    }
+  };
+
+  const speakableWebPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Antek Automation - AI Automation Agency UK",
+    "url": "https://antekautomation.com",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".hero-description", ".snippet-bait", "h1"]
+    }
+  };
+
   const reviewSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
@@ -738,6 +832,30 @@ export function Head() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
+      />
+
+      {/* JSON-LD: Service schema — AI Voice Agents */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(voiceAgentServiceSchema) }}
+      />
+
+      {/* JSON-LD: Service schema — n8n Workflow Automation */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(workflowAutomationServiceSchema) }}
+      />
+
+      {/* JSON-LD: Service schema — GEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(geoServiceSchema) }}
+      />
+
+      {/* JSON-LD: Speakable WebPage schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableWebPageSchema) }}
       />
     </>
   );

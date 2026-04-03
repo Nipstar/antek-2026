@@ -33,7 +33,7 @@ export default function Page() {
             <h1 className="font-black text-4xl md:text-5xl lg:text-6xl uppercase tracking-tight-xl text-charcoal mb-6 leading-tight">
               You're Losing Customers Every Time You Can't Answer the Phone
             </h1>
-            <p className="text-lg md:text-xl text-charcoal leading-relaxed mb-8 max-w-3xl">
+            <p className="hero-description text-lg md:text-xl text-charcoal leading-relaxed mb-8 max-w-3xl">
               We build AI that answers your calls, captures your leads, and books your appointments — so you can focus on the actual work.
             </p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
@@ -42,6 +42,23 @@ export default function Page() {
                 <Button variant="secondary">Book a 15-Min Chat</Button>
               </a>
             </div>
+            <p className="text-sm text-charcoal/70 mt-4 tracking-wide">
+              AI voice agents from &pound;297/month &middot; Workflow automation from &pound;247/month
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── SNIPPET BAIT ── */}
+      <section className="bg-off-white border-b-3 border-charcoal py-16 md:py-20">
+        <div className="max-w-7xl mx-auto px-6 md:px-12">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="font-black text-3xl md:text-4xl uppercase tracking-tight-lg text-charcoal mb-6">
+              What Is Antek Automation?
+            </h2>
+            <p className="snippet-bait text-lg text-charcoal leading-relaxed">
+              Antek Automation is a UK-based AI automation agency specialising in AI voice agents, chatbots, n8n workflow automation, and Generative Engine Optimisation (GEO). Based in Andover, Hampshire, we help SMBs and service businesses automate calls, leads, and workflows &mdash; with transparent pricing, no offshore handoffs, and a certified Retell AI partnership.
+            </p>
           </div>
         </div>
       </section>
