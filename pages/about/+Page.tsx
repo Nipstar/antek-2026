@@ -153,7 +153,7 @@ export default function Page() {
 
             <div className="bg-peach border-3 border-charcoal p-6 md:p-8">
               <p className="text-charcoal font-bold leading-relaxed">
-                We're not a faceless agency. We're based at Chantry House, 38 Chantry Way, Andover, Hampshire, SP10 1LZ. You can call us on 03330 389960. Andy personally oversees every project. When you work with Antek, you're working with the person who built it.
+                We're not a faceless agency. We're based at Chantry House, 38 Chantry Way, Andover, Hampshire, SP10 1LZ. You can call us on 0333 038 9960. Andy personally oversees every project. When you work with Antek, you're working with the person who built it.
               </p>
             </div>
 
@@ -162,7 +162,7 @@ export default function Page() {
               <ul className="space-y-2 text-mid-gray text-sm">
                 <li><span className="font-bold text-charcoal">Founded by:</span> Andy Norman — 30+ years in technology</li>
                 <li><span className="font-bold text-charcoal">Headquarters:</span> Chantry House, 38 Chantry Way, Andover, Hampshire, SP10 1LZ</li>
-                <li><span className="font-bold text-charcoal">Phone:</span> 03330 389960</li>
+                <li><span className="font-bold text-charcoal">Phone:</span> 0333 038 9960</li>
                 <li><span className="font-bold text-charcoal">Email:</span> hello@antekautomation.com</li>
                 <li><span className="font-bold text-charcoal">Partnership:</span> Certified Retell AI Partner</li>
                 <li><span className="font-bold text-charcoal">Membership:</span> Federation of Small Businesses (FSB)</li>

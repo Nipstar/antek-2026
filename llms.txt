@@ -12,7 +12,7 @@
 
 - [About](https://www.antekautomation.com/about): About Antek Automation and founder Andy Norman. 30+ years in technology, Certified Retell AI Partner, FSB member. Based in Andover, Hampshire.
 - [Homepage](https://www.antekautomation.com): Overview of AI automation services with case studies showing 95% reduction in missed calls, 3-day ROI payback, and £5K/month admin savings.
-- [Contact](https://www.antekautomation.com/contact): Contact form, phone (03330 389960), email (hello@antekautomation.com), office location in Andover, Hampshire.
+- [Contact](https://www.antekautomation.com/contact): Contact form, phone (0333 038 9960), email (hello@antekautomation.com), office location in Andover, Hampshire.
 
 ## Locations
 
@@ -30,7 +30,7 @@
 ## Key Facts
 
 - Headquarters: Chantry House, 38 Chantry Way, Andover, Hampshire, SP10 1LZ
-- Phone: 03330 389960
+- Phone: 0333 038 9960
 - Founder: Andy Norman (30+ years in technology)
 - Certified Retell AI Partner
 - AI Chatbots from £149 setup + £57/month, AI Voice Agents from £249 setup + £97/month, Workflow Automation from £250
@@ -40,4 +40,4 @@
 
 - Website: https://www.antekautomation.com
 - Email: hello@antekautomation.com
-- Phone: 03330 389960
+- Phone: 0333 038 9960

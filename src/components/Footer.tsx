@@ -91,7 +91,7 @@ export function Footer() {
                 <span className="text-off-white/80">Phone:</span>
                 <br />
                 <a href="tel:03330389960" className="text-off-white/80 hover:text-terracotta transition-colors">
-                  03330 389960
+                  0333 038 9960
                 </a>
               </li>
               <li>

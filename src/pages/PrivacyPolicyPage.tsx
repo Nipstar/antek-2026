@@ -188,7 +188,7 @@ export function PrivacyPolicyPage() {
             </p>
             <div className="mt-4 space-y-1 leading-relaxed">
               <p><strong>Email:</strong> hello@antekautomation.com</p>
-              <p><strong>Phone:</strong> 03330 389960</p>
+              <p><strong>Phone:</strong> 0333 038 9960</p>
               <p><strong>Address:</strong> Chantry House, 38 Chantry Way, Andover, SP10 1LZ</p>
             </div>
           </section>

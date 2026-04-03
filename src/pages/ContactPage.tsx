@@ -301,7 +301,7 @@ export function ContactPage() {
             </Card>
             <Card>
               <h3 className="font-black text-xl uppercase text-charcoal mb-2">Phone</h3>
-              <p className="text-charcoal"><a href="tel:03330389960" className="hover:text-terracotta transition-colors font-bold">03330 389960</a></p>
+              <p className="text-charcoal"><a href="tel:03330389960" className="hover:text-terracotta transition-colors font-bold">0333 038 9960</a></p>
             </Card>
             <Card>
               <h3 className="font-black text-xl uppercase text-charcoal mb-2">Location</h3>
