@@ -8,12 +8,14 @@ export default defineConfig({
     exclude: ['lucide-react'],
   },
   build: {
+    target: 'es2022',
     sourcemap: true,
     minify: 'terser',
     terserOptions: {
       compress: {
-        drop_console: false,
         drop_debugger: true,
+        pure_funcs: ['console.log', 'console.info', 'console.debug'],
+        passes: 2,
       },
     },
   },

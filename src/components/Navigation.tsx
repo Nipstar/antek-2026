@@ -27,7 +27,7 @@ export function Navigation() {
             href="/"
             className="flex items-center space-x-3 hover:opacity-80 transition-opacity"
           >
-            <img src="/logo.svg" alt="Antek Automation Logo" width={56} height={56} className="w-14 h-14" />
+            <img src="/logo.svg" alt="Antek Automation Logo" width={56} height={56} decoding="async" className="w-14 h-14" />
             <span className="font-black text-2xl uppercase text-charcoal">
               Antek Automation
             </span>

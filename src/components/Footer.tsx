@@ -12,7 +12,7 @@ export function Footer() {
           {/* Company Info */}
           <div>
             <a href="/" className="flex items-center space-x-3 mb-8 hover:opacity-80 transition-opacity">
-              <img src="/logo.svg" alt="Antek Automation Logo" width={48} height={48} className="w-12 h-12" />
+              <img src="/logo.svg" alt="Antek Automation Logo" width={48} height={48} loading="lazy" decoding="async" className="w-12 h-12" />
               <span className="font-black text-lg uppercase tracking-tight-lg text-off-white">
                 Antek Automation
               </span>
@@ -136,9 +136,11 @@ export function Footer() {
               <img
                 src="/RS51463_FSB Member Logo_White.png"
                 alt="visit FSB's website"
-                width={120}
-                height={64}
-                className="h-16"
+                width={240}
+                height={135}
+                loading="lazy"
+                decoding="async"
+                className="h-16 w-auto"
               />
             </a>
           </div>
