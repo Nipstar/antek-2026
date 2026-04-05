@@ -27,6 +27,11 @@ export function Footer() {
             <p className="font-black uppercase text-off-white text-sm tracking-tight-lg mb-6">Services</p>
             <ul className="space-y-4">
               <li>
+                <a href="/ai-receptionist" className="text-off-white/80 hover:text-terracotta transition-colors text-sm">
+                  AI Receptionist
+                </a>
+              </li>
+              <li>
                 <a href="/services/ai-chatbots" className="text-off-white/80 hover:text-terracotta transition-colors text-sm">
                   AI Chatbots
                 </a>

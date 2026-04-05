@@ -1,0 +1,177 @@
+export function Head() {
+  const canonical = 'https://www.antekautomation.com/ai-receptionist'
+
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.antekautomation.com/' },
+      { '@type': 'ListItem', position: 2, name: 'AI Receptionist', item: canonical },
+    ],
+  }
+
+  const serviceSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    '@id': `${canonical}#service`,
+    name: 'AI Receptionist',
+    description:
+      'AI phone answering service for UK businesses. Screens callers, captures details, and books appointments 24/7. Plans from £49/month with setup from £149.',
+    provider: { '@id': 'https://www.antekautomation.com/#organization' },
+    serviceType: 'AI Phone Answering Service',
+    areaServed: { '@type': 'Country', name: 'United Kingdom' },
+    audience: { '@type': 'BusinessAudience', name: 'UK SMBs and service businesses' },
+    url: canonical,
+    offers: {
+      '@type': 'Offer',
+      name: 'AI Receptionist Plan',
+      price: '49',
+      priceCurrency: 'GBP',
+      priceSpecification: {
+        '@type': 'UnitPriceSpecification',
+        price: '49',
+        priceCurrency: 'GBP',
+        unitText: 'month',
+      },
+    },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'AI Receptionist Pricing',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          name: 'AI Receptionist Setup',
+          price: '149',
+          priceCurrency: 'GBP',
+          priceSpecification: {
+            '@type': 'UnitPriceSpecification',
+            price: '149',
+            priceCurrency: 'GBP',
+            unitText: 'one-time',
+          },
+        },
+        {
+          '@type': 'Offer',
+          name: 'AI Receptionist Monthly Plan',
+          price: '49',
+          priceCurrency: 'GBP',
+          priceSpecification: {
+            '@type': 'UnitPriceSpecification',
+            price: '49',
+            priceCurrency: 'GBP',
+            unitText: 'month',
+          },
+        },
+      ],
+    },
+  }
+
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How long does setup take?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Under 5 minutes. We scrape your website to build the knowledge base, you tell us your screening questions, and you forward your number. That\u2019s it.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Will callers know it\u2019s AI?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Most don\u2019t. The voice is natural, the conversation flows properly, and it doesn\u2019t sound like a robot reading a menu.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What happens if someone asks something it can\u2019t answer?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'It acknowledges the gap, takes a message, and flags it for you. No bluffing, no making things up, no awkward silences.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can it handle different types of calls differently?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Emergency vs routine. New enquiry vs existing customer. Booking request vs general question. You set the rules, it follows them.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Does it integrate with my existing tools?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'It works with most CRMs, calendars, and field service tools. If you\u2019re using something specific, ask us.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What if I already have a voicemail or answering service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Voicemail captures maybe 20% of callers. An answering service takes a message. This qualifies the lead, captures details, and books the appointment. Different league.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How much does it cost?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Plans start from \u00a349/month with setup from \u00a3149. No per-minute charges. Book a quick call and we\u2019ll give you a straight answer based on your needs.',
+        },
+      },
+    ],
+  }
+
+  return (
+    <>
+      <title>AI Receptionist for UK Businesses | Never Miss a Call Again</title>
+      <meta
+        name="description"
+        content="AI receptionist that answers your phone 24/7, screens callers, captures details, and books appointments. Built for UK trades, professional services, and healthcare. From £49/month."
+      />
+      <link rel="canonical" href={canonical} />
+
+      <meta
+        property="og:title"
+        content="AI Receptionist for UK Businesses | Never Miss a Call Again"
+      />
+      <meta
+        property="og:description"
+        content="AI receptionist that answers your phone 24/7, screens callers, captures details, and books appointments. From £49/month."
+      />
+      <meta property="og:url" content={canonical} />
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Antek Automation" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:title"
+        content="AI Receptionist for UK Businesses | Never Miss a Call Again"
+      />
+      <meta
+        name="twitter:description"
+        content="AI receptionist that answers your phone 24/7, screens callers, captures details, and books appointments. From £49/month."
+      />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+    </>
+  )
+}
