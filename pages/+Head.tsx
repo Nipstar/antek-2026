@@ -15,6 +15,21 @@ export function Head() {
       <meta name="robots" content="index, follow" />
       <meta name="author" content="Antek Automation" />
 
+      {/* Social Share Defaults — per-page +Head.tsx files override title/description/url */}
+      <meta property="og:site_name" content="Antek Automation" />
+      <meta property="og:locale" content="en_GB" />
+      <meta property="og:image" content="https://www.antekautomation.com/og-image.png" />
+      <meta property="og:image:secure_url" content="https://www.antekautomation.com/og-image.png" />
+      <meta property="og:image:type" content="image/png" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:alt" content="Antek Automation — AI automation agency for UK service businesses" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@AntekAutomation" />
+      <meta name="twitter:creator" content="@AntekAutomation" />
+      <meta name="twitter:image" content="https://www.antekautomation.com/og-image.png" />
+      <meta name="twitter:image:alt" content="Antek Automation — AI automation agency for UK service businesses" />
+
       {/* Performance */}
       <link rel="preload" as="image" href="/logo.svg" type="image/svg+xml" />
 

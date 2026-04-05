@@ -816,6 +816,10 @@ export function Head() {
       <meta property="og:url" content="https://www.antekautomation.com/" />
       <meta property="og:type" content="website" />
 
+      {/* Twitter Card */}
+      <meta name="twitter:title" content="AI Automation for UK Businesses | Antek Automation" />
+      <meta name="twitter:description" content="We build AI voice agents, chatbots &amp; workflow automation for UK service businesses. Stop missing calls. Start capturing leads 24/7. Based in Hampshire." />
+
       {/* JSON-LD: WebPage + Organization schema */}
       <script
         type="application/ld+json"

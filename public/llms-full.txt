@@ -11,6 +11,28 @@ Email: hello@antekautomation.com
 
 ## Core Services
 
+### AI Receptionist (Productised)
+Page: https://www.antekautomation.com/ai-receptionist
+
+Productised AI phone answering service distinct from custom-built voice agents. Designed for UK SMBs and service businesses that can't always answer the phone — whether they're on the tools, in a client meeting, or out of hours. Screens every caller, captures the details you need, and books qualified enquiries straight into your calendar.
+
+Pricing: Plans from £97/month with setup from £249. No per-minute charges. No hidden fees. Most customers are live within 24–48 hours.
+
+Industry-specific pages with tailored screening flows, integrations, and copy:
+- [Electricians](https://www.antekautomation.com/ai-receptionist/electricians) — Emergency vs routine triage, EICR/Part P capture, consumer unit details
+- [Plumbers](https://www.antekautomation.com/ai-receptionist/plumbers) — Leak triage, stopcock guidance, boiler make/model capture
+- [HVAC Engineers](https://www.antekautomation.com/ai-receptionist/hvac) — Heating/cooling triage, fault codes, maintenance contracts
+- [Accountants](https://www.antekautomation.com/ai-receptionist/accountants) — New client screening, business type/turnover, sector filtering
+- [Lawyers & Solicitors](https://www.antekautomation.com/ai-receptionist/lawyers) — Matter type routing, conflict check capture, SRA-compliant
+- [Veterinary Practices](https://www.antekautomation.com/ai-receptionist/veterinary-practices) — Emergency triage, species/symptoms, OOH routing
+- [Dentists](https://www.antekautomation.com/ai-receptionist/dentists) — NHS vs private, emergency dental triage, practitioner routing
+- [Therapists](https://www.antekautomation.com/ai-receptionist/therapists) — Warm intake, presenting concern capture, crisis protocol
+
+Live demo numbers (UK, 24/7, powered by Retell AI):
+- Bolt Electrical AI Reception: 07782 214455 (try asking about a fuse board replacement)
+- Antek Plumbing & Heating AI Receptionist: 0333 051 0944 (try booking a boiler service)
+- Ember & Oak Restaurant AI Host: 07426 476540 (try booking a table for four)
+
 ### AI Voice Agents
 Page: https://www.antekautomation.com/services/ai-voice-assistants
 

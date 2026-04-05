@@ -7,10 +7,11 @@
 - Location: Chantry House, 38 Chantry Way, Andover, Hampshire SP10 1LZ
 - Phone: 0333 038 9960
 - Email: hello@antekautomation.com
-- Specialisms: AI voice agents (Retell AI Certified Partner), AI chatbots, n8n workflow automation, GEO audits
+- Specialisms: AI Receptionist (productised phone answering), AI voice agents (Retell AI Certified Partner), AI chatbots, n8n workflow automation, GEO audits
 - Target market: UK service businesses, tradespeople, SMEs and SMBs
 
 ## Core Services
+- [AI Receptionist](https://www.antekautomation.com/ai-receptionist): Productised AI phone answering service. Screens callers, captures details, books appointments 24/7. From £97/month, setup from £249. 8 industry-specific pages.
 - [AI Voice Agents](https://www.antekautomation.com/services/ai-voice-assistants): 24/7 AI-powered call answering for service businesses
 - [AI Chatbots](https://www.antekautomation.com/services/ai-chatbots): Website chat agents that qualify leads and book appointments
 - [Workflow Automation](https://www.antekautomation.com/services/workflow-automation): n8n-based automation connecting CRM, calendar, email, invoicing
@@ -21,6 +22,15 @@
 - UK-wide remote service delivery
 
 ## Key Content
+- /ai-receptionist - AI Receptionist productised service hub
+- /ai-receptionist/electricians - AI Receptionist for electricians
+- /ai-receptionist/plumbers - AI Receptionist for plumbers
+- /ai-receptionist/hvac - AI Receptionist for HVAC engineers
+- /ai-receptionist/accountants - AI Receptionist for accountants
+- /ai-receptionist/lawyers - AI Receptionist for law firms
+- /ai-receptionist/veterinary-practices - AI Receptionist for vet practices
+- /ai-receptionist/dentists - AI Receptionist for dental practices
+- /ai-receptionist/therapists - AI Receptionist for therapists
 - /services/ai-voice-assistants - AI Voice Agent service page
 - /services/ai-chatbots - AI Chatbot service page
 - /services/workflow-automation - Workflow Automation service page

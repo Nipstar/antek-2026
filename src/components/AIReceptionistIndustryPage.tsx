@@ -3,6 +3,7 @@ import { Button } from './Button'
 import { Card } from './Card'
 import { Icon } from './Icon'
 import { VoiceDemoButton } from './VoiceDemoButton'
+import { AIReceptionistDemoCards } from './AIReceptionistDemoCards'
 import type { IndustryData } from '../data/aiReceptionist'
 import { getIndustryBySlug } from '../data/aiReceptionist'
 
@@ -41,7 +42,7 @@ export function AIReceptionistIndustryPage({ industry }: Props) {
               </a>
             </div>
             <p className="text-sm text-charcoal/70 mt-4 tracking-wide">
-              Plans from &pound;49/month &middot; Setup from &pound;149
+              Plans from &pound;97/month &middot; Setup from &pound;249
             </p>
           </div>
         </div>
@@ -91,7 +92,7 @@ export function AIReceptionistIndustryPage({ industry }: Props) {
             <h2 className="font-black text-4xl md:text-5xl uppercase tracking-tight-lg text-charcoal mb-4">
               How It Works
             </h2>
-            <p className="text-lg text-charcoal">Live in under 5 minutes. Seriously.</p>
+            <p className="text-lg text-charcoal">Live in 24&ndash;48 hours. No forms. No faff.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {industry.howItWorks.map((step, i) => (
@@ -136,7 +137,7 @@ export function AIReceptionistIndustryPage({ industry }: Props) {
                 Simple Pricing
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                Plans from &pound;49/month. Setup from &pound;149. No per-minute charges. No hidden
+                Plans from &pound;97/month. Setup from &pound;249. No per-minute charges. No hidden
                 fees.
               </p>
               <a href="/contact">
@@ -156,23 +157,24 @@ export function AIReceptionistIndustryPage({ industry }: Props) {
         </div>
       </section>
 
-      {/* ── DEMO PLACEHOLDER ── */}
+      {/* ── DEMO ── */}
       <section id="demo" className="bg-peach border-y-3 border-charcoal py-20 md:py-28">
-        <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
-          <h2 className="font-black text-4xl md:text-5xl uppercase tracking-tight-lg text-charcoal mb-6">
-            Hear It For Yourself
-          </h2>
-          <p className="text-lg text-charcoal mb-10">
-            Call the demo. See how it handles a real conversation on your line.
-          </p>
-          <div className="bg-white border-3 border-charcoal shadow-brutal p-12 mb-8">
-            <p className="font-black text-xl uppercase text-charcoal tracking-wide">
-              Demo agent coming soon
+        <div className="max-w-6xl mx-auto px-6 md:px-12">
+          <div className="text-center mb-12">
+            <h2 className="font-black text-4xl md:text-5xl uppercase tracking-tight-lg text-charcoal mb-6">
+              Hear It For Yourself
+            </h2>
+            <p className="text-lg text-charcoal max-w-2xl mx-auto">
+              Dial any of our live demo agents below. Real phone numbers. Real conversations.
+              Pick one, give it a go, then imagine it running on your line.
             </p>
           </div>
-          <a href="/contact">
-            <Button variant="primary">Book a 15-Min Chat</Button>
-          </a>
+          <AIReceptionistDemoCards />
+          <div className="text-center mt-12">
+            <a href="/contact">
+              <Button variant="primary">Book a 15-Min Chat</Button>
+            </a>
+          </div>
         </div>
       </section>
 

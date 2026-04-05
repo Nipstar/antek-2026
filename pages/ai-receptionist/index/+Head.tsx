@@ -16,7 +16,7 @@ export function Head() {
     '@id': `${canonical}#service`,
     name: 'AI Receptionist',
     description:
-      'AI phone answering service for UK businesses. Screens callers, captures details, and books appointments 24/7. Plans from £49/month with setup from £149.',
+      'AI phone answering service for UK businesses. Screens callers, captures details, and books appointments 24/7. Plans from £97/month with setup from £249.',
     provider: { '@id': 'https://www.antekautomation.com/#organization' },
     serviceType: 'AI Phone Answering Service',
     areaServed: { '@type': 'Country', name: 'United Kingdom' },
@@ -25,11 +25,11 @@ export function Head() {
     offers: {
       '@type': 'Offer',
       name: 'AI Receptionist Plan',
-      price: '49',
+      price: '97',
       priceCurrency: 'GBP',
       priceSpecification: {
         '@type': 'UnitPriceSpecification',
-        price: '49',
+        price: '97',
         priceCurrency: 'GBP',
         unitText: 'month',
       },
@@ -41,11 +41,11 @@ export function Head() {
         {
           '@type': 'Offer',
           name: 'AI Receptionist Setup',
-          price: '149',
+          price: '249',
           priceCurrency: 'GBP',
           priceSpecification: {
             '@type': 'UnitPriceSpecification',
-            price: '149',
+            price: '249',
             priceCurrency: 'GBP',
             unitText: 'one-time',
           },
@@ -53,11 +53,11 @@ export function Head() {
         {
           '@type': 'Offer',
           name: 'AI Receptionist Monthly Plan',
-          price: '49',
+          price: '97',
           priceCurrency: 'GBP',
           priceSpecification: {
             '@type': 'UnitPriceSpecification',
-            price: '49',
+            price: '97',
             priceCurrency: 'GBP',
             unitText: 'month',
           },
@@ -75,7 +75,7 @@ export function Head() {
         name: 'How long does setup take?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Under 5 minutes. We scrape your website to build the knowledge base, you tell us your screening questions, and you forward your number. That\u2019s it.',
+          text: 'Most customers are live within 24\u201348 hours. We scrape your website to build the knowledge base, you tell us your screening questions, and you forward your number. No forms. No faff.',
         },
       },
       {
@@ -123,7 +123,7 @@ export function Head() {
         name: 'How much does it cost?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Plans start from \u00a349/month with setup from \u00a3149. No per-minute charges. Book a quick call and we\u2019ll give you a straight answer based on your needs.',
+          text: 'Plans start from \u00a397/month with setup from \u00a3249. No per-minute charges. Book a quick call and we\u2019ll give you a straight answer based on your needs.',
         },
       },
     ],
@@ -134,7 +134,7 @@ export function Head() {
       <title>AI Receptionist for UK Businesses | Never Miss a Call Again</title>
       <meta
         name="description"
-        content="AI receptionist that answers your phone 24/7, screens callers, captures details, and books appointments. Built for UK trades, professional services, and healthcare. From £49/month."
+        content="AI receptionist that answers your phone 24/7, screens callers, captures details, and books appointments. Built for UK trades, professional services, and healthcare. From £97/month."
       />
       <link rel="canonical" href={canonical} />
 
@@ -144,7 +144,7 @@ export function Head() {
       />
       <meta
         property="og:description"
-        content="AI receptionist that answers your phone 24/7, screens callers, captures details, and books appointments. From £49/month."
+        content="AI receptionist that answers your phone 24/7, screens callers, captures details, and books appointments. From £97/month."
       />
       <meta property="og:url" content={canonical} />
       <meta property="og:type" content="website" />
@@ -157,7 +157,7 @@ export function Head() {
       />
       <meta
         name="twitter:description"
-        content="AI receptionist that answers your phone 24/7, screens callers, captures details, and books appointments. From £49/month."
+        content="AI receptionist that answers your phone 24/7, screens callers, captures details, and books appointments. From £97/month."
       />
 
       <script

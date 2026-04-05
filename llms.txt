@@ -4,6 +4,7 @@
 
 ## Services
 
+- [AI Receptionist](https://www.antekautomation.com/ai-receptionist): Productised AI phone answering service for UK SMBs. Screens callers, captures details, and books appointments 24/7. From £97/month with setup from £249. Industry pages for electricians, plumbers, HVAC engineers, accountants, lawyers, veterinary practices, dentists, and therapists.
 - [AI Voice Assistants](https://www.antekautomation.com/services/ai-voice-assistants): 24/7 AI phone agents that answer calls, book appointments, capture details, and transfer urgent calls for UK businesses across hospitality, trades, dental, and legal sectors.
 - [AI Chatbots](https://www.antekautomation.com/services/ai-chatbots): Custom-trained website chatbots that answer questions, capture leads, book appointments, and qualify prospects. Handles ~80% of conversations autonomously.
 - [Workflow Automation](https://www.antekautomation.com/services/workflow-automation): Business process automation built on n8n (open source) connecting 400+ tools including Google Workspace, Xero, Stripe, HubSpot, Slack, and WhatsApp. Saves 10-20 hours/week.
@@ -33,7 +34,7 @@
 - Phone: 0333 038 9960
 - Founder: Andy Norman (30+ years in technology)
 - Certified Retell AI Partner
-- AI Chatbots from £149 setup + £57/month, AI Voice Agents from £249 setup + £97/month, Workflow Automation from £250
+- AI Receptionist from £249 setup + £97/month, AI Chatbots from £149 setup + £57/month, AI Voice Agents from £249 setup + £97/month, Workflow Automation from £250
 - Industries served: Hospitality, dental, legal, accounting, trades, cleaning, estate agents, restaurants, salons, fitness, property management, veterinary
 
 ## Contact

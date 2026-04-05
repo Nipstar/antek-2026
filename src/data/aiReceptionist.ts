@@ -1,3 +1,39 @@
+export interface DemoCall {
+  id: string
+  label: string
+  title: string
+  phoneDisplay: string
+  phoneTel: string
+  prompt: string
+}
+
+export const demoCalls: DemoCall[] = [
+  {
+    id: 'electrical',
+    label: 'Electrical Demo',
+    title: 'Bolt Electrical AI Reception',
+    phoneDisplay: '07782 214455',
+    phoneTel: '07782214455',
+    prompt: 'Try asking about a fuse board replacement',
+  },
+  {
+    id: 'plumbing',
+    label: 'Plumbing & Heating Demo',
+    title: 'Antek Plumbing & Heating AI Receptionist',
+    phoneDisplay: '0333 051 0944',
+    phoneTel: '03330510944',
+    prompt: 'Try booking a boiler service',
+  },
+  {
+    id: 'hospitality',
+    label: 'Hospitality Demo',
+    title: 'Ember & Oak Restaurant AI Host',
+    phoneDisplay: '07426 476540',
+    phoneTel: '07426476540',
+    prompt: 'Try booking a table for four',
+  },
+]
+
 export interface BeforeAfter {
   without: string
   with: string
@@ -44,13 +80,13 @@ export const industries: Record<string, IndustryData> = {
     slug: 'electricians',
     name: 'Electricians',
     metaTitle: 'AI Receptionist for Electricians | Never Miss an Emergency Call',
-    metaDescription: 'AI phone answering for electricians. Screens emergency vs routine calls, captures job details, and books appointments while you\u2019re on the tools. From \u00a349/month.',
+    metaDescription: 'AI phone answering for electricians. Screens emergency vs routine calls, captures job details, and books appointments while you\u2019re on the tools. From \u00a397/month.',
     iconName: 'Zap',
     gridDescription: 'AI phone answering that screens emergency vs routine calls while you\u2019re on the tools.',
 
     heroEyebrow: 'AI RECEPTIONIST FOR ELECTRICIANS',
     heroH1: 'You Can\u2019t Answer the Phone With Your Hands in a Consumer Unit',
-    heroSubhead: 'Emergency call at 6pm on a Friday? Someone wanting a quote for a full rewire? A landlord needing an EICR? Your AI receptionist handles all of it \u2014 screening callers, capturing job details, and booking the ones worth your time. From \u00a349/month.',
+    heroSubhead: 'Emergency call at 6pm on a Friday? Someone wanting a quote for a full rewire? A landlord needing an EICR? Your AI receptionist handles all of it \u2014 screening callers, capturing job details, and booking the ones worth your time. From \u00a397/month.',
 
     problemH2: 'Every Missed Call Is a Job That Went to the Bloke Who Answered',
     problemParagraphs: [
@@ -89,7 +125,7 @@ export const industries: Record<string, IndustryData> = {
       { question: 'What about Part P and certification questions?', answer: 'It captures what type of work is needed and whether a certificate is required. It doesn\u2019t give electrical advice \u2014 it gathers the information so you can assess the job properly.' },
       { question: 'Will it handle commercial enquiries differently from domestic?', answer: 'If you want it to, yes. You can set different screening flows for domestic vs commercial, so commercial enquiries capture site access details, project scope, and decision-maker contact information.' },
       { question: 'I work with a mate / small team \u2014 can we all see the bookings?', answer: 'Yes. Bookings go into a shared calendar, and call summaries can be sent to multiple people. Everyone sees what\u2019s coming in.' },
-      { question: 'How much does it cost?', answer: 'Plans from \u00a349/month. Setup from \u00a3149. No per-minute charges. Book a quick call for an exact quote.' },
+      { question: 'How much does it cost?', answer: 'Plans from \u00a397/month. Setup from \u00a3249. No per-minute charges. Book a quick call for an exact quote.' },
     ],
 
     bottomCtaH2: 'Stop Losing Jobs Because You\u2019re Busy Doing Jobs',
@@ -100,13 +136,13 @@ export const industries: Record<string, IndustryData> = {
     slug: 'plumbers',
     name: 'Plumbers',
     metaTitle: 'AI Receptionist for Plumbers | Capture Every Emergency Call',
-    metaDescription: 'AI phone answering for plumbers. Screens emergency leaks from routine jobs, captures property details, and books callouts while you\u2019re under a sink. From \u00a349/month.',
+    metaDescription: 'AI phone answering for plumbers. Screens emergency leaks from routine jobs, captures property details, and books callouts while you\u2019re under a sink. From \u00a397/month.',
     iconName: 'Droplets',
     gridDescription: 'AI phone answering that captures emergency leaks and boiler breakdowns while you\u2019re on a job.',
 
     heroEyebrow: 'AI RECEPTIONIST FOR PLUMBERS',
     heroH1: 'A Burst Pipe Waits for No One. Neither Should Your Phone.',
-    heroSubhead: 'When someone\u2019s kitchen is flooding, they\u2019re calling three plumbers. First to answer wins. Your AI receptionist picks up instantly \u2014 screens for emergencies, captures the details, and books the callout. Even when you\u2019re elbow-deep in someone else\u2019s U-bend. From \u00a349/month.',
+    heroSubhead: 'When someone\u2019s kitchen is flooding, they\u2019re calling three plumbers. First to answer wins. Your AI receptionist picks up instantly \u2014 screens for emergencies, captures the details, and books the callout. Even when you\u2019re elbow-deep in someone else\u2019s U-bend. From \u00a397/month.',
 
     problemH2: 'They Called. You Were Under a Sink. They Called Someone Else.',
     problemParagraphs: [
@@ -145,7 +181,7 @@ export const industries: Record<string, IndustryData> = {
       { question: 'Can it guide callers to turn off their stopcock?', answer: 'Yes. For active leaks, it can walk them through locating and turning off the stopcock while capturing the rest of the details. It won\u2019t give plumbing advice, but it can help with basic safety steps you define.' },
       { question: 'I do Gas Safe work \u2014 can it capture boiler details?', answer: 'It asks about boiler make, model, and the nature of the fault. It captures whether there\u2019s a smell of gas and advises them to call the Gas Emergency line if needed before continuing the screening.' },
       { question: 'What about commercial contracts vs domestic one-offs?', answer: 'You can set different screening flows. Commercial enquiries capture site contact, access arrangements, and contract details. Domestic calls focus on the immediate issue and booking.' },
-      { question: 'How much does it cost?', answer: 'Plans from \u00a349/month. Setup from \u00a3149. No per-minute charges. Book a quick call for an exact quote.' },
+      { question: 'How much does it cost?', answer: 'Plans from \u00a397/month. Setup from \u00a3249. No per-minute charges. Book a quick call for an exact quote.' },
     ],
 
     bottomCtaH2: 'The Plumber Who Answers First Gets the Job. Make Sure That\u2019s You.',
@@ -156,13 +192,13 @@ export const industries: Record<string, IndustryData> = {
     slug: 'hvac',
     name: 'HVAC Engineers',
     metaTitle: 'AI Receptionist for HVAC Engineers | Never Miss a Breakdown Call',
-    metaDescription: 'AI phone answering for HVAC engineers. Screens heating emergencies from routine servicing, captures system details, and books callouts 24/7. From \u00a349/month.',
+    metaDescription: 'AI phone answering for HVAC engineers. Screens heating emergencies from routine servicing, captures system details, and books callouts 24/7. From \u00a397/month.',
     iconName: 'Thermometer',
     gridDescription: 'AI phone answering that triages heating and cooling emergencies while you\u2019re on a rooftop.',
 
     heroEyebrow: 'AI RECEPTIONIST FOR HVAC ENGINEERS',
     heroH1: 'It\u2019s January. Their Boiler\u2019s Dead. You\u2019re on Another Job.',
-    heroSubhead: 'No heating in winter is a crisis, not a voicemail. Your AI receptionist picks up instantly, screens for emergencies, captures system details, and books the callout \u2014 while you\u2019re finishing the job you\u2019re already on. From \u00a349/month.',
+    heroSubhead: 'No heating in winter is a crisis, not a voicemail. Your AI receptionist picks up instantly, screens for emergencies, captures system details, and books the callout \u2014 while you\u2019re finishing the job you\u2019re already on. From \u00a397/month.',
 
     problemH2: 'Peak Season Doesn\u2019t Care That You\u2019re Already Flat Out',
     problemParagraphs: [
@@ -202,7 +238,7 @@ export const industries: Record<string, IndustryData> = {
       { question: 'Can it handle both heating and cooling enquiries?', answer: 'Yes. You define your service range \u2014 boilers, heat pumps, air conditioning, underfloor heating, commercial HVAC \u2014 and it screens accordingly.' },
       { question: 'What about F-Gas and refrigerant handling questions?', answer: 'It doesn\u2019t give technical advice. It captures system type, refrigerant concerns, and fault symptoms, then routes the information to you for assessment.' },
       { question: 'We do maintenance contracts \u2014 can it capture renewal enquiries?', answer: 'Yes. It can identify existing contract holders, capture renewal interest from new callers, and flag commercial maintenance opportunities separately from one-off repair calls.' },
-      { question: 'How much does it cost?', answer: 'Plans from \u00a349/month. Setup from \u00a3149. No per-minute charges. Book a quick call for an exact quote.' },
+      { question: 'How much does it cost?', answer: 'Plans from \u00a397/month. Setup from \u00a3249. No per-minute charges. Book a quick call for an exact quote.' },
     ],
 
     bottomCtaH2: 'Peak Season Is Coming. Make Sure Every Call Gets Answered.',
@@ -213,13 +249,13 @@ export const industries: Record<string, IndustryData> = {
     slug: 'accountants',
     name: 'Accountants',
     metaTitle: 'AI Receptionist for Accountants | Capture High-Value Clients',
-    metaDescription: 'AI phone answering for accountants and tax advisors. Screens new client enquiries, captures business details, and books consultations. From \u00a349/month.',
+    metaDescription: 'AI phone answering for accountants and tax advisors. Screens new client enquiries, captures business details, and books consultations. From \u00a397/month.',
     iconName: 'Calculator',
     gridDescription: 'AI phone answering that screens new client enquiries while you\u2019re buried in returns.',
 
     heroEyebrow: 'AI RECEPTIONIST FOR ACCOUNTANTS',
     heroH1: 'A Business Owner Called Looking for a New Accountant. You Were Doing Someone Else\u2019s Tax Return.',
-    heroSubhead: 'That missed call might be a sole trader needing basic bookkeeping. Or it might be a limited company doing \u00a3800K turnover looking to switch accountants. Your AI receptionist finds out before you lift a finger. From \u00a349/month.',
+    heroSubhead: 'That missed call might be a sole trader needing basic bookkeeping. Or it might be a limited company doing \u00a3800K turnover looking to switch accountants. Your AI receptionist finds out before you lift a finger. From \u00a397/month.',
 
     problemH2: 'You Don\u2019t Get 50 Calls a Day. But the Ones You Get Could Be Worth \u00a350,000.',
     problemParagraphs: [
@@ -259,7 +295,7 @@ export const industries: Record<string, IndustryData> = {
       { question: 'Can it handle calls from existing clients too?', answer: 'Yes. It identifies existing clients and either takes a message, transfers the call, or captures what they need \u2014 depending on your preference. New enquiries get the full screening treatment.' },
       { question: 'What about confidentiality?', answer: 'All calls are encrypted. You control what questions are asked and what information is captured. It doesn\u2019t access your systems or client data \u2014 it just handles the front door.' },
       { question: 'We specialise in specific sectors \u2014 can it filter for that?', answer: 'Absolutely. If you only work with property landlords and construction businesses, it can screen for sector fit and politely decline enquiries outside your specialisation.' },
-      { question: 'How much does it cost?', answer: 'Plans from \u00a349/month. Setup from \u00a3149. No per-minute charges. Book a quick call for an exact quote.' },
+      { question: 'How much does it cost?', answer: 'Plans from \u00a397/month. Setup from \u00a3249. No per-minute charges. Book a quick call for an exact quote.' },
     ],
 
     bottomCtaH2: 'Stop Losing Clients Because You Were Busy Serving Clients',
@@ -270,13 +306,13 @@ export const industries: Record<string, IndustryData> = {
     slug: 'lawyers',
     name: 'Lawyers & Solicitors',
     metaTitle: 'AI Receptionist for Law Firms | Capture Every Client Enquiry',
-    metaDescription: 'AI phone answering for solicitors and law firms. Screens new client enquiries, captures case details, and books consultations. From \u00a349/month.',
+    metaDescription: 'AI phone answering for solicitors and law firms. Screens new client enquiries, captures case details, and books consultations. From \u00a397/month.',
     iconName: 'Scale',
     gridDescription: 'AI phone answering that screens client enquiries and captures case details while you\u2019re in meetings.',
 
     heroEyebrow: 'AI RECEPTIONIST FOR LAW FIRMS',
     heroH1: 'Your Next Client Called While You Were With Your Current One',
-    heroSubhead: 'Personal injury, conveyancing, family law, commercial disputes \u2014 when someone needs a solicitor, they need one now. Your AI receptionist screens every call, captures the case details, and books consultations so you never lose an instruction because you were doing your job. From \u00a349/month.',
+    heroSubhead: 'Personal injury, conveyancing, family law, commercial disputes \u2014 when someone needs a solicitor, they need one now. Your AI receptionist screens every call, captures the case details, and books consultations so you never lose an instruction because you were doing your job. From \u00a397/month.',
 
     problemH2: 'They Won\u2019t Leave a Voicemail. They\u2019ll Just Call Another Firm.',
     problemParagraphs: [
@@ -316,7 +352,7 @@ export const industries: Record<string, IndustryData> = {
       { question: 'We have multiple fee earners \u2014 can it route to the right person?', answer: 'Yes. Based on the area of law, it can route the booking to the right person\u2019s calendar. Family matters go to your family team, conveyancing to your property team, and so on.' },
       { question: 'What about legal aid vs private client?', answer: 'You can include screening for funding type. It\u2019ll capture whether they\u2019re looking for legal aid, have insurance cover, or are paying privately \u2014 so you know before the consultation.' },
       { question: 'Is it SRA-compliant?', answer: 'It handles call answering only \u2014 it doesn\u2019t give legal advice, doesn\u2019t access client files, and doesn\u2019t make decisions about matters. All data is encrypted. You remain in full control of client relationships and regulatory compliance.' },
-      { question: 'How much does it cost?', answer: 'Plans from \u00a349/month. Setup from \u00a3149. No per-minute charges. Book a quick call for an exact quote.' },
+      { question: 'How much does it cost?', answer: 'Plans from \u00a397/month. Setup from \u00a3249. No per-minute charges. Book a quick call for an exact quote.' },
     ],
 
     bottomCtaH2: 'Every Missed Call Is an Instruction That Went to Another Firm',
@@ -327,13 +363,13 @@ export const industries: Record<string, IndustryData> = {
     slug: 'veterinary-practices',
     name: 'Veterinary Practices',
     metaTitle: 'AI Receptionist for Veterinary Practices | Never Miss an Urgent Call',
-    metaDescription: 'AI phone answering for vet practices. Triages emergencies from routine appointments, captures pet and owner details, and books consultations 24/7. From \u00a349/month.',
+    metaDescription: 'AI phone answering for vet practices. Triages emergencies from routine appointments, captures pet and owner details, and books consultations 24/7. From \u00a397/month.',
     iconName: 'Stethoscope',
     gridDescription: 'AI phone answering that triages emergencies and books appointments while your team focuses on patients.',
 
     heroEyebrow: 'AI RECEPTIONIST FOR VETERINARY PRACTICES',
     heroH1: 'Your Receptionist Is Dealing With a Distressed Owner. The Phone\u2019s Ringing. Again.',
-    heroSubhead: 'Vet reception is one of the hardest front-desk jobs going. Your team is juggling walk-ins, dispensing meds, calming anxious owners, and trying to answer a phone that never stops. Your AI receptionist takes the calls they can\u2019t get to \u2014 triaging emergencies, booking routine appointments, and capturing the details your team needs. From \u00a349/month.',
+    heroSubhead: 'Vet reception is one of the hardest front-desk jobs going. Your team is juggling walk-ins, dispensing meds, calming anxious owners, and trying to answer a phone that never stops. Your AI receptionist takes the calls they can\u2019t get to \u2014 triaging emergencies, booking routine appointments, and capturing the details your team needs. From \u00a397/month.',
 
     problemH2: 'Your Reception Team Is Brilliant. They\u2019re Also Overwhelmed.',
     problemParagraphs: [
@@ -374,7 +410,7 @@ export const industries: Record<string, IndustryData> = {
       { question: 'What about out-of-hours calls?', answer: 'It handles them however you want. Route genuine emergencies to your OOH provider\u2019s number. Take messages for everything else. Or screen and book the first available morning appointment.' },
       { question: 'We use a practice management system \u2014 does it integrate?', answer: 'It works alongside your PMS rather than replacing it. Call summaries and booking details feed into your existing workflow. We can discuss specific PMS integrations for your practice.' },
       { question: 'Our clients are often distressed \u2014 is the AI sensitive to that?', answer: 'The voice is calm, patient, and reassuring. It doesn\u2019t rush callers. It acknowledges concern and gathers information at the caller\u2019s pace. It won\u2019t replace human empathy, but it won\u2019t make things worse either.' },
-      { question: 'How much does it cost?', answer: 'Plans from \u00a349/month. Setup from \u00a3149. No per-minute charges. Book a quick call for an exact quote.' },
+      { question: 'How much does it cost?', answer: 'Plans from \u00a397/month. Setup from \u00a3249. No per-minute charges. Book a quick call for an exact quote.' },
     ],
 
     bottomCtaH2: 'Your Team Shouldn\u2019t Have to Choose Between the Phone and the Patient in Front of Them',
@@ -385,13 +421,13 @@ export const industries: Record<string, IndustryData> = {
     slug: 'dentists',
     name: 'Dentists',
     metaTitle: 'AI Receptionist for Dental Practices | Book More Appointments, Miss Fewer Calls',
-    metaDescription: 'AI phone answering for dental practices. Screens emergency toothache from routine check-ups, captures patient details, and books appointments 24/7. From \u00a349/month.',
+    metaDescription: 'AI phone answering for dental practices. Screens emergency toothache from routine check-ups, captures patient details, and books appointments 24/7. From \u00a397/month.',
     iconName: 'Smile',
     gridDescription: 'AI phone answering that books appointments and triages dental emergencies while your team treats patients.',
 
     heroEyebrow: 'AI RECEPTIONIST FOR DENTAL PRACTICES',
     heroH1: 'The Phone Rang 40 Times Today. Your Receptionist Answered 25.',
-    heroSubhead: 'Dental reception desks are chaos. Check-ins, payments, nervous patients, treatment plan questions \u2014 and a phone that won\u2019t stop ringing. Your AI receptionist handles the overflow, booking appointments and screening emergencies so your front desk can focus on the people actually in the practice. From \u00a349/month.',
+    heroSubhead: 'Dental reception desks are chaos. Check-ins, payments, nervous patients, treatment plan questions \u2014 and a phone that won\u2019t stop ringing. Your AI receptionist handles the overflow, booking appointments and screening emergencies so your front desk can focus on the people actually in the practice. From \u00a397/month.',
 
     problemH2: 'You\u2019re Not Losing Patients Because of Your Dentistry. You\u2019re Losing Them Because Nobody Answered the Phone.',
     problemParagraphs: [
@@ -430,7 +466,7 @@ export const industries: Record<string, IndustryData> = {
       { question: 'Can it handle NHS vs private patient screening?', answer: 'Yes. It asks whether they\u2019re looking for NHS or private treatment and screens accordingly. If you\u2019re not accepting NHS patients currently, it can let them know politely.' },
       { question: 'What about nervous patients calling to enquire?', answer: 'The AI is patient and reassuring. It doesn\u2019t rush the conversation. For callers who mention dental anxiety, it can highlight any nervous patient services you offer.' },
       { question: 'We have multiple practitioners \u2014 can it book into specific diaries?', answer: 'Yes. Hygiene appointments go to the hygienist\u2019s diary. Emergency slots go to the duty dentist. New patient check-ups go wherever you want them.' },
-      { question: 'How much does it cost?', answer: 'Plans from \u00a349/month. Setup from \u00a3149. No per-minute charges. Book a quick call for an exact quote.' },
+      { question: 'How much does it cost?', answer: 'Plans from \u00a397/month. Setup from \u00a3249. No per-minute charges. Book a quick call for an exact quote.' },
     ],
 
     bottomCtaH2: 'Every Missed Call Is a Patient Who Went Somewhere Else',
@@ -441,13 +477,13 @@ export const industries: Record<string, IndustryData> = {
     slug: 'therapists',
     name: 'Therapists',
     metaTitle: 'AI Receptionist for Therapists | Handle Enquiries Between Sessions',
-    metaDescription: 'AI phone answering for therapists and counsellors. Screens new client enquiries, captures presenting concerns, and books initial consultations. From \u00a349/month.',
+    metaDescription: 'AI phone answering for therapists and counsellors. Screens new client enquiries, captures presenting concerns, and books initial consultations. From \u00a397/month.',
     iconName: 'Brain',
     gridDescription: 'AI phone answering that handles enquiries and books consultations while you\u2019re in session.',
 
     heroEyebrow: 'AI RECEPTIONIST FOR THERAPISTS',
     heroH1: 'You Can\u2019t Answer the Phone When You\u2019re With a Client. But They Can\u2019t Wait Until You\u2019re Free.',
-    heroSubhead: 'Someone reaches out for therapy when they\u2019re ready \u2014 not when it\u2019s convenient for your diary. Your AI receptionist answers that call with warmth and care, captures what they need, and books an initial consultation. No missed opportunities. No pressure. From \u00a349/month.',
+    heroSubhead: 'Someone reaches out for therapy when they\u2019re ready \u2014 not when it\u2019s convenient for your diary. Your AI receptionist answers that call with warmth and care, captures what they need, and books an initial consultation. No missed opportunities. No pressure. From \u00a397/month.',
 
     problemH2: 'The Hardest Part of Getting Therapy Is Making That First Call. Don\u2019t Let It Go to Voicemail.',
     problemParagraphs: [
@@ -489,7 +525,7 @@ export const industries: Record<string, IndustryData> = {
       { question: 'What if someone calls in crisis?', answer: 'You define the protocol. For callers expressing immediate distress, it can provide your specified crisis resources (Samaritans on 116 123, Crisis Text Line \u2014 text SHOUT to 85258) and flag the call for your urgent attention.' },
       { question: 'I work from a home office \u2014 I don\u2019t want to share my address until I\u2019ve screened the client.', answer: 'It doesn\u2019t share your location. It books the consultation and lets you decide what information to share after you\u2019ve reviewed the enquiry.' },
       { question: 'Can it handle multiple therapists in a group practice?', answer: 'Yes. It can route based on specialisation \u2014 CBT, EMDR, couples, children \u2014 and book into the right therapist\u2019s calendar.' },
-      { question: 'How much does it cost?', answer: 'Plans from \u00a349/month. Setup from \u00a3149. No per-minute charges. Book a quick call for an exact quote.' },
+      { question: 'How much does it cost?', answer: 'Plans from \u00a397/month. Setup from \u00a3249. No per-minute charges. Book a quick call for an exact quote.' },
     ],
 
     bottomCtaH2: 'Make Sure the Hardest Call They Ever Make Gets Answered',
@@ -536,11 +572,11 @@ export function getIndustryHeadData(slug: string) {
     url: canonical,
     offers: {
       '@type': 'Offer',
-      price: '49',
+      price: '97',
       priceCurrency: 'GBP',
       priceSpecification: {
         '@type': 'UnitPriceSpecification',
-        price: '49',
+        price: '97',
         priceCurrency: 'GBP',
         unitText: 'month',
       },

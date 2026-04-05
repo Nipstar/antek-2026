@@ -151,10 +151,10 @@ export default function Page() {
       <section className="bg-peach border-y-3 border-charcoal py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
           <p className="text-sm uppercase tracking-wide text-charcoal mb-4 font-black">
-            NEW &middot; FROM &pound;49/MONTH
+            NEW &middot; FROM &pound;97/MONTH
           </p>
           <h2 className="font-black text-4xl md:text-5xl lg:text-6xl uppercase tracking-tight-lg text-charcoal mb-6">
-            AI Receptionist &mdash; From &pound;49/Month
+            AI Receptionist &mdash; From &pound;97/Month
           </h2>
           <p className="text-lg md:text-xl text-charcoal leading-relaxed mb-10 max-w-2xl mx-auto">
             Your phone answered 24/7. Callers screened. Appointments booked. Summaries sent. All

@@ -11,6 +11,10 @@ export function Head() {
       <meta property="og:url" content="https://www.antekautomation.com/locations/southampton" />
       <meta property="og:type" content="website" />
 
+      {/* Twitter Card */}
+      <meta name="twitter:title" content="AI Automation Southampton | Voice Agents & Chatbots" />
+      <meta name="twitter:description" content="AI automation for Southampton businesses. Voice agents, chatbots & workflow automation. Local Hampshire agency. Free consultation." />
+
       {/* BreadcrumbList Schema */}
       <script
         type="application/ld+json"

@@ -324,7 +324,16 @@ export default function Page() {
           <h3 className="font-black text-2xl uppercase tracking-tight-lg text-charcoal mb-8 text-center">
             Related Services
           </h3>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <a href="/ai-receptionist" className="block">
+              <Card hover>
+                <Icon letter="R" size="md" />
+                <h4 className="font-black text-lg uppercase text-charcoal mt-4 mb-2">AI Receptionist</h4>
+                <p className="text-charcoal text-sm leading-normal">
+                  Productised phone answering from &pound;97/month. Screens callers and books appointments 24/7.
+                </p>
+              </Card>
+            </a>
             <a href="/services/ai-voice-assistants" className="block">
               <Card hover>
                 <Icon letter="V" size="md" />

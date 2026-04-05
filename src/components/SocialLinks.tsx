@@ -1,4 +1,4 @@
-import { Twitter, Youtube, Linkedin, Facebook, Instagram, MapPin, ExternalLink, Award } from 'lucide-react';
+import { Twitter, Youtube, Linkedin, Facebook, Instagram, MapPin, ExternalLink, Award, Rss } from 'lucide-react';
 
 interface SocialLink {
   name: string;
@@ -47,6 +47,11 @@ const socialLinks: SocialLink[] = [
     name: 'Retell AI Partner',
     url: 'https://www.retellai.com/partner/antek-automation',
     icon: <Award className="w-5 h-5" />,
+  },
+  {
+    name: 'Podcast',
+    url: 'https://media.rss.com/antek-automation-quick-tips/feed.xml',
+    icon: <Rss className="w-5 h-5" />,
   },
 ];
 

@@ -13,6 +13,7 @@ import {
 import { Button } from '../../../src/components/Button'
 import { Card } from '../../../src/components/Card'
 import { VoiceDemoButton } from '../../../src/components/VoiceDemoButton'
+import { AIReceptionistDemoCards } from '../../../src/components/AIReceptionistDemoCards'
 import { getAllIndustries, type IndustryData } from '../../../src/data/aiReceptionist'
 
 const VoiceChat = lazy(() =>
@@ -33,7 +34,7 @@ const iconMap: Record<IndustryData['iconName'], LucideIcon> = {
 const faqs = [
   {
     q: 'How long does setup take?',
-    a: 'Under 5 minutes. We scrape your website to build the knowledge base, you tell us your screening questions, and you forward your number. That\u2019s it.',
+    a: 'Most customers are live within 24\u201348 hours. We scrape your website to build the knowledge base, you tell us your screening questions, and you forward your number. No forms. No faff.',
   },
   {
     q: 'Will callers know it\u2019s AI?',
@@ -57,7 +58,7 @@ const faqs = [
   },
   {
     q: 'How much does it cost?',
-    a: 'Plans start from \u00a349/month with setup from \u00a3149. No per-minute charges. Book a quick call and we\u2019ll give you a straight answer based on your needs.',
+    a: 'Plans start from \u00a397/month with setup from \u00a3249. No per-minute charges. Book a quick call and we\u2019ll give you a straight answer based on your needs.',
   },
 ]
 
@@ -103,7 +104,7 @@ export default function Page() {
             <p className="text-lg md:text-xl text-charcoal leading-relaxed mb-8 max-w-3xl">
               An AI receptionist that picks up when you can&rsquo;t. It screens callers, captures
               the details you need, and books them into your calendar &mdash; 24/7, including
-              weekends and bank holidays. From &pound;49/month.
+              weekends and bank holidays. From &pound;97/month.
             </p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <a href="#demo">
@@ -114,7 +115,7 @@ export default function Page() {
               </a>
             </div>
             <p className="text-sm text-charcoal/70 mt-4 tracking-wide">
-              Plans from &pound;49/month &middot; Setup from &pound;149 &middot; No per-minute
+              Plans from &pound;97/month &middot; Setup from &pound;249 &middot; No per-minute
               charges
             </p>
           </div>
@@ -126,7 +127,7 @@ export default function Page() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center mb-16">
             <h2 className="font-black text-4xl md:text-5xl uppercase tracking-tight-lg text-charcoal mb-4">
-              Live in Under 5 Minutes. Seriously.
+              Live in 24&ndash;48 Hours. No Forms. No Faff.
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -182,8 +183,8 @@ export default function Page() {
             Simple, Transparent Pricing
           </h2>
           <p className="text-lg text-charcoal leading-relaxed mb-10">
-            Plans start from &pound;49/month. No per-minute charges. No hidden fees. Setup from
-            &pound;149. The exact cost depends on your call volume and what integrations you need
+            Plans start from &pound;97/month. No per-minute charges. No hidden fees. Setup from
+            &pound;249. The exact cost depends on your call volume and what integrations you need
             &mdash; book a quick chat and we&rsquo;ll give you a straight answer.
           </p>
           <a href="/contact">
@@ -255,24 +256,24 @@ export default function Page() {
         </div>
       </section>
 
-      {/* ── DEMO PLACEHOLDER ── */}
+      {/* ── DEMO ── */}
       <section id="demo" className="bg-peach border-y-3 border-charcoal py-20 md:py-28">
-        <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
-          <h2 className="font-black text-4xl md:text-5xl uppercase tracking-tight-lg text-charcoal mb-6">
-            Hear It For Yourself
-          </h2>
-          <p className="text-lg text-charcoal mb-10 max-w-2xl mx-auto">
-            Call the demo. See how it handles a real conversation. Then imagine that running on
-            your number, 24/7.
-          </p>
-          <div className="bg-white border-3 border-charcoal shadow-brutal p-12 mb-8">
-            <p className="font-black text-xl uppercase text-charcoal tracking-wide">
-              Demo agent coming soon
+        <div className="max-w-6xl mx-auto px-6 md:px-12">
+          <div className="text-center mb-12">
+            <h2 className="font-black text-4xl md:text-5xl uppercase tracking-tight-lg text-charcoal mb-6">
+              Hear It For Yourself
+            </h2>
+            <p className="text-lg text-charcoal max-w-2xl mx-auto">
+              Dial any of our live demo agents below. Real phone numbers. Real conversations. Pick
+              one, give it a go, then imagine it running on your number.
             </p>
           </div>
-          <a href="/contact">
-            <Button variant="primary">Book a 15-Min Chat</Button>
-          </a>
+          <AIReceptionistDemoCards />
+          <div className="text-center mt-12">
+            <a href="/contact">
+              <Button variant="primary">Book a 15-Min Chat</Button>
+            </a>
+          </div>
         </div>
       </section>
 
