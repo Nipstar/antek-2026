@@ -64,8 +64,8 @@ export default function Page() {
               <p className="text-charcoal leading-relaxed mb-6">
                 Every missed call in London is worth more. Make sure you catch them all.
               </p>
-              <a href="/services/ai-voice-assistants" aria-label="Learn more about AI Voice Assistants">
-                <Button variant="primary" className="w-full">Learn More</Button>
+              <a href="/services/ai-voice-assistants" aria-label="See how AI Voice Agents work">
+                <Button variant="primary" className="w-full">See Voice Agents</Button>
               </a>
             </Card>
 
@@ -81,8 +81,8 @@ export default function Page() {
               <p className="text-charcoal leading-relaxed mb-6">
                 Convert night-owl Londoners while you sleep.
               </p>
-              <a href="/services/ai-chatbots" aria-label="Learn more about AI Chatbots">
-                <Button variant="primary" className="w-full">Learn More</Button>
+              <a href="/services/ai-chatbots" aria-label="See how AI Chatbots work">
+                <Button variant="primary" className="w-full">See Chatbots</Button>
               </a>
             </Card>
 
@@ -98,8 +98,8 @@ export default function Page() {
               <p className="text-charcoal leading-relaxed mb-6">
                 Automate the London-specific admin that eats your margins.
               </p>
-              <a href="/services/workflow-automation" aria-label="Learn more about Workflow Automation">
-                <Button variant="primary" className="w-full">Learn More</Button>
+              <a href="/services/workflow-automation" aria-label="See how Workflow Automation works">
+                <Button variant="primary" className="w-full">See Automation</Button>
               </a>
             </Card>
           </div>
