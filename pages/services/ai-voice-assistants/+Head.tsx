@@ -111,6 +111,54 @@ export function Head() {
         }}
       />
 
+      {/* HowTo Schema — "Here's What Happens When Someone Rings You" */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'HowTo',
+            '@id': 'https://www.antekautomation.com/services/ai-voice-assistants#how-it-works',
+            name: "Here's What Happens When Someone Rings You",
+            description:
+              'From the moment the phone rings to the moment you get a summary in your pocket. The whole thing takes about two minutes.',
+            inLanguage: 'en-GB',
+            step: [
+              {
+                '@type': 'HowToStep',
+                position: 1,
+                name: 'The Phone Rings',
+                text: 'Someone calls your business number. Your AI agent picks up within two rings. No hold music. No "press 1 for sales." Just a friendly, natural-sounding voice.',
+              },
+              {
+                '@type': 'HowToStep',
+                position: 2,
+                name: 'It Has a Proper Conversation',
+                text: 'The AI asks what they need, answers questions about your services, pricing, and availability. It is trained on your business, so it actually knows what it is talking about.',
+              },
+              {
+                '@type': 'HowToStep',
+                position: 3,
+                name: 'It Captures Their Details',
+                text: 'Name, number, email, what they need, when they need it. All collected naturally during the conversation, not through some robotic questionnaire.',
+              },
+              {
+                '@type': 'HowToStep',
+                position: 4,
+                name: 'It Books the Appointment',
+                text: 'Connected to your calendar, so it checks your real availability and books them in. They get a confirmation text or email straight away.',
+              },
+              {
+                '@type': 'HowToStep',
+                position: 5,
+                name: 'You Get a Summary',
+                text: 'Within seconds, you get a text or email with everything: who called, what they want, their contact details, and when they are booked in. Check it when you are ready.',
+              },
+            ],
+          }),
+        }}
+      />
+
       {/* FAQPage Schema */}
       <script
         type="application/ld+json"

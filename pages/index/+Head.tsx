@@ -47,7 +47,15 @@ export function Head() {
       "url": "https://www.antekautomation.com/",
       "name": "Antek Automation",
       "inLanguage": "en-GB",
-      "publisher": { "@id": "https://www.antekautomation.com/#organization" }
+      "publisher": { "@id": "https://www.antekautomation.com/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.antekautomation.com/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
     },
     "mainEntity": {
       "@type": ["Organization", "LocalBusiness"],
@@ -274,6 +282,13 @@ export function Head() {
         "https://www.google.com/maps?cid=17451278745729112685",
         "https://local.google.com/place?id=17451278745729112685&use=srp"
       ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": 5,
+        "bestRating": 5,
+        "ratingCount": 3,
+        "reviewCount": 3
+      },
       "founder": {
         "@type": "Person",
         "@id": "https://www.antekautomation.com/#founder",

@@ -164,6 +164,42 @@ export function Head() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
+
+      {/* HowTo Schema — "Live in 24–48 Hours" setup steps */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'HowTo',
+            '@id': 'https://www.antekautomation.com/ai-receptionist#how-to-setup',
+            name: 'How to Set Up Your AI Receptionist',
+            description:
+              'Live in 24 to 48 hours. No forms. No faff. Three simple steps to get your AI receptionist answering calls.',
+            inLanguage: 'en-GB',
+            step: [
+              {
+                '@type': 'HowToStep',
+                position: 1,
+                name: 'Tell Us About Your Business',
+                text: 'Share your website and phone number. We pull your services, hours, and service areas automatically. No forms. No faff.',
+              },
+              {
+                '@type': 'HowToStep',
+                position: 2,
+                name: 'Set Your Screening Logic',
+                text: 'Tell us what questions to ask, what qualifies a good lead, and what is urgent versus routine. You set the rules. The AI follows them.',
+              },
+              {
+                '@type': 'HowToStep',
+                position: 3,
+                name: 'Forward Your Calls',
+                text: 'Dial a short code or scan a QR. Takes 30 seconds. Your AI receptionist is live — answering calls, screening callers, and booking appointments while you get on with the actual work.',
+              },
+            ],
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
