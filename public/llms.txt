@@ -31,6 +31,7 @@
 - /ai-receptionist/veterinary-practices - AI Receptionist for vet practices
 - /ai-receptionist/dentists - AI Receptionist for dental practices
 - /ai-receptionist/therapists - AI Receptionist for therapists
+- /services - All AI automation services hub
 - /services/ai-voice-assistants - AI Voice Agent service page
 - /services/ai-chatbots - AI Chatbot service page
 - /services/workflow-automation - Workflow Automation service page
