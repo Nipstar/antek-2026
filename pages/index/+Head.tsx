@@ -103,17 +103,8 @@ export function Head() {
             "Thursday",
             "Friday"
           ],
-          "opens": "09:00",
+          "opens": "08:00",
           "closes": "18:00"
-        },
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": [
-            "Saturday",
-            "Sunday"
-          ],
-          "opens": "00:00",
-          "closes": "00:00"
         }
       ],
       "potentialAction": {

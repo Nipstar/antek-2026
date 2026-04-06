@@ -204,6 +204,23 @@ export function Head() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
+
+      {/* Speakable Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: 'AI Receptionist for UK Businesses',
+            url: 'https://www.antekautomation.com/ai-receptionist',
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', 'section p.text-xl', 'section p.text-lg'],
+            },
+          }),
+        }}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}

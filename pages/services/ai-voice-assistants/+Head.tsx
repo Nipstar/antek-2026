@@ -211,6 +211,22 @@ export function Head() {
           }),
         }}
       />
+      {/* Speakable Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: 'AI Voice Agents for UK Businesses',
+            url: 'https://www.antekautomation.com/services/ai-voice-assistants',
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', 'section p.text-xl', 'section p.text-lg'],
+            },
+          }),
+        }}
+      />
     </>
   )
 }

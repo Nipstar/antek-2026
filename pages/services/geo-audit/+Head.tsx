@@ -194,6 +194,22 @@ export function Head() {
           }),
         }}
       />
+      {/* Speakable Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: 'GEO Audit — AI Search Visibility for UK Businesses',
+            url: 'https://www.antekautomation.com/services/geo-audit',
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', 'section p.text-xl', 'section p.text-lg'],
+            },
+          }),
+        }}
+      />
     </>
   );
 }

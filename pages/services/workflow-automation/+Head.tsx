@@ -163,6 +163,22 @@ export function Head() {
           }),
         }}
       />
+      {/* Speakable Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebPage',
+            name: 'Workflow Automation for UK Businesses',
+            url: 'https://www.antekautomation.com/services/workflow-automation',
+            speakable: {
+              '@type': 'SpeakableSpecification',
+              cssSelector: ['h1', 'section p.text-xl', 'section p.text-lg'],
+            },
+          }),
+        }}
+      />
     </>
   )
 }
