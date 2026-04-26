@@ -12,6 +12,7 @@ export function Icon({ letter, size = 'md' }: IconProps) {
 
   return (
     <div
+      aria-hidden="true"
       className={`${sizeClasses[size]} bg-charcoal text-off-white flex items-center justify-center font-black border-3 border-charcoal`}
     >
       {letter.toUpperCase()}

@@ -4,6 +4,8 @@ import { Card } from './Card'
 import { Icon } from './Icon'
 import { VoiceDemoButton } from './VoiceDemoButton'
 import { AIReceptionistDemoCards } from './AIReceptionistDemoCards'
+import { QuickRecap } from './QuickRecap'
+import { ResourcesCompliance } from './ResourcesCompliance'
 import type { IndustryData } from '../data/aiReceptionist'
 import { getIndustryBySlug } from '../data/aiReceptionist'
 
@@ -137,7 +139,7 @@ export function AIReceptionistIndustryPage({ industry }: Props) {
                 Simple Pricing
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                Plans from &pound;97/month. Setup from &pound;249. No per-minute charges. No hidden
+                Plans from &pound;97/month. Setup from &pound;249. 120 call minutes included per month, £0.18/min over. No hidden
                 fees.
               </p>
               <a href="/contact">
@@ -212,6 +214,20 @@ export function AIReceptionistIndustryPage({ industry }: Props) {
           </div>
         </section>
       )}
+
+      <QuickRecap items={[
+        `AI receptionist built specifically for ${industry.name} — answers calls, screens callers, and books appointments 24/7`,
+        `For ${industry.name.toLowerCase()} who miss calls when they're on jobs or out of hours`,
+        'From £97/month + £249 one-off setup — <a href="/pricing#ai-receptionist" class="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">see full pricing</a>',
+        'Live in 24–48 hours — configure from your website, set your screening questions, forward your number',
+        '120 call minutes included per month — higher plans add more minutes and features; handles emergency vs routine calls differently based on your rules',
+      ]} />
+
+      <ResourcesCompliance links={[
+        { text: 'ICO call recording guidance', url: 'https://ico.org.uk/for-organisations/guide-to-data-protection/', context: 'UK law on handling caller data and call recordings' },
+        { text: 'Ofcom telecoms guidance', url: 'https://www.ofcom.org.uk/phones-telecoms-and-internet', context: 'UK regulator for business phone services' },
+        { text: 'Virtual receptionist overview', url: 'https://en.wikipedia.org/wiki/Virtual_receptionist', context: 'Background on automated reception technology' },
+      ]} />
 
       {/* ── FAQ ── */}
       <section className="bg-off-white border-t-3 border-charcoal py-20 md:py-28">

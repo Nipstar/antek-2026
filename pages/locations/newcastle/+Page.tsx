@@ -31,7 +31,7 @@ export default function Page() {
             <p className="text-sm text-mid-gray mb-8">By <a href="/about" className="underline hover:text-terracotta transition-colors">Andy Norman</a>, Founder | 30+ years in technology</p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <a href="/contact">
-                <Button variant="primary">Book a Free 15-Min Chat</Button>
+                <Button variant="primary">Book a free 15-min chat</Button>
               </a>
               <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
             </div>
@@ -233,7 +233,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
             <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
             <a href="/contact">
-              <Button variant="secondary">Book a Free Chat</Button>
+              <Button variant="secondary">Book a free 15-min chat</Button>
             </a>
           </div>
         </div>

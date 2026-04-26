@@ -145,7 +145,7 @@ export function Head() {
                 name: 'How much does it cost?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'AI voice agents start from £197/month. For an Andover tradesperson missing even 3-4 calls a week, the return on investment is usually clear within the first couple of weeks.',
+                  text: 'AI voice agents start from £97/month. For an Andover tradesperson missing even 3-4 calls a week, the return on investment is usually clear within the first couple of weeks.',
                 },
               },
             ],

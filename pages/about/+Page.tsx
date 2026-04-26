@@ -184,7 +184,7 @@ export default function Page() {
             Book a free 30-minute call. We'll look at where AI can save you time and win you more business.
           </p>
           <a href="/contact">
-            <Button variant="primary">Book Free Call &rarr;</Button>
+            <Button variant="primary">Book a free 15-min chat</Button>
           </a>
         </div>
       </section>

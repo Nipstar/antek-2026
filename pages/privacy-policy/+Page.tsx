@@ -24,7 +24,7 @@ export default function Page() {
               Antek Automation Ltd ("we", "us", "our", "Company") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
             </p>
             <p className="leading-relaxed mt-2">
-              Our registered address is Chantry House, 38 Chantry Way, Andover SP10 1LZ. You can contact us at{' '}
+              Our registered address is Chantry House, 38 Chantry Way, Andover SP10 1LZ. ICO registration number: <em>pending — register at ico.org.uk/registration</em>. You can contact us at{' '}
               <a href="mailto:hello@antekautomation.com" className="text-terracotta hover:underline font-bold">hello@antekautomation.com</a>.
             </p>
           </section>
@@ -85,9 +85,9 @@ export default function Page() {
           </section>
 
           <section>
-            <h2 className="font-black text-2xl uppercase tracking-tight-lg mb-4 text-charcoal">6. International Data Transfers</h2>
+            <h2 className="font-black text-2xl uppercase tracking-tight-lg mb-4 text-charcoal">6. Data Residency and International Transfers</h2>
             <p className="leading-relaxed">
-              Some of our third-party service providers may process data outside the UK. Where this occurs, we ensure that appropriate safeguards are in place, such as standard contractual clauses or adequacy decisions, to protect your personal data in accordance with UK GDPR.
+              Our primary data processing takes place within the UK and EU. We use third-party service providers — including Retell AI for voice agent infrastructure and Supabase for data storage — whose servers may be located within the EU or UK. Where data is processed outside the UK, we ensure appropriate safeguards are in place (standard contractual clauses or adequacy decisions) in accordance with UK GDPR.
             </p>
           </section>
 
@@ -98,10 +98,11 @@ export default function Page() {
             </p>
             <ul className="list-disc list-inside space-y-2 leading-relaxed">
               <li>Contact form submissions: Up to 3 years for business records</li>
-              <li>Chatbot and voice agent sessions: Up to 12 months for service improvement</li>
+              <li>Call recordings: 90 days, then permanently deleted</li>
+              <li>Chat transcripts and chatbot session data: Up to 12 months</li>
               <li>Analytics data: Up to 26 months</li>
               <li>Marketing communications: Until you unsubscribe</li>
-              <li>Contractual records: 6 years after the end of the contract</li>
+              <li>Contractual records: 6 years after the end of the contract (Companies Act 2006)</li>
             </ul>
           </section>
 

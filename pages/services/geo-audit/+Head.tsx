@@ -104,14 +104,14 @@ export function Head() {
                 name: 'Quick Check',
                 price: '247',
                 priceCurrency: 'GBP',
-                description: 'AI visibility test across 4 platforms, 10 real customer prompts tested, citation readiness score, top 5 priorities, Loom video walkthrough + 1-page PDF. Delivered in 3 working days.',
+                description: 'AI visibility test across 4 platforms, 10 real customer prompts tested, citation readiness score, top 5 priorities, Loom video walkthrough + 1-page PDF. Delivered within 24 hours.',
               },
               {
                 '@type': 'Offer',
                 name: 'Full Audit',
                 price: '497',
                 priceCurrency: 'GBP',
-                description: 'Everything in Quick Check plus full technical crawlability review, schema audit, content structure analysis, 3 competitor benchmarks, 30+ test prompts, effort/impact action plan, PDF report + 30-min video walkthrough. Delivered in 5-7 working days.',
+                description: 'Everything in Quick Check plus full technical crawlability review, schema audit, content structure analysis, 3 competitor benchmarks, 30+ test prompts, effort/impact action plan, PDF report + 30-min video walkthrough. Delivered within 24 hours.',
               },
               {
                 '@type': 'Offer',
@@ -163,7 +163,7 @@ export function Head() {
                 name: 'How long does a GEO audit take?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: 'Quick Check: 3 working days. Full Audit: 5-7 working days. Audit + Fix: 3-4 weeks including implementation.',
+                  text: 'All audits delivered within 24 hours. Ongoing fixes are handled through the monthly GEO retainer.',
                 },
               },
               {

@@ -21,3 +21,8 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Audit output (generated — commit only audit-output/sample/)
+audit-output/*
+!audit-output/sample/
+.dev-notes/

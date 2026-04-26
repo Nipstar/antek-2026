@@ -23,7 +23,7 @@ export default function Page() {
               AI Automation for Birmingham Businesses
             </h1>
             <p className="text-lg md:text-xl text-charcoal leading-relaxed mb-4 max-w-3xl">
-              Birmingham doesn't hang about. It's the UK's second-largest city, it's got a manufacturing heritage that runs deep, and its service sector is fiercely competitive. If you're running a business here &mdash; whether that's a trades firm in Digbeth, a consultancy in the Jewellery Quarter, or a dental practice out in Solihull &mdash; you already know that every missed call is money walking out the door.
+              Birmingham doesn't hang about. It's the UK's second-largest city, it's got a manufacturing heritage that runs deep, and its service sector is fiercely competitive. If you're running a business here &mdash; whether that's a trades firm in Digbeth, a consultancy in the Jewellery Quarter, or a dental practice out in Solihull &mdash; you already know that every missed call is lost revenue.
             </p>
             <p className="text-lg md:text-xl text-charcoal leading-relaxed mb-8 max-w-3xl">
               We build AI that catches those calls, converts those website visitors, and handles the admin that eats your evenings. Delivered remotely from Hampshire, working brilliantly for businesses across the West Midlands. We also serve <a href="/locations/manchester" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Manchester</a> and <a href="/locations/london" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">London</a>.
@@ -31,7 +31,7 @@ export default function Page() {
             <p className="text-sm text-mid-gray mb-8">By <a href="/about" className="underline hover:text-terracotta transition-colors">Andy Norman</a>, Founder | 30+ years in technology</p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <a href="/contact">
-                <Button variant="primary">Book a Free 15-Min Chat</Button>
+                <Button variant="primary">Book a free 15-min chat</Button>
               </a>
               <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
             </div>
@@ -233,7 +233,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
             <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
             <a href="/contact">
-              <Button variant="secondary">Book a Free Chat</Button>
+              <Button variant="secondary">Book a free 15-min chat</Button>
             </a>
           </div>
         </div>

@@ -1,6 +1,8 @@
 import { Button } from '../../../src/components/Button'
 import { Card } from '../../../src/components/Card'
 import { Icon } from '../../../src/components/Icon'
+import { QuickRecap } from '../../../src/components/QuickRecap'
+import { ResourcesCompliance } from '../../../src/components/ResourcesCompliance'
 
 export default function Page() {
   const openChatbot = () => {
@@ -37,6 +39,14 @@ export default function Page() {
         </div>
       </section>
 
+      <QuickRecap items={[
+        'An AI chatbot trained on your business — answers questions, captures leads, and books appointments 24/7',
+        'For businesses whose websites get traffic but lose visitors out of hours or at weekends',
+        'From £57/month + £149 one-off setup — <a href="/pricing#ai-chatbot" class="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">see full pricing</a>',
+        'Live on your website within 24–48 hours',
+        'Typically handles ~80% of standard conversations autonomously; flags the rest for your team',
+      ]} />
+
       {/* Problem Section */}
       <section className="py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
@@ -48,7 +58,7 @@ export default function Page() {
               Picture this. It's 10pm on a Tuesday. Someone's sitting on their sofa, phone in hand, looking for exactly the service you offer. They land on your website. They've got questions -- how much does it cost? Do you cover their area? Can they book for next week?
             </p>
             <p>
-              There's no one there to answer. No live chat. No quick reply. Just a contact form that feels like shouting into a void. So they close the tab and try the next result on Google.
+              There's no one there to answer. No live chat. No quick reply. Just a contact form — an unanswered form. So they close the tab and try the next result on Google.
             </p>
             <div className="bg-peach border-3 border-charcoal p-6">
               <p className="font-black text-charcoal text-xl mb-2">
@@ -112,7 +122,7 @@ export default function Page() {
                 Qualifies Leads
               </h3>
               <p className="text-charcoal leading-normal">
-                Asks the right questions to work out if someone's a good fit. Budget, timeline, location. You get warm leads, not tyre-kickers.
+                Asks the right questions to work out if someone's a good fit. Budget, timeline, location. You get warm leads, not low-quality leads.
               </p>
             </Card>
 
@@ -182,7 +192,7 @@ export default function Page() {
                 </tr>
                 <tr className="border-t-3 border-charcoal bg-peach">
                   <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Monthly Cost</td>
-                  <td className="p-4 text-charcoal border-r-3 border-charcoal">From £57/month</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal"><a href="/pricing#ai-chatbot" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">From £57/month — see pricing</a></td>
                   <td className="p-4 text-charcoal border-r-3 border-charcoal">£500+/month (staff costs)</td>
                   <td className="p-4 text-charcoal">Free</td>
                 </tr>
@@ -217,7 +227,7 @@ export default function Page() {
                 It's Not a Replacement for Human Connection
               </h3>
               <p className="text-charcoal leading-normal">
-                Some customers want to talk to a real person. That's fine. Your chatbot can hand over to you during office hours or collect details for a callback. It's a first responder, not a replacement for your team.
+                Some customers want to talk to a real person. That's fine. Your chatbot can hand over to you during office hours or collect details for a callback. It's an initial contact handler, not a replacement for your team.
               </p>
             </Card>
 
@@ -246,7 +256,7 @@ export default function Page() {
                 <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
-                Setup starts from £149, with monthly plans from £57/month. The exact pricing depends on features, integrations, and complexity. We offer a free consultation to scope your needs and give you a clear quote — no hidden fees.
+                From £57/month with a £149 one-off setup fee. <a href="/pricing#ai-chatbot" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">See full pricing</a> — no hidden fees.
               </div>
             </details>
 
@@ -266,7 +276,7 @@ export default function Page() {
                 <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
-                About 80% of conversations are handled autonomously — common questions, lead capture, appointment booking. The other 20% (complex queries, complaints, edge cases) get flagged for your team to follow up.
+                Typically around 80% of conversations are handled autonomously (standard questions, lead capture, booking) — exact rates depend on how well the bot is trained on your business — common questions, lead capture, appointment booking. The other 20% (complex queries, complaints, edge cases) get flagged for your team to follow up.
               </div>
             </details>
 
@@ -293,6 +303,12 @@ export default function Page() {
         </div>
       </section>
 
+      <ResourcesCompliance links={[
+        { text: 'ICO data protection for businesses', url: 'https://ico.org.uk/for-organisations/guide-to-data-protection/', context: 'UK law on handling lead data collected via chatbot conversations' },
+        { text: 'Chatbot overview', url: 'https://en.wikipedia.org/wiki/Chatbot', context: 'Background on conversational AI and chatbot technology' },
+        { text: 'Chatbot technology overview', url: 'https://en.wikipedia.org/wiki/Chatbot', context: 'Background on the technology behind AI website chatbots' },
+      ]} />
+
       {/* CTA Section */}
       <section className="bg-charcoal py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
@@ -311,7 +327,7 @@ export default function Page() {
             </Button>
             <a href="/contact">
               <Button variant="secondary" className="text-lg px-10">
-                Book a Free Consultation
+                Book a free 15-min chat
               </Button>
             </a>
           </div>

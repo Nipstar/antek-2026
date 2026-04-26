@@ -75,7 +75,7 @@ export function Head() {
         name: 'How long does setup take?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Most customers are live within 24\u201348 hours. We scrape your website to build the knowledge base, you tell us your screening questions, and you forward your number. No forms. No faff.',
+          text: 'Most customers are live within 24\u201348 hours. We scrape your website to build the knowledge base, you tell us your screening questions, and you forward your number. No long setup.',
         },
       },
       {
@@ -123,7 +123,7 @@ export function Head() {
         name: 'How much does it cost?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Plans start from \u00a397/month with setup from \u00a3249. No per-minute charges. Book a quick call and we\u2019ll give you a straight answer based on your needs.',
+          text: 'Plans start from \u00a397/month with setup from \u00a3249. 120 call minutes included per month, £0.18/min over. Book a quick call and we\u2019ll give you a straight answer based on your needs.',
         },
       },
     ],
@@ -175,14 +175,14 @@ export function Head() {
             '@id': 'https://www.antekautomation.com/ai-receptionist#how-to-setup',
             name: 'How to Set Up Your AI Receptionist',
             description:
-              'Live in 24 to 48 hours. No forms. No faff. Three simple steps to get your AI receptionist answering calls.',
+              'Live in 24 to 48 hours. No long setup. Three simple steps to get your AI receptionist answering calls.',
             inLanguage: 'en-GB',
             step: [
               {
                 '@type': 'HowToStep',
                 position: 1,
                 name: 'Tell Us About Your Business',
-                text: 'Share your website and phone number. We pull your services, hours, and service areas automatically. No forms. No faff.',
+                text: 'Share your website and phone number. We pull your services, hours, and service areas automatically. No long setup.',
               },
               {
                 '@type': 'HowToStep',

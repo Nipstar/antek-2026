@@ -19,7 +19,7 @@ export function VoiceDemoButton({ onClick }: VoiceDemoButtonProps) {
         {/* Live badge */}
         <div className="absolute -top-3 -right-3 flex items-center space-x-1 bg-soft-sage border-2 border-charcoal px-2 py-1 rounded-full">
           <span className="w-2 h-2 bg-off-white rounded-full animate-pulse"></span>
-          <span className="text-xs font-black uppercase text-charcoal">Live</span>
+          <span aria-hidden="true" className="text-xs font-black uppercase text-charcoal">Live</span>
         </div>
 
         {/* Button content */}
@@ -36,7 +36,7 @@ export function VoiceDemoButton({ onClick }: VoiceDemoButtonProps) {
           {/* Button text - solid, always readable */}
           <div className="text-center">
             <div className="font-black uppercase text-sm md:text-base text-charcoal tracking-tight-lg">
-              Try Voice AI Demo
+              Try the demo
             </div>
             <div className="hidden md:block text-xs text-charcoal">
               No signup required

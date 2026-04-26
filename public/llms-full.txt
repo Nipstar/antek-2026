@@ -2,7 +2,7 @@
 > UK AI automation agency building AI voice agents, chatbots and workflow automation for service businesses. Based in Hampshire, serving UK-wide.
 
 ## About
-Antek Automation is a UK-based AI automation agency founded by Andy Norman. With 30+ years in technology — not the trendy Silicon Valley kind, but the kind where you actually build things that work — Andy set up Antek Automation after seeing local tradespeople and service businesses losing work to missed calls, slow follow-ups, and admin overload.
+Antek Automation is a UK-based AI automation agency founded by Andy Norman. With 30+ years in technology, Andy set up Antek Automation after seeing local tradespeople and service businesses losing work to missed calls, slow follow-ups, and admin overload.
 
 The company is based at Chantry House, 38 Chantry Way, Andover, Hampshire SP10 1LZ. Antek Automation is a Certified Retell AI Partner and FSB (Federation of Small Businesses) member. The company serves UK businesses nationwide, with a particular focus on service businesses, tradespeople, and SMEs.
 
@@ -14,18 +14,24 @@ Email: hello@antekautomation.com
 ### AI Receptionist (Productised)
 Page: https://www.antekautomation.com/ai-receptionist
 
-Productised AI phone answering service distinct from custom-built voice agents. Designed for UK SMBs and service businesses that can't always answer the phone — whether they're on the tools, in a client meeting, or out of hours. Screens every caller, captures the details you need, and books qualified enquiries straight into your calendar.
+Productised AI phone answering service for UK SMBs and service businesses. Screens every caller, captures the details you need, and books qualified enquiries straight into your calendar.
 
-Pricing: Plans from £97/month with setup from £249. No per-minute charges. No hidden fees. Most customers are live within 24–48 hours.
+Pricing tiers:
+- Starter: £97/month + £249 one-off setup. Includes 120 call minutes. Call answering, screening, summaries.
+- Standard: £198/month + £249 setup. Includes 240 call minutes. Adds CRM and API integrations.
+- Pro: Contact sales. Custom minutes. Adds workflow automations for complex voice agent workflows.
+- Overage: £0.18/min over included minutes.
 
-Industry-specific pages with tailored screening flows, integrations, and copy:
-- [Electricians](https://www.antekautomation.com/ai-receptionist/electricians) — Emergency vs routine triage, EICR/Part P capture, consumer unit details
-- [Plumbers](https://www.antekautomation.com/ai-receptionist/plumbers) — Leak triage, stopcock guidance, boiler make/model capture
+Live in 24–48 hours. No contracts — rolling monthly.
+
+Industry-specific pages with tailored screening flows:
+- [Electricians](https://www.antekautomation.com/ai-receptionist/electricians) — Emergency vs routine triage, EICR/Part P capture
+- [Plumbers](https://www.antekautomation.com/ai-receptionist/plumbers) — Leak triage, stopcock guidance, boiler make/model
 - [HVAC Engineers](https://www.antekautomation.com/ai-receptionist/hvac) — Heating/cooling triage, fault codes, maintenance contracts
-- [Accountants](https://www.antekautomation.com/ai-receptionist/accountants) — New client screening, business type/turnover, sector filtering
-- [Lawyers & Solicitors](https://www.antekautomation.com/ai-receptionist/lawyers) — Matter type routing, conflict check capture, SRA-compliant
+- [Accountants](https://www.antekautomation.com/ai-receptionist/accountants) — New client screening, business type/turnover
+- [Lawyers & Solicitors](https://www.antekautomation.com/ai-receptionist/lawyers) — Matter type routing, conflict check capture
 - [Veterinary Practices](https://www.antekautomation.com/ai-receptionist/veterinary-practices) — Emergency triage, species/symptoms, OOH routing
-- [Dentists](https://www.antekautomation.com/ai-receptionist/dentists) — NHS vs private, emergency dental triage, practitioner routing
+- [Dentists](https://www.antekautomation.com/ai-receptionist/dentists) — NHS vs private, emergency dental triage
 - [Therapists](https://www.antekautomation.com/ai-receptionist/therapists) — Warm intake, presenting concern capture, crisis protocol
 
 Live demo numbers (UK, 24/7, powered by Retell AI):
@@ -36,69 +42,83 @@ Live demo numbers (UK, 24/7, powered by Retell AI):
 ### AI Voice Agents
 Page: https://www.antekautomation.com/services/ai-voice-assistants
 
-24/7 AI-powered phone agents that answer calls in a natural, human-sounding voice. Built on Retell AI (Certified Partner), these voice agents pick up on the first ring, answer customer questions, book appointments directly into calendars, capture caller details, and transfer urgent calls to real humans when needed.
+24/7 AI-powered phone agents built on Retell AI (Certified Partner). Picks up on the first ring, answers questions, books appointments, captures caller details, and transfers calls when needed.
 
-Designed for service businesses where missed calls mean lost revenue — tradespeople on jobs, dental practices handling appointment requests, hospitality businesses managing bookings, and any business where the phone rings when nobody can answer it.
-
-Typical results: 95% reduction in missed calls, ROI within days not months. Voice agents start from £197/month.
+Same pricing tiers as AI Receptionist (Starter £97, Standard £198, Pro contact sales). 120 minutes included on Starter, 240 on Standard. £0.18/min overage. Pro tier includes workflow automations for complex voice agent workflows.
 
 ### AI Chatbots
 Page: https://www.antekautomation.com/services/ai-chatbots
 
-Custom-trained website chatbots that engage visitors the moment they land on a page. These aren't generic chat widgets — they're trained on your specific business, services, pricing, and FAQs. They answer questions, qualify leads, capture contact details, and book appointments directly into your calendar.
+Custom-trained website chatbots. Trained on your specific business, services, pricing, and FAQs. Answers questions, qualifies leads, captures contact details, books appointments. Unlimited conversations — no per-message limits.
 
-Handles approximately 80% of conversations autonomously, escalating complex queries to humans. Works 24/7, converting late-night browsers into booked appointments while you sleep. Particularly effective for businesses where comparison shopping is common — dental, trades, professional services.
+Pricing: £57/month + £149 one-off setup. No contracts.
 
-Chatbots start from £149 setup + £57/month.
+Typically handles around 80% of standard conversations autonomously (rate depends on training quality and question complexity). Complex or unusual queries escalated to your team.
 
 ### Workflow Automation
 Page: https://www.antekautomation.com/services/workflow-automation
 
-Business process automation built on n8n (open-source workflow automation platform). Connects 400+ tools including Google Workspace, Xero, Stripe, HubSpot, Slack, WhatsApp, and more. Automates repetitive tasks: new enquiry comes in, it gets logged, acknowledged, and followed up automatically. Invoice due? Reminder sent. Appointment booked? Confirmation email, calendar update, and CRM entry — all without lifting a finger.
+Business process automation built on n8n (open-source, self-hosted). Connects 400+ tools including Google Workspace, Xero, Stripe, HubSpot, Slack, WhatsApp, Shopify, Tradify, Jobber, ServiceM8. You own the workflows — no vendor lock-in.
 
-Saves 10-20 hours per week for typical small businesses. One-off builds from £250, with ongoing management available.
+Pricing: From £250 one-off for a starter workflow. Complex builds scoped per project. Ongoing retainer available.
+Timeline: Simple workflows 1–2 days. Complex multi-system builds 1–2 weeks.
+Clients typically save 10–20 hours/week on admin (depends on volume of manual work replaced).
 
 ### GEO Audits (Generative Engine Optimisation)
 Page: https://www.antekautomation.com/services/geo-audit
 
-GEO — Generative Engine Optimisation — is SEO's sharper sibling. While SEO gets you ranking in Google's blue links, GEO gets you cited in AI-generated answers from ChatGPT, Perplexity, Google AI Overviews, Claude, and Gemini.
+GEO — Generative Engine Optimisation — gets your business cited in AI-generated answers from ChatGPT, Perplexity, Google AI Overviews, Claude, and Gemini.
 
-Our GEO audit assesses your visibility across AI search platforms, evaluates technical setup (schema markup, robots.txt, llms.txt), content structure, authority signals, and citation readiness. We test real prompts your customers would use across multiple AI platforms and provide a prioritised action plan.
+Pricing:
+- Quick Check: £247 — AI visibility across 4 platforms, 10 prompts tested, citation readiness score, top 5 priorities, Loom walkthrough + 1-page PDF
+- Full Audit: £497 — everything in Quick Check plus full technical review, schema audit, content analysis, 3 competitor benchmarks, 30+ test prompts
+- Audit + Fix: £997 — Full Audit plus we implement the priority fixes
+- Monthly Retainer: £497/month (min 3 months) — ongoing citation monitoring, content updates, schema maintenance, monthly report, quarterly strategy call
 
-Three tiers: Quick Check (£247, 3 working days), Full Audit (£497, 5-7 working days), Audit + Fix (£997, includes 3 weeks implementation). Monthly retainer from £247/month.
+All audits delivered within 24 hours. Ongoing fixes handled via the monthly retainer.
+
+### Pricing Page
+Page: https://www.antekautomation.com/pricing
+
+Full transparent pricing for all five products with comparison table, per-product tier breakdowns, FAQ, and Resources & Compliance section.
+
+## Support and Compliance
+- Standard support response: within 24 hours
+- Critical incident response (e.g. agent offline during business hours): within 4 hours
+- Call recording retention: 90 days, then permanently deleted
+- Chat transcript retention: 12 months
+- Data residency: UK/EU
+- GDPR compliant. DPA available on request.
+- No long-term contracts on any monthly plan.
 
 ## Service Areas
-Antek Automation is headquartered in Andover, Hampshire but serves businesses across the UK. Location-specific pages:
+Headquartered in Andover, Hampshire. UK-wide remote delivery.
 
-- [Hampshire](https://www.antekautomation.com/locations/hampshire) — HQ county, serving Southampton, Winchester, Basingstoke, Farnborough, Fareham, Alton, Petersfield, Aldershot
-- [Southampton](https://www.antekautomation.com/locations/southampton) — Port city, university town, maritime economy
-- [Andover](https://www.antekautomation.com/locations/andover) — HQ town, Test Valley, local businesses
-- [London](https://www.antekautomation.com/locations/london) — UK's largest market, competitive service economy
-- [Birmingham](https://www.antekautomation.com/locations/birmingham) — Second city, West Midlands, Jewellery Quarter
-- [Manchester](https://www.antekautomation.com/locations/manchester) — Northern Powerhouse, MediaCity, tech hub
-- [Leeds](https://www.antekautomation.com/locations/leeds) — Financial centre, professional services
-- [Liverpool](https://www.antekautomation.com/locations/liverpool) — Maritime heritage, creative economy
-- [Glasgow](https://www.antekautomation.com/locations/glasgow) — Scotland's commercial capital
-- [Newcastle](https://www.antekautomation.com/locations/newcastle) — North East hub, digital innovation
-
-All services delivered remotely via cloud infrastructure. Face-to-face meetings available for Hampshire-based clients.
+- [Hampshire](https://www.antekautomation.com/locations/hampshire)
+- [Southampton](https://www.antekautomation.com/locations/southampton)
+- [Andover](https://www.antekautomation.com/locations/andover)
+- [London](https://www.antekautomation.com/locations/london)
+- [Birmingham](https://www.antekautomation.com/locations/birmingham)
+- [Manchester](https://www.antekautomation.com/locations/manchester)
+- [Leeds](https://www.antekautomation.com/locations/leeds)
+- [Liverpool](https://www.antekautomation.com/locations/liverpool)
+- [Glasgow](https://www.antekautomation.com/locations/glasgow)
+- [Newcastle](https://www.antekautomation.com/locations/newcastle)
 
 ## Industries Served
-Hospitality (restaurants, hotels, pubs), dental practices, legal firms, accounting practices, trades businesses (plumbers, electricians, builders, roofers), cleaning companies, estate agents, salons and beauty, fitness and wellness, property management, veterinary practices, professional services, IT and MSPs.
+Hospitality, dental practices, legal firms, accounting practices, trades (plumbers, electricians, HVAC, builders, roofers), cleaning companies, estate agents, salons, fitness and wellness, property management, veterinary practices, professional services, IT and MSPs.
 
 ## Key Differentiators
-- Not an SEO agency adding "AI" to the menu — builds AI systems daily using the same technology stack
-- Hampshire-based with London-quality delivery at non-London prices
-- 30+ years in service business technology
 - Certified Retell AI Partner (voice AI)
+- Hampshire-based, London-quality delivery at non-London prices
+- 30+ years in service business technology
+- Builds AI systems daily using the same technology stack as GEO auditing
 - FSB Member
-- Straight-talking, no-jargon approach — "a bloke who picks up his own phone"
-- Face-to-face meetings available for local Hampshire businesses
+- Face-to-face meetings available for Hampshire-based clients
 
 ## Contact
 - Website: https://www.antekautomation.com
 - Email: hello@antekautomation.com
 - Phone: 0333 038 9960
 - Address: Chantry House, 38 Chantry Way, Andover, Hampshire SP10 1LZ
-- LinkedIn: https://www.linkedin.com/in/andy-norman-ab78443a1
 - Book a call: https://www.antekautomation.com/contact

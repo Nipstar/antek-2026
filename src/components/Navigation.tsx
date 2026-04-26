@@ -1,9 +1,20 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { Menu, X, ChevronDown } from 'lucide-react'
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
   const [isServicesOpen, setIsServicesOpen] = useState(false)
+  const dropdownRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    const handleClickOutside = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setIsServicesOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
 
   const navLinks = [
     { label: 'Home', href: '/' },
@@ -17,6 +28,7 @@ export function Navigation() {
     { label: 'AI Voice Assistants', href: '/services/ai-voice-assistants' },
     { label: 'Workflow Automation', href: '/services/workflow-automation' },
     { label: 'GEO Audit', href: '/services/geo-audit' },
+    { label: 'Pricing', href: '/pricing' },
   ]
 
   return (
@@ -43,7 +55,7 @@ export function Navigation() {
                 {link.label}
               </a>
             ))}
-            <div className="relative">
+            <div ref={dropdownRef} className="relative">
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
                 onMouseEnter={() => setIsServicesOpen(true)}
@@ -55,31 +67,25 @@ export function Navigation() {
                 />
               </button>
               {isServicesOpen && (
-                <>
-                  <div
-                    className="fixed inset-0 z-10"
-                    onClick={() => setIsServicesOpen(false)}
-                  />
-                  <div className="absolute top-full left-0 mt-2 bg-off-white border-3 border-charcoal shadow-brutal min-w-[260px] z-20">
-                    {serviceLinks.map((link) => (
-                      <a
-                        key={link.href}
-                        href={link.href}
-                        onClick={() => setIsServicesOpen(false)}
-                        className="block w-full text-left px-6 py-4 font-bold uppercase text-sm text-charcoal hover:bg-warm-beige transition-colors border-b-3 border-charcoal last:border-b-0"
-                      >
-                        {link.label}
-                      </a>
-                    ))}
-                  </div>
-                </>
+                <div className="absolute top-full left-0 mt-2 bg-off-white border-3 border-charcoal shadow-brutal min-w-[260px] z-50">
+                  {serviceLinks.map((link) => (
+                    <a
+                      key={link.href}
+                      href={link.href}
+                      onClick={() => setIsServicesOpen(false)}
+                      className="block w-full text-left px-6 py-4 font-bold uppercase text-sm text-charcoal hover:bg-warm-beige transition-colors border-b-3 border-charcoal last:border-b-0"
+                    >
+                      {link.label}
+                    </a>
+                  ))}
+                </div>
               )}
             </div>
             <a
               href="/contact"
               className="px-4 py-2 md:px-5 md:py-2.5 lg:px-6 lg:py-3 bg-terracotta border-3 border-charcoal ring-1 ring-white ring-inset shadow-brutal font-black uppercase text-off-white text-xs md:text-sm hover:shadow-brutal-lg hover:scale-105 transition-all duration-300 whitespace-nowrap"
             >
-              Book Free Call →
+              Book a free 15-min chat
             </a>
           </div>
 
@@ -124,7 +130,7 @@ export function Navigation() {
                 onClick={() => setIsOpen(false)}
                 className="w-full px-6 py-3 bg-terracotta border-3 border-charcoal ring-1 ring-white ring-inset shadow-brutal font-black uppercase text-off-white text-sm hover:shadow-brutal-lg hover:scale-105 transition-all duration-300 text-center block"
               >
-                Book Free Call →
+                Book a free 15-min chat
               </a>
             </div>
           </div>

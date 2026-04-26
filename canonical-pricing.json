@@ -1,0 +1,53 @@
+{
+  "voiceAssistant": {
+    "name": "AI Voice Assistant",
+    "anchor": "ai-voice-assistant",
+    "fromMonthly": 97,
+    "setup": 249,
+    "billingType": "monthly",
+    "overagePerMin": 0.18,
+    "tiers": [
+      { "name": "Starter", "monthly": 97, "minutes": 120, "includes": "Call answering, screening, calendar booking, summaries" },
+      { "name": "Standard", "monthly": 198, "minutes": 240, "includes": "Starter + CRM and API integrations" },
+      { "name": "Pro", "monthly": null, "minutes": null, "includes": "Standard + workflow automations for complex voice agent workflows + advanced features", "note": "Contact sales" }
+    ]
+  },
+  "chatbot": {
+    "name": "AI Chatbot",
+    "anchor": "ai-chatbot",
+    "fromMonthly": 57,
+    "setup": 149,
+    "billingType": "monthly"
+  },
+  "workflowAutomation": {
+    "name": "Workflow Automation",
+    "anchor": "workflow-automation",
+    "fromOneOff": 250,
+    "billingType": "one-off"
+  },
+  "geoAudit": {
+    "name": "GEO Audit",
+    "anchor": "geo-audit",
+    "fromOneOff": 247,
+    "billingType": "one-off",
+    "tiers": [
+      { "name": "Quick Check", "price": 247 },
+      { "name": "Full Audit", "price": 497 },
+      { "name": "Audit + Fix", "price": 997 }
+    ],
+    "retainer": { "name": "Monthly Retainer", "fromMonthly": 497 }
+  },
+  "aiReceptionist": {
+    "name": "AI Receptionist",
+    "anchor": "ai-receptionist",
+    "fromMonthly": 97,
+    "setup": 249,
+    "billingType": "monthly",
+    "overagePerMin": 0.18,
+    "tiers": [
+      { "name": "Starter", "monthly": 97, "minutes": 120 },
+      { "name": "Standard", "monthly": 198, "minutes": 240 },
+      { "name": "Pro", "monthly": null, "minutes": null, "note": "Contact sales" }
+    ]
+  }
+}

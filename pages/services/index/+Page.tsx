@@ -17,7 +17,7 @@ const services = [
     slug: 'ai-chatbots',
     description:
       "Website chat that handles enquiries, qualifies prospects, and books appointments around the clock \u2014 even when you're asleep.",
-    price: 'From £249 setup + £97/month',
+    price:   'From £149 setup + £57/month',
   },
   {
     letter: 'A',
@@ -25,7 +25,7 @@ const services = [
     slug: 'workflow-automation',
     description:
       "Connect your tools. Eliminate repetitive tasks. From invoice chasing to CRM updates \u2014 let AI handle the busywork so you don't have to.",
-    price: 'From £499 setup + £97/month',
+    price: 'From £250 one-off',
   },
   {
     letter: 'G',
@@ -33,7 +33,7 @@ const services = [
     slug: 'geo-audit',
     description:
       'A full audit of how visible your business is in AI-generated answers from ChatGPT, Claude, Gemini, and Perplexity — with a clear action plan to fix it.',
-    price: 'From £497 one-time',
+    price: 'From £247 one-time',
   },
 ]
 
@@ -56,7 +56,7 @@ export default function Page() {
             </p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <a href="/contact">
-                <Button variant="primary">Book a Free Chat</Button>
+                <Button variant="primary">Book a free 15-min chat</Button>
               </a>
               <a href="/ai-receptionist">
                 <Button variant="secondary">See AI Receptionist</Button>
@@ -146,7 +146,7 @@ export default function Page() {
           </p>
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
             <a href="/contact">
-              <Button variant="primary">Book a Free Chat</Button>
+              <Button variant="primary">Book a free 15-min chat</Button>
             </a>
             <a href="tel:03330389960">
               <Button variant="secondary">Call 0333 038 9960</Button>

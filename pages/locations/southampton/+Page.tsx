@@ -3,6 +3,8 @@ import { Button } from '../../../src/components/Button';
 import { Card } from '../../../src/components/Card';
 import { Icon } from '../../../src/components/Icon';
 import { VoiceDemoButton } from '../../../src/components/VoiceDemoButton';
+import { QuickRecap } from '../../../src/components/QuickRecap';
+import { ResourcesCompliance } from '../../../src/components/ResourcesCompliance';
 
 const VoiceChat = lazy(() => import('../../../src/components/VoiceChat').then(m => ({ default: m.VoiceChat })));
 
@@ -31,13 +33,27 @@ export default function Page() {
             <p className="text-sm text-mid-gray mb-8">By <a href="/about" className="underline hover:text-terracotta transition-colors">Andy Norman</a>, Founder | 30+ years in technology</p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <a href="/contact">
-                <Button variant="primary">Book a Free 15-Min Chat</Button>
+                <Button variant="primary">Book a free 15-min chat</Button>
               </a>
               <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
             </div>
           </div>
         </div>
       </section>
+
+      <QuickRecap items={[
+        'AI automation for Southampton and Hampshire businesses — voice agents, chatbots, and workflow automation',
+        'For Southampton service businesses tired of missing calls and drowning in admin',
+        'From £57/month — based in Andover, about 30 minutes up the road — <a href="/pricing" class="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">see full pricing</a>',
+        'Voice and chat products live within 24–48 hours; closer to you than any London agency',
+        'No travel costs, no commuting overheads — everything delivered remotely by a team that knows Hampshire',
+      ]} />
+
+      <ResourcesCompliance links={[
+        { text: 'ONS regional economic data', url: 'https://www.ons.gov.uk/economy/grossdomesticproductgdp', context: 'Official ONS statistics on UK regional economic output' },
+        { text: 'Southampton City Council business profile', url: 'https://www.southampton.gov.uk/business/', context: 'Local authority business support and economic data' },
+        { text: 'ICO data protection guidance', url: 'https://ico.org.uk/for-organisations/guide-to-data-protection/', context: 'UK law governing customer data collected by AI systems' },
+      ]} />
 
       {/* ── SERVICES ── */}
       <section className="py-20 md:py-28">
@@ -138,11 +154,11 @@ export default function Page() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card>
               <div className="text-4xl font-black text-terracotta mb-2">&pound;7.5bn</div>
-              <p className="text-charcoal font-bold">GVA economy</p>
+              <p className="text-charcoal font-bold">Gross Value Added economy <span className="font-normal text-mid-gray text-sm">(ONS regional data)</span></p>
             </Card>
             <Card>
               <div className="text-4xl font-black text-terracotta mb-2">18,000+</div>
-              <p className="text-charcoal font-bold">Registered businesses</p>
+              <p className="text-charcoal font-bold">Registered businesses <span className="font-normal text-mid-gray text-sm">(Companies House / ONS)</span></p>
             </Card>
             <Card>
               <div className="text-4xl font-black text-terracotta mb-2">40,000+</div>
@@ -214,7 +230,17 @@ export default function Page() {
                 <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
-                A Southampton trades business missing just 5 calls per week at an average job value of &pound;200 is losing &pound;4,000/month in potential revenue. Our AI voice agents start from &pound;197/month &mdash; the maths speaks for itself.
+                A Southampton trades business missing just 5 calls per week at an average job value of &pound;200 is losing &pound;4,000/month in potential revenue. AI voice agents start from &pound;97/month — that&rsquo;s a 40&times; return if you capture just one extra job per week.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                How quickly can you get started with a Southampton business?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Voice agents and chatbots are typically live within 24&ndash;48 hours of you forwarding your number or giving us website access. We&rsquo;re based in Andover &mdash; about 30 minutes up the A3057 &mdash; so a face-to-face meeting is straightforward if you prefer it, but most clients get set up entirely over video call.
               </div>
             </details>
           </div>
@@ -233,7 +259,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
             <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
             <a href="/contact">
-              <Button variant="secondary">Book a Free Chat</Button>
+              <Button variant="secondary">Book a free 15-min chat</Button>
             </a>
           </div>
         </div>

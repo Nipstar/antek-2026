@@ -19,7 +19,7 @@ export function VoiceAgentDemoButton({ onClick }: VoiceAgentDemoButtonProps) {
         {/* Live badge */}
         <div className="absolute -top-3 -right-3 flex items-center space-x-1 bg-terracotta border-2 border-charcoal px-2 py-1 rounded-full">
           <span className="w-2 h-2 bg-off-white rounded-full animate-pulse"></span>
-          <span className="text-xs font-black uppercase text-off-white">Live</span>
+          <span aria-hidden="true" className="text-xs font-black uppercase text-off-white">Live</span>
         </div>
 
         {/* Button content */}

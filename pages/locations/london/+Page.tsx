@@ -3,6 +3,8 @@ import { Button } from '../../../src/components/Button';
 import { Card } from '../../../src/components/Card';
 import { Icon } from '../../../src/components/Icon';
 import { VoiceDemoButton } from '../../../src/components/VoiceDemoButton';
+import { QuickRecap } from '../../../src/components/QuickRecap';
+import { ResourcesCompliance } from '../../../src/components/ResourcesCompliance';
 
 const VoiceChat = lazy(() => import('../../../src/components/VoiceChat').then(m => ({ default: m.VoiceChat })));
 
@@ -31,13 +33,28 @@ export default function Page() {
             <p className="text-sm text-mid-gray mb-8">By <a href="/about" className="underline hover:text-terracotta transition-colors">Andy Norman</a>, Founder | 30+ years in technology</p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <a href="/contact">
-                <Button variant="primary">Book a Free 15-Min Chat</Button>
+                <Button variant="primary">Book a free 15-min chat</Button>
               </a>
               <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
             </div>
           </div>
         </div>
       </section>
+
+      <QuickRecap items={[
+        'AI voice agents, chatbots, and workflow automation built for London businesses',
+        'For London trades firms, consultancies, and service businesses competing in the UK\'s most expensive market',
+        'From £57/month — Hampshire-based team, no London agency overheads — <a href="/pricing" class="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">see full pricing</a>',
+        'Voice and chat products live within 24–48 hours; workflow automation in 1–14 days',
+        'Delivered fully remotely — same quality, no Shoreditch office rent on your invoice',
+      ]} />
+
+      <ResourcesCompliance links={[
+        { text: 'ONS Greater London business statistics', url: 'https://www.ons.gov.uk/businessindustryandtrade', context: 'Official data on London\'s business population and economy' },
+        { text: 'TfL ULEZ information', url: 'https://tfl.gov.uk/modes/driving/ultra-low-emission-zone', context: 'Ultra Low Emission Zone (ULEZ) guidance for London businesses' },
+        { text: 'ICO data protection guidance', url: 'https://ico.org.uk/for-organisations/guide-to-data-protection/', context: 'UK law governing customer data collected by AI systems' },
+        { text: 'Conversational agent overview', url: 'https://en.wikipedia.org/wiki/Conversational_agent', context: 'Background on AI conversational agent technology' },
+      ]} />
 
       {/* ── SERVICES ── */}
       <section className="py-20 md:py-28">
@@ -47,7 +64,7 @@ export default function Page() {
               What We Build for London Businesses
             </h2>
             <p className="text-lg text-charcoal max-w-2xl mx-auto">
-              Three services that help you punch above your weight in the most competitive market in the UK.
+              Three services that help you compete with larger agencies in the most competitive market in the UK.
             </p>
           </div>
 
@@ -59,10 +76,10 @@ export default function Page() {
                 AI Voice Agents
               </h3>
               <p className="text-charcoal leading-relaxed mb-4">
-                A Croydon boiler-repair firm gets a call at 7 am on a freezing Monday. The owner&rsquo;s already under a boiler in Bromley. Our AI voice agent picks up, confirms the caller&rsquo;s postcode is in range, books a slot for Wednesday, and texts the owner a summary &mdash; all before the kettle&rsquo;s boiled. That&rsquo;s a &pound;300&ndash;500 job that would have gone to a competitor. Multiply that by 47 inbound enquiries a week (the London average for established trades firms) and you see why voice AI pays for itself in the first month.
+                A Croydon boiler-repair firm gets a call at 7 am on a freezing Monday. The owner&rsquo;s already under a boiler in Bromley. Our AI voice agent picks up, confirms the caller&rsquo;s postcode is in range, books a slot for Wednesday, and texts the owner a summary &mdash; all within minutes. That&rsquo;s a &pound;300&ndash;500 job that would have gone to a competitor. Multiply that by 47 inbound enquiries a week (the London average for established trades firms) and you can see why voice AI pays for itself quickly for most London trades businesses.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
-                Every missed call in London is worth more. Make sure you catch them all.
+                With London job values and average enquiry volumes, every missed call has real revenue attached to it. Make sure you catch them all.
               </p>
               <a href="/services/ai-voice-assistants" aria-label="See how AI Voice Agents work">
                 <Button variant="primary" className="w-full">See Voice Agents</Button>
@@ -79,7 +96,7 @@ export default function Page() {
                 A London customer finds your site at 11 pm. They&rsquo;ve got 15 browser tabs open &mdash; yours and fourteen competitors. Our chatbot engages them in under two seconds, answers &ldquo;Do you cover E14?&rdquo;, confirms pricing ballpark, and books a callback for 9 am. The other fourteen tabs get closed. In a market where attention spans are measured in seconds, being first isn&rsquo;t an advantage &mdash; it&rsquo;s the entire game.
               </p>
               <p className="text-charcoal leading-relaxed mb-6">
-                Convert night-owl Londoners while you sleep.
+                Capture out-of-hours enquiries while you sleep.
               </p>
               <a href="/services/ai-chatbots" aria-label="See how AI Chatbots work">
                 <Button variant="primary" className="w-full">See Chatbots</Button>
@@ -138,11 +155,11 @@ export default function Page() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card>
               <div className="text-4xl font-black text-terracotta mb-2">1M+</div>
-              <p className="text-charcoal font-bold">Registered businesses in Greater London &mdash; the most competitive market in the UK</p>
+              <p className="text-charcoal font-bold">Registered businesses in Greater London &mdash; the most competitive market in the UK <span className="font-normal text-mid-gray text-sm">(ONS / Companies House)</span></p>
             </Card>
             <Card>
               <div className="text-4xl font-black text-terracotta mb-2">5.6M</div>
-              <p className="text-charcoal font-bold">Working-age population, with a service economy that never sleeps</p>
+              <p className="text-charcoal font-bold">Working-age population in Greater London, with a service economy that never sleeps <span className="font-normal text-mid-gray text-sm">(ONS)</span></p>
             </Card>
             <Card>
               <div className="text-4xl font-black text-terracotta mb-2">&pound;150&ndash;250/hr</div>
@@ -150,7 +167,7 @@ export default function Page() {
             </Card>
             <Card>
               <div className="text-4xl font-black text-terracotta mb-2">47</div>
-              <p className="text-charcoal font-bold">Average weekly inbound enquiries for established London trades firms (industry benchmark)</p>
+              <p className="text-charcoal font-bold">Estimated weekly inbound enquiries for an established London trades firm at capacity</p>
             </Card>
           </div>
         </div>
@@ -217,6 +234,16 @@ export default function Page() {
                 Significantly lower. London agencies typically charge &pound;150&ndash;250/hr for the same services we deliver at a fixed project price. Our voice agents start from a one-off setup fee plus a monthly subscription &mdash; no hourly billing, no scope creep, no surprises. You can see our <a href="/services/geo-audit" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">GEO Audit pricing</a> as an example of how we keep things transparent.
               </div>
             </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                How quickly can you get started with a London business?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Voice agents and chatbots are typically live within 24&ndash;48 hours of you forwarding your number or giving us website access. Workflow automation projects start with a discovery call and go live in 1&ndash;14 days depending on complexity. Everything is set up remotely &mdash; no site visits needed.
+              </div>
+            </details>
           </div>
         </div>
       </section>
@@ -228,12 +255,12 @@ export default function Page() {
             London Speed. Without London Prices.
           </h2>
           <p className="text-lg md:text-xl text-off-white/90 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Book a free 15-minute chat. We'll tell you exactly what AI can do for your London business &mdash; and what it can't. No faff.
+            Book a free 15-minute chat. We'll tell you exactly what AI can do for your London business &mdash; and what it can't.
           </p>
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
             <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
             <a href="/contact">
-              <Button variant="secondary">Book a Free Chat</Button>
+              <Button variant="secondary">Book a free 15-min chat</Button>
             </a>
           </div>
         </div>

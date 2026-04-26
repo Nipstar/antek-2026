@@ -1,0 +1,91 @@
+name: Site Audit
+
+on:
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Determine phase from PR label or PHASE file
+        id: phase
+        run: |
+          PHASE=99
+          # Check for PHASE file in PR diff
+          if git diff --name-only origin/${{ github.base_ref }}...HEAD | grep -q '^PHASE$'; then
+            if [ -f PHASE ]; then
+              PHASE=$(cat PHASE | tr -d '[:space:]')
+            fi
+          fi
+          # Check PR labels (phase-1, phase-2, etc.)
+          LABEL="${{ join(github.event.pull_request.labels.*.name, ' ') }}"
+          for n in 1 2 3 4 5 6; do
+            if echo "$LABEL" | grep -q "phase-$n"; then
+              PHASE=$n
+              break
+            fi
+          done
+          echo "phase=$PHASE" >> $GITHUB_OUTPUT
+          echo "Running audit with --since-phase=$PHASE"
+
+      - name: Start dev server
+        run: npm run dev &
+        env:
+          VITE_CONTACT_WEBHOOK_URL: ${{ secrets.VITE_CONTACT_WEBHOOK_URL }}
+          VITE_CHATBOT_WEBHOOK_URL: ${{ secrets.VITE_CHATBOT_WEBHOOK_URL }}
+          VITE_GOOGLE_ANALYTICS_ID: ${{ secrets.VITE_GOOGLE_ANALYTICS_ID }}
+
+      - name: Wait for dev server
+        run: npx wait-on http://localhost:5173 --timeout 30000
+
+      - name: Run audit
+        run: npm run audit -- --since-phase=${{ steps.phase.outputs.phase }} --json
+        env:
+          AUDIT_BASE_URL: http://localhost:5173
+
+      - name: Post audit report as PR comment
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs')
+            const reportPath = 'audit-output/report.md'
+            if (!fs.existsSync(reportPath)) {
+              console.log('No report found — audit may have crashed')
+              return
+            }
+            const body = fs.readFileSync(reportPath, 'utf8')
+            // Truncate if too long for a GitHub comment
+            const truncated = body.length > 60000
+              ? body.slice(0, 60000) + '\n\n_[Report truncated — see audit-output/report.md for full output]_'
+              : body
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: truncated,
+            })
+
+      - name: Upload audit artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-output
+          path: audit-output/
+          retention-days: 30

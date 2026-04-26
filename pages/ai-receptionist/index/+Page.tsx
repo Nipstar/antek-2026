@@ -13,6 +13,8 @@ import {
 import { Button } from '../../../src/components/Button'
 import { Card } from '../../../src/components/Card'
 import { VoiceDemoButton } from '../../../src/components/VoiceDemoButton'
+import { QuickRecap } from '../../../src/components/QuickRecap'
+import { ResourcesCompliance } from '../../../src/components/ResourcesCompliance'
 import { AIReceptionistDemoCards } from '../../../src/components/AIReceptionistDemoCards'
 import { getAllIndustries, type IndustryData } from '../../../src/data/aiReceptionist'
 
@@ -58,7 +60,11 @@ const faqs = [
   },
   {
     q: 'How much does it cost?',
-    a: 'Plans start from \u00a397/month with setup from \u00a3249. No per-minute charges. Book a quick call and we\u2019ll give you a straight answer based on your needs.',
+    a: 'Plans start from \u00a397/month with setup from \u00a3249. 120 call minutes included per month, £0.18/min over. Book a quick call and we\u2019ll give you a straight answer based on your needs.',
+  },
+  {
+    q: 'What support is included?',
+    a: 'Standard queries are responded to within 24 hours. Critical incidents \u2014 such as the agent going offline during business hours \u2014 are responded to within 4 hours. Included across all plans.',
   },
 ]
 
@@ -69,11 +75,11 @@ const features = [
   },
   {
     title: 'Screens and Qualifies Callers',
-    body: 'It doesn\u2019t just take a message and hope for the best. It asks your questions, captures the details you need, and filters tyre-kickers from serious enquiries \u2014 before you spend a second on them.',
+    body: 'It doesn\u2019t just take a message and hope for the best. It asks your questions, captures the details you need, and filters low-quality leads from serious enquiries \u2014 before you spend a second on them.',
   },
   {
     title: 'Books Appointments Into Your Calendar',
-    body: 'Qualified caller? They get your booking link. Appointment lands in your calendar with full context \u2014 who they are, what they need, and why they called. No phone tag. No back-and-forth.',
+    body: 'Qualified caller? They get your booking link. Appointment lands in your calendar with full context \u2014 who they are, what they need, and why they called. No back-and-forth calls.',
   },
   {
     title: 'Sends You a Summary After Every Call',
@@ -115,8 +121,7 @@ export default function Page() {
               </a>
             </div>
             <p className="text-sm text-charcoal/70 mt-4 tracking-wide">
-              Plans from &pound;97/month &middot; Setup from &pound;249 &middot; No per-minute
-              charges
+              Plans from &pound;97/month &middot; Setup from &pound;249 &middot; 120 call minutes included per month — higher plans add more minutes and features
             </p>
           </div>
         </div>
@@ -127,14 +132,14 @@ export default function Page() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center mb-16">
             <h2 className="font-black text-4xl md:text-5xl uppercase tracking-tight-lg text-charcoal mb-4">
-              Live in 24&ndash;48 Hours. No Forms. No Faff.
+              Live in 24&ndash;48 Hours. No Long Setup.
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
                 h: 'Tell Us About Your Business',
-                b: 'Share your website and phone number. We pull your services, hours, and service areas automatically. No forms. No faff.',
+                b: 'Share your website and phone number. We pull your services, hours, and service areas automatically.',
               },
               {
                 h: 'Set Your Screening Logic',
@@ -183,7 +188,7 @@ export default function Page() {
             Simple, Transparent Pricing
           </h2>
           <p className="text-lg text-charcoal leading-relaxed mb-10">
-            Plans start from &pound;97/month. No per-minute charges. No hidden fees. Setup from
+            Plans start from &pound;97/month. 120 call minutes included per month, £0.18/min over. No hidden fees. Setup from
             &pound;249. The exact cost depends on your call volume and what integrations you need
             &mdash; book a quick chat and we&rsquo;ll give you a straight answer.
           </p>
@@ -276,6 +281,20 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      <QuickRecap items={[
+        'An AI receptionist that answers every call, screens callers against your criteria, and books appointments 24/7',
+        'For UK trades businesses, professional services, and healthcare practices missing calls during the working day',
+        'From £97/month + £249 one-off setup — <a href="/pricing#ai-receptionist" class="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">see full pricing</a>',
+        'Live in 24–48 hours — we pull your services from your website, you set the screening questions',
+        '120 call minutes included per month — higher plans add more minutes and features; industry-specific setups available for trades, legal, healthcare, and more',
+      ]} />
+
+      <ResourcesCompliance links={[
+        { text: 'ICO call recording and data protection', url: 'https://ico.org.uk/for-organisations/guide-to-data-protection/', context: 'UK law on handling caller data and recording conversations' },
+        { text: 'Ofcom telecoms guidance', url: 'https://www.ofcom.org.uk/phones-telecoms-and-internet', context: 'UK regulator for business telecommunications' },
+        { text: 'Virtual receptionist overview', url: 'https://en.wikipedia.org/wiki/Virtual_receptionist', context: 'Background on automated reception technology' },
+      ]} />
 
       {/* ── FAQ ── */}
       <section className="py-20 md:py-28">

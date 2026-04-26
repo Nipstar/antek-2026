@@ -31,7 +31,7 @@ export default function Page() {
             <p className="text-sm text-mid-gray mb-8">By <a href="/about" className="underline hover:text-terracotta transition-colors">Andy Norman</a>, Founder | 30+ years in technology</p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <a href="/contact">
-                <Button variant="primary">Book a Free 15-Min Chat</Button>
+                <Button variant="primary">Book a free 15-min chat</Button>
               </a>
               <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
             </div>
@@ -231,7 +231,7 @@ export default function Page() {
                 <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
-                AI voice agents start from &pound;197/month. For an Andover tradesperson missing even 3&ndash;4 calls a week, the return on investment is usually clear within the first couple of weeks.
+                AI voice agents start from &pound;97/month. For an Andover tradesperson missing even 3&ndash;4 calls a week, the return on investment is usually clear within the first couple of weeks.
               </div>
             </details>
           </div>
@@ -250,7 +250,7 @@ export default function Page() {
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
             <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
             <a href="/contact">
-              <Button variant="secondary">Book a Free Chat</Button>
+              <Button variant="secondary">Book a free 15-min chat</Button>
             </a>
           </div>
         </div>

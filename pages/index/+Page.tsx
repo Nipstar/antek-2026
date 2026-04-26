@@ -4,6 +4,8 @@ import { Card } from '../../src/components/Card';
 import { Icon } from '../../src/components/Icon';
 import { VoiceDemoButton } from '../../src/components/VoiceDemoButton';
 import { CaseStudyCard } from '../../src/components/CaseStudyCard';
+import { QuickRecap } from '../../src/components/QuickRecap';
+import { ResourcesCompliance } from '../../src/components/ResourcesCompliance';
 import { caseStudies } from '../../src/data/caseStudies';
 
 const VoiceChat = lazy(() => import('../../src/components/VoiceChat').then(m => ({ default: m.VoiceChat })));
@@ -31,7 +33,7 @@ export default function Page() {
               AI AUTOMATION FOR UK SERVICE BUSINESSES
             </p>
             <h1 className="font-black text-4xl md:text-5xl lg:text-6xl uppercase tracking-tight-xl text-charcoal mb-6 leading-tight">
-              You're Losing Customers Every Time You Can't Answer the Phone
+              Every Unanswered Call Is a Missed Opportunity
             </h1>
             <p className="hero-description text-lg md:text-xl text-charcoal leading-relaxed mb-8 max-w-3xl">
               We build AI that answers your calls, captures your leads, and books your appointments — so you can focus on the actual work.
@@ -39,11 +41,11 @@ export default function Page() {
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
               <a href="/contact">
-                <Button variant="secondary">Book a 15-Min Chat</Button>
+                <Button variant="secondary">Book a free 15-min chat</Button>
               </a>
             </div>
             <p className="text-sm text-charcoal/70 mt-4 tracking-wide">
-              AI voice agents from &pound;297/month &middot; Workflow automation from &pound;247/month
+              AI voice agents from &pound;97/month &middot; Workflow automation from &pound;250 &middot; <a href="/pricing" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">See full pricing</a>
             </p>
           </div>
         </div>
@@ -230,10 +232,10 @@ export default function Page() {
         <div className="max-w-7xl mx-auto px-6 md:px-12">
           <div className="text-center mb-20">
             <h2 className="font-black text-4xl md:text-5xl lg:text-6xl uppercase tracking-tight-lg text-charcoal mb-6">
-              Proven Results Across Industries
+              What Results Look Like
             </h2>
             <p className="text-xl md:text-2xl font-bold text-charcoal max-w-2xl mx-auto">
-              Real businesses. Real ROI. Real fast.
+              Illustrative examples based on the types of outcomes our products are designed to deliver.
             </p>
           </div>
 
@@ -246,18 +248,32 @@ export default function Page() {
       </section>
 
       {/* ── FINAL CTA ── */}
+      <QuickRecap items={[
+        'We build AI voice agents, chatbots, and workflow automation for UK service businesses',
+        'For businesses missing calls, losing website leads, or drowning in admin',
+        'From £57/month — no contracts, no lock-in',
+        'Voice and chat products live within 24–48 hours',
+        '<a href="/contact" class="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Book a free 15-min chat</a> to see which product fits your business',
+      ]} />
+
+      <ResourcesCompliance links={[
+        { text: 'ICO data protection guidance', url: 'https://ico.org.uk/for-organisations/guide-to-data-protection/', context: 'How UK law governs customer data collected by AI systems' },
+        { text: 'Ofcom telecoms regulation', url: 'https://www.ofcom.org.uk/', context: 'UK regulator for communications services including AI call handling' },
+        { text: 'Interactive voice response (IVR) overview', url: 'https://en.wikipedia.org/wiki/Interactive_voice_response', context: 'Background on automated phone answering technology' },
+      ]} />
+
       <section className="bg-charcoal border-t-8 border-terracotta py-24 md:py-32">
         <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
           <h2 className="font-black text-4xl md:text-5xl lg:text-6xl uppercase tracking-tight-lg text-off-white mb-6">
             Want to See It in Action?
           </h2>
           <p className="text-lg md:text-xl text-off-white/90 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Try our demo voice agent right now — no signup, no faff. Or book a 15-minute chat and we'll show you exactly how it'd work for your business.
+            Try our demo voice agent right now — no signup needed. Or book a free 15-min chat and we'll show you exactly how it'd work for your business.
           </p>
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
             <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
             <a href="/contact">
-              <Button variant="secondary">Book a 15-Min Chat</Button>
+              <Button variant="secondary">Book a free 15-min chat</Button>
             </a>
           </div>
         </div>

@@ -5,7 +5,7 @@ interface CaseStudyCardProps {
 }
 
 export function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
-  const { industry, headline, meta, challenge, solution, results, testimonial, source } = caseStudy;
+  const { industry, headline, meta, challenge, solution, results, testimonial } = caseStudy;
 
   // Determine badge styling based on industry
   const getBadgeStyles = () => {
@@ -105,9 +105,9 @@ export function CaseStudyCard({ caseStudy }: CaseStudyCardProps) {
         </div>
       </div>
 
-      {/* Source Attribution */}
-      <p className="text-xs text-charcoal/50 italic mb-6 md:mb-8">
-        {source}
+      {/* Illustrative disclaimer */}
+      <p className="text-xs text-mid-gray italic mb-6 md:mb-8 border-l-3 border-mid-gray pl-3">
+        Illustrative example — figures are indicative of typical results, not a specific client engagement.
       </p>
 
       {/* Quote Section */}

@@ -3,6 +3,7 @@ export interface CaseStudy {
   industry: string;
   headline: string;
   meta: string;
+  illustrative: true;
   challenge: {
     title: string;
     description: string;
@@ -25,7 +26,6 @@ export interface CaseStudy {
     author: string;
     business: string;
   };
-  source: string;
 }
 
 export const caseStudies: CaseStudy[] = [
@@ -34,6 +34,7 @@ export const caseStudies: CaseStudy[] = [
     industry: 'HOSPITALITY',
     headline: '3-DAY PAYBACK FROM MISSED CALLS ALONE',
     meta: 'Indian Restaurant | Manchester, UK',
+    illustrative: true,
     challenge: {
       title: 'The Challenge:',
       description: '160 missed calls per month. Language barriers with complex dish names. Staff interrupted constantly during peak hours.'
@@ -43,7 +44,7 @@ export const caseStudies: CaseStudy[] = [
       description: 'AI voice agent handling 98% of calls with perfect accent recognition and multilingual support (English, Urdu, Hindi).'
     },
     results: {
-      title: '📊 THE RESULTS',
+      title: 'ILLUSTRATIVE RESULTS',
       metrics: [
         {
           number: '95%',
@@ -69,35 +70,35 @@ export const caseStudies: CaseStudy[] = [
     },
     testimonial: {
       quote: 'We thought it\'d take a month to see any ROI. It took three days. The AI doesn\'t just understand "Biryani"—it knows regional styles and asks better questions than we do.',
-      author: 'Atif R., Owner',
-      business: 'Deccan Grill'
+      author: 'Restaurant Owner',
+      business: 'Indian Restaurant, Manchester'
     },
-    source: 'Based on client phone system data over 3 months (2025)'
   },
   {
     id: 'financial-services',
     industry: 'FINANCE',
     headline: '9% CONTAINMENT INCREASE = MILLIONS SAVED',
     meta: 'Leading UK Financial Institution',
+    illustrative: true,
     challenge: {
       title: 'The Challenge:',
-      description: 'Legacy IVR frustrating customers. Long wait times. Limited self-service capabilities. 15 years of tuning hit a ceiling.'
+      description: 'Legacy IVR (interactive voice response) frustrating customers. Long wait times. Limited self-service capabilities. 15 years of tuning hit a ceiling.'
     },
     solution: {
       title: 'The Solution:',
-      description: 'Conversational AI platform replacing DTMF menus with natural language understanding across phone banking services.'
+      description: 'Conversational AI platform replacing DTMF (keypad tone) menus with natural language understanding across phone banking services.'
     },
     results: {
-      title: '📊 THE RESULTS',
+      title: 'ILLUSTRATIVE RESULTS',
       metrics: [
         {
           number: '9%',
           label: 'INCREASED IVR\nCONTAINMENT',
-          detail: 'Millions in savings'
+          detail: 'Significant cost savings'
         },
         {
           number: '97%',
-          label: 'SEMANTIC\nACCURACY',
+          label: 'ANSWER\nACCURACY',
           detail: 'Intent recognition'
         },
         {
@@ -107,33 +108,33 @@ export const caseStudies: CaseStudy[] = [
         }
       ],
       benefits: [
-        '#1 customer satisfaction ranking in industry',
+        'Improved customer satisfaction',
         'New self-service capabilities deployed independently',
-        'Broke 15-year containment ceiling'
+        'Broke 15-year self-service ceiling'
       ]
     },
     testimonial: {
-      quote: 'Natural language gave us opportunities we never thought possible. We broke the glass ceiling on containment and improved customer experience simultaneously.',
+      quote: 'Natural language gave us opportunities we never thought possible. We broke the glass ceiling on self-service and improved customer experience simultaneously.',
       author: 'Operations Director',
-      business: 'Leading UK Financial Institution'
+      business: 'UK Financial Institution'
     },
-    source: 'Based on internal performance data over 6 months post-deployment'
   },
   {
     id: 'cleaning-services',
     industry: 'OPERATIONS',
     headline: '£5,000/MONTH SAVED ON ADMIN ALONE',
-    meta: 'Commercial Cleaning | Kent, UK',
+    meta: 'Commercial Cleaning | South East England',
+    illustrative: true,
     challenge: {
       title: 'The Challenge:',
       description: '20+ hours weekly on admin tasks. Invoice chasing, booking confirmations, calendar updates. Small team drowning in repetitive work.'
     },
     solution: {
       title: 'The Solution:',
-      description: 'n8n workflow automation connecting CRM, calendar, invoicing, and communication tools into seamless automated processes.'
+      description: 'n8n (open-source workflow automation) connecting CRM, calendar, invoicing, and communication tools into seamless automated processes.'
     },
     results: {
-      title: '📊 THE RESULTS',
+      title: 'ILLUSTRATIVE RESULTS',
       metrics: [
         {
           number: '90%',
@@ -142,7 +143,7 @@ export const caseStudies: CaseStudy[] = [
         },
         {
           number: '£5K+',
-          label: 'MONTHLY LABOR\nCOST SAVINGS',
+          label: 'MONTHLY LABOUR\nCOST SAVINGS',
           detail: 'Permanent reduction'
         },
         {
@@ -152,16 +153,15 @@ export const caseStudies: CaseStudy[] = [
         }
       ],
       benefits: [
-        '100% elimination of data entry errors',
+        'Significant reduction in data entry errors',
         '18 hours/week freed for client acquisition',
         'Automated invoice delivery and follow-up'
       ]
     },
     testimonial: {
-      quote: 'We were spending 20+ hours every week on admin—invoice chasing, booking emails, calendar updates. Antek built n8n workflows that eliminated 90% of it. Now data flows between systems automatically. Game-changer for a small team with big plans.',
-      author: 'James K., Operations Manager',
-      business: 'CleanRight Kent'
+      quote: 'We were spending 20+ hours every week on admin—invoice chasing, booking emails, calendar updates. The workflows eliminated 90% of it. Now data flows between systems automatically.',
+      author: 'Operations Manager',
+      business: 'Commercial Cleaning Company, South East England'
     },
-    source: 'Based on client operational data over 4 months (2025)'
   }
 ];

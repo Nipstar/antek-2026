@@ -2,53 +2,40 @@
 > UK AI automation agency building AI voice agents, chatbots and workflow automation for service businesses. Based in Hampshire, serving UK-wide.
 
 ## About
-- Company: Antek Automation
-- Founded by: Andy Norman
+- Company: Antek Automation Ltd
+- Founded by: Andy Norman (30+ years in technology)
 - Location: Chantry House, 38 Chantry Way, Andover, Hampshire SP10 1LZ
 - Phone: 0333 038 9960
 - Email: hello@antekautomation.com
-- Specialisms: AI Receptionist (productised phone answering), AI voice agents (Retell AI Certified Partner), AI chatbots, n8n workflow automation, GEO audits
+- Certified Retell AI Partner, FSB Member
 - Target market: UK service businesses, tradespeople, SMEs and SMBs
 
 ## Core Services
-- [AI Receptionist](https://www.antekautomation.com/ai-receptionist): Productised AI phone answering service. Screens callers, captures details, books appointments 24/7. From £97/month, setup from £249. 8 industry-specific pages.
-- [AI Voice Agents](https://www.antekautomation.com/services/ai-voice-assistants): 24/7 AI-powered call answering for service businesses
-- [AI Chatbots](https://www.antekautomation.com/services/ai-chatbots): Website chat agents that qualify leads and book appointments
-- [Workflow Automation](https://www.antekautomation.com/services/workflow-automation): n8n-based automation connecting CRM, calendar, email, invoicing
-- [GEO Audits](https://www.antekautomation.com/services/geo-audit): Generative Engine Optimisation audits for AI search visibility
-
-## Service Areas
-- Hampshire (HQ), Southampton, Andover, London, Birmingham, Manchester, Leeds, Liverpool, Glasgow, Newcastle
-- UK-wide remote service delivery
-
-## Key Content
-- /ai-receptionist - AI Receptionist productised service hub
-- /ai-receptionist/electricians - AI Receptionist for electricians
-- /ai-receptionist/plumbers - AI Receptionist for plumbers
-- /ai-receptionist/hvac - AI Receptionist for HVAC engineers
-- /ai-receptionist/accountants - AI Receptionist for accountants
-- /ai-receptionist/lawyers - AI Receptionist for law firms
-- /ai-receptionist/veterinary-practices - AI Receptionist for vet practices
-- /ai-receptionist/dentists - AI Receptionist for dental practices
-- /ai-receptionist/therapists - AI Receptionist for therapists
-- /services - All AI automation services hub
-- /services/ai-voice-assistants - AI Voice Agent service page
-- /services/ai-chatbots - AI Chatbot service page
-- /services/workflow-automation - Workflow Automation service page
-- /services/geo-audit - GEO Audit service page
-- /locations/ - Service area location pages
-- /about - About Andy Norman and Antek Automation
-- /contact - Contact and booking page
+- [AI Receptionist](https://www.antekautomation.com/ai-receptionist): Productised AI phone answering. Screens callers, captures details, books appointments 24/7. Starter £97/month (120 call minutes) + £249 setup. Standard £198/month (240 mins). Pro: contact sales. £0.18/min overage. CRM and API integrations from Standard tier.
+- [AI Voice Agents](https://www.antekautomation.com/services/ai-voice-assistants): Custom 24/7 AI call answering. Same tier structure as AI Receptionist. Workflow automations included on Pro tier.
+- [AI Chatbots](https://www.antekautomation.com/services/ai-chatbots): Website chat agents that qualify leads and book appointments. From £57/month + £149 setup. Unlimited conversations.
+- [Workflow Automation](https://www.antekautomation.com/services/workflow-automation): n8n-based automation connecting 400+ tools. From £250 one-off. Clients typically save 10–20 hours/week on admin.
+- [GEO Audits](https://www.antekautomation.com/services/geo-audit): AI search visibility audit across ChatGPT, Perplexity, Google AI Overviews, Claude, Gemini. Quick Check £247, Full Audit £497, Audit + Fix £997. All delivered within 24 hours. Monthly retainer from £497/month.
+- [Pricing](https://www.antekautomation.com/pricing): Full pricing page with all tiers, comparison table, and FAQ.
 
 ## Key Facts
-- Headquarters: Chantry House, 38 Chantry Way, Andover, Hampshire, SP10 1LZ
-- Phone: 0333 038 9960
-- Founder: Andy Norman (30+ years in technology)
-- Certified Retell AI Partner
-- FSB Member
-- Industries served: Hospitality, dental, legal, accounting, trades, cleaning, estate agents, restaurants, salons, fitness, property management, veterinary
+- Support: 24-hour standard response, 4-hour critical incident response. Included on all plans.
+- Data: Call recordings retained 90 days, chat transcripts 12 months. UK/EU data residency. GDPR compliant. DPA available on request.
+- Setup: Voice and chat products live in 24–48 hours. Workflow automation 1–14 days.
+- No long-term contracts. All monthly plans roll month-to-month.
+
+## Key Content
+- /pricing - Full pricing page (all products, all tiers)
+- /ai-receptionist - AI Receptionist hub
+- /ai-receptionist/electricians, /plumbers, /hvac, /accountants, /lawyers, /veterinary-practices, /dentists, /therapists - Industry-specific pages
+- /services - Services hub
+- /services/ai-voice-assistants, /ai-chatbots, /workflow-automation, /geo-audit - Service pages
+- /locations/ - Location pages (Hampshire, Southampton, Andover, London, Birmingham, Manchester, Leeds, Liverpool, Glasgow, Newcastle)
+- /about - About Andy Norman and Antek Automation
+- /contact - Contact and booking
 
 ## Contact
 - Website: https://www.antekautomation.com
 - Email: hello@antekautomation.com
 - Phone: 0333 038 9960
+- Book a call: https://www.antekautomation.com/contact

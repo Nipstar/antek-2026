@@ -145,7 +145,7 @@ export function Head() {
                 name: "What's the typical ROI for a Southampton service business?",
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: "A Southampton trades business missing just 5 calls per week at an average job value of \u00a3200 is losing \u00a34,000/month in potential revenue. Our AI voice agents start from \u00a3197/month \u2014 the maths speaks for itself.",
+                  text: "A Southampton trades business missing just 5 calls per week at an average job value of \u00a3200 is losing \u00a34,000/month in potential revenue. AI voice agents start from \u00a397/month.",
                 },
               },
             ],

@@ -273,13 +273,6 @@ export function Head() {
         "https://www.google.com/maps?cid=17451278745729112685",
         "https://local.google.com/place?id=17451278745729112685&use=srp"
       ],
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": 5,
-        "bestRating": 5,
-        "ratingCount": 3,
-        "reviewCount": 3
-      },
       "founder": {
         "@type": "Person",
         "@id": "https://www.antekautomation.com/#founder",
@@ -755,60 +748,6 @@ export function Head() {
     }
   };
 
-  const reviewSchema = {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "@id": "https://www.antekautomation.com/#organization",
-    "name": "Antek Automation",
-    "review": [
-      {
-        "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "Atif R."
-        },
-        "reviewBody": "We thought it'd take a month to see any ROI. It took three days. The AI doesn't just understand \"Biryani\"—it knows regional styles and asks better questions than we do.",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": 5,
-          "bestRating": 5
-        }
-      },
-      {
-        "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "Operations Director"
-        },
-        "reviewBody": "Natural language gave us opportunities we never thought possible. We broke the glass ceiling on containment and improved customer experience simultaneously.",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": 5,
-          "bestRating": 5
-        }
-      },
-      {
-        "@type": "Review",
-        "author": {
-          "@type": "Person",
-          "name": "James K."
-        },
-        "reviewBody": "We were spending 20+ hours every week on admin—invoice chasing, booking emails, calendar updates. Antek built n8n workflows that eliminated 90% of it. Now data flows between systems automatically. Game-changer for a small team with big plans.",
-        "reviewRating": {
-          "@type": "Rating",
-          "ratingValue": 5,
-          "bestRating": 5
-        }
-      }
-    ],
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": 5,
-      "bestRating": 5,
-      "ratingCount": 3,
-      "reviewCount": 3
-    }
-  };
 
   return (
     <>
@@ -836,12 +775,6 @@ export function Head() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
-      />
-
-      {/* JSON-LD: Reviews + AggregateRating schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewSchema) }}
       />
 
       {/* JSON-LD: Service schema — AI Voice Agents */}

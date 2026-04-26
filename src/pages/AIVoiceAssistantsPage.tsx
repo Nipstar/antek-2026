@@ -268,7 +268,7 @@ export function AIVoiceAssistantsPage() {
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-success-green">✓</span>
-                  <span>Unlimited calls (no per-minute charges)</span>
+                  <span>Unlimited calls (120 call minutes included, £0.18/min over)</span>
                 </li>
                 <li className="flex items-start space-x-2">
                   <span className="text-success-green">✓</span>

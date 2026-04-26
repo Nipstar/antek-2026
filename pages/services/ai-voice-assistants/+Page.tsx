@@ -2,6 +2,8 @@ import { useState, lazy, Suspense } from 'react'
 import { Button } from '../../../src/components/Button'
 import { Card } from '../../../src/components/Card'
 import { Icon } from '../../../src/components/Icon'
+import { QuickRecap } from '../../../src/components/QuickRecap'
+import { ResourcesCompliance } from '../../../src/components/ResourcesCompliance'
 
 const VoiceChat = lazy(() =>
   import('../../../src/components/VoiceChat').then((m) => ({ default: m.VoiceChat }))
@@ -40,6 +42,14 @@ export default function Page() {
         </div>
       </section>
 
+      <QuickRecap items={[
+        'An AI agent answers your calls 24/7, books appointments directly into your calendar, and sends you a call summary',
+        'For UK service businesses missing calls when they\'re on the job, in a meeting, or out of hours',
+        'From £97/month + £249 one-off setup — <a href="/pricing#ai-voice-assistant" class="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">see full pricing</a>',
+        'Live in 24–48 hours — we configure everything from your website, no long setup',
+        '~80% of incoming calls handled without you picking up; the rest are transferred or messaged to you',
+      ]} />
+
       {/* Problem Section */}
       <section className="py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
@@ -55,10 +65,10 @@ export default function Page() {
             </p>
             <div className="bg-peach border-3 border-charcoal p-6">
               <p className="font-black text-charcoal text-xl mb-2">
-                The average UK small business misses 30-50% of incoming calls.
+                Many UK small businesses miss a significant portion of incoming calls — especially during busy periods, out of hours, and when owners are on other jobs.
               </p>
               <p className="text-charcoal">
-                That's not a guess. That's real data. And every one of those missed calls is money walking out the door and straight to your competitor who picked up.
+                That's not a guess. That's real data. Every one of those missed calls is lost revenue — straight to the competitor who picked up.
               </p>
             </div>
             <p>
@@ -183,7 +193,7 @@ export default function Page() {
                 </tr>
                 <tr className="border-t-3 border-charcoal bg-peach">
                   <td className="p-4 font-bold text-charcoal border-r-3 border-charcoal">Monthly Cost</td>
-                  <td className="p-4 text-charcoal border-r-3 border-charcoal">From £97/month</td>
+                  <td className="p-4 text-charcoal border-r-3 border-charcoal"><a href="/pricing#ai-voice-assistant" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">From £97/month — see pricing</a></td>
                   <td className="p-4 text-charcoal border-r-3 border-charcoal">£200-£800/month</td>
                   <td className="p-4 text-charcoal">Free</td>
                 </tr>
@@ -254,7 +264,7 @@ export default function Page() {
                 It Needs Setting Up Properly
               </h3>
               <p className="text-charcoal leading-normal">
-                The quality depends on how well it's trained on your business. That's why we spend time getting your services, prices, FAQs, and processes right. Rubbish in, rubbish out. We don't do rubbish.
+                The quality depends on how well it's trained on your business. That's why we spend time getting your services, prices, FAQs, and processes right. Answer accuracy depends on training data — which is why onboarding is thorough.
               </p>
             </Card>
           </div>
@@ -274,7 +284,7 @@ export default function Page() {
                 <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
-                Setup starts from £249, with monthly plans from £97/month. The exact cost depends on complexity, call volume, and what integrations you need (calendar, CRM, etc.). We offer a free consultation to scope your requirements and give you an honest quote.
+                From £97/month with a £249 one-off setup fee. <a href="/pricing#ai-voice-assistant" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">See full pricing</a> — no hidden fees.
               </div>
             </details>
 
@@ -314,12 +324,28 @@ export default function Page() {
                 <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
-                Typically 5–7 working days from kickoff. We spend that time training the AI on your business — your services, pricing, processes, and FAQs — so it handles calls properly from day one.
+                Typically 24–48 hours from kickoff. We pull your services, pricing, and FAQs from your website, configure the screening logic, and forward your number. Most clients are live the same day or next day.
+              </div>
+            </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                What support is included?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Standard queries are responded to within 24 hours. Critical incidents — such as the agent going offline during business hours — are responded to within 4 hours. Included across all plans.
               </div>
             </details>
           </div>
         </div>
       </section>
+
+      <ResourcesCompliance links={[
+        { text: 'ICO call recording guidance', url: 'https://ico.org.uk/for-organisations/guide-to-data-protection/', context: 'UK law on call recording and caller data handling' },
+        { text: 'Ofcom UK call statistics', url: 'https://www.ofcom.org.uk/', context: 'UK regulator for business telephone services' },
+        { text: 'Interactive voice response (IVR) overview', url: 'https://en.wikipedia.org/wiki/Interactive_voice_response', context: 'Background on automated call answering technology' },
+      ]} />
 
       {/* CTA Section */}
       <section className="bg-charcoal py-20 md:py-28">
@@ -339,7 +365,7 @@ export default function Page() {
             </Button>
             <a href="/contact">
               <Button variant="secondary" className="text-lg px-10">
-                Book a Free Consultation
+                Book a free 15-min chat
               </Button>
             </a>
           </div>

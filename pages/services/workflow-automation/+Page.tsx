@@ -1,6 +1,8 @@
 import { Button } from '../../../src/components/Button'
 import { Card } from '../../../src/components/Card'
 import { Icon } from '../../../src/components/Icon'
+import { QuickRecap } from '../../../src/components/QuickRecap'
+import { ResourcesCompliance } from '../../../src/components/ResourcesCompliance'
 
 export default function Page() {
   return (
@@ -35,6 +37,14 @@ export default function Page() {
         </div>
       </section>
 
+      <QuickRecap items={[
+        'We automate your repetitive admin using n8n (open-source) — you own the workflows outright, no vendor lock-in',
+        'For service businesses spending 10+ hours/week on manual data entry, follow-ups, and CRM updates',
+        'From £250 one-off for a starter workflow — <a href="/pricing#workflow-automation" class="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">see full pricing</a>',
+        'Simple workflows live in 1–2 days; complex multi-system builds take 1–2 weeks',
+        'Discovery audit first — we won\'t automate processes we don\'t fully understand',
+      ]} />
+
       {/* Problem Section */}
       <section className="py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6 md:px-12">
@@ -57,7 +67,7 @@ export default function Page() {
               </p>
             </div>
             <p>
-              The mad thing is, most of this work follows the exact same steps every single time. If something happens the same way every time, a computer can do it. Faster, more accurately, and without needing a tea break.
+              Importantly, most of this work follows the exact same steps every single time. If something happens the same way every time, a computer can do it. Faster, more accurately, and without needing a tea break.
             </p>
           </div>
         </div>
@@ -286,7 +296,7 @@ export default function Page() {
                 <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
               </summary>
               <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
-                Automations start from £250. The exact cost depends on the number of workflows, integrations, and complexity. We offer a free automation audit to scope your needs and give you a clear quote.
+                From £250 one-off for a starter workflow. <a href="/pricing#workflow-automation" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">See full pricing</a> — exact cost depends on workflow count and complexity.
               </div>
             </details>
 
@@ -333,6 +343,12 @@ export default function Page() {
         </div>
       </section>
 
+      <ResourcesCompliance links={[
+        { text: 'n8n workflow automation (Wikipedia)', url: 'https://en.wikipedia.org/wiki/N8n', context: 'Open-source automation platform used for all Antek workflow builds' },
+        { text: 'Webhook overview (Wikipedia)', url: 'https://en.wikipedia.org/wiki/Webhook', context: 'Technical explanation of webhooks — the backbone of automation integrations' },
+        { text: 'ICO data protection for businesses', url: 'https://ico.org.uk/for-organisations/guide-to-data-protection/', context: 'UK law on data handling within automated workflows' },
+      ]} />
+
       {/* CTA Section */}
       <section className="bg-charcoal py-20 md:py-28">
         <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
@@ -343,7 +359,7 @@ export default function Page() {
             We'll spend 30 minutes on a call, look at your current processes, and tell you exactly where automation would save you the most time. No sales pitch, no pressure. If we think automation isn't right for you, we'll say so.
           </p>
           <p className="text-off-white leading-normal mb-10">
-            Most of our clients save 10-20 hours a week. That's two full working days back, every single week.
+            Clients typically save 10–20 hours a week once automations are running — that's one to two full working days back, every week. Exact savings depend on the volume of manual work being replaced.
           </p>
           <a href="/contact">
             <Button variant="primary" className="text-lg px-10">
