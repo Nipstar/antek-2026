@@ -4,7 +4,8 @@ export function Head() {
     '@type': 'Person',
     '@id': 'https://www.antekautomation.com/#founder',
     name: 'Andy Norman',
-    jobTitle: 'Founder & Director',
+    jobTitle: 'Founder',
+    image: 'https://www.antekautomation.com/andy-norman.webp',
     description:
       'Founder of Antek Automation with 30+ years in technology. Background in Managed Print Services as technician, service manager, and print management solutions specialist. Now building AI voice agents, chatbots, and workflow automation for UK businesses.',
     worksFor: {

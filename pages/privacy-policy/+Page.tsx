@@ -21,10 +21,10 @@ export default function Page() {
           <section>
             <h2 className="font-black text-2xl uppercase tracking-tight-lg mb-4 text-charcoal">1. Introduction</h2>
             <p className="leading-relaxed">
-              Antek Automation Ltd ("we", "us", "our", "Company") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
+              Antek Automation ("we", "us", "our") is a sole trader committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
             </p>
             <p className="leading-relaxed mt-2">
-              Our registered address is Chantry House, 38 Chantry Way, Andover SP10 1LZ. ICO registration number: <em>pending — register at ico.org.uk/registration</em>. You can contact us at{' '}
+              Our trading address is Chantry House, 38 Chantry Way, Andover SP10 1LZ. ICO registration number: <strong>ZC133436</strong>. DUNS number: <strong>235593033</strong>. You can contact us at{' '}
               <a href="mailto:hello@antekautomation.com" className="text-terracotta hover:underline font-bold">hello@antekautomation.com</a>.
             </p>
           </section>
@@ -204,7 +204,7 @@ export default function Page() {
               For any questions about this Privacy Policy or your personal data:
             </p>
             <div className="mt-4 space-y-1 leading-relaxed">
-              <p><strong>Antek Automation Ltd</strong></p>
+              <p><strong>Antek Automation</strong> (sole trader)</p>
               <p><strong>Email:</strong>{' '}
                 <a href="mailto:hello@antekautomation.com" className="text-terracotta hover:underline font-bold">hello@antekautomation.com</a>
               </p>
@@ -212,6 +212,8 @@ export default function Page() {
                 <a href="tel:03330389960" className="text-terracotta hover:underline font-bold">0333 038 9960</a>
               </p>
               <p><strong>Address:</strong> Chantry House, 38 Chantry Way, Andover SP10 1LZ</p>
+              <p><strong>ICO Registration:</strong> ZC133436</p>
+              <p><strong>DUNS Number:</strong> 235593033</p>
             </div>
           </section>
 

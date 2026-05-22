@@ -31,7 +31,7 @@ export function TermsOfBusinessPage() {
           <section>
             <h2 className="font-black text-2xl uppercase tracking-tight-lg mb-4 text-charcoal">1. Agreement</h2>
             <p className="leading-relaxed">
-              These Terms of Business set out the terms and conditions under which Antek Automation Ltd ("We", "Us", "Our", "Company") provides services to you ("Client", "You", "Your"). By engaging with us, you agree to be bound by these Terms of Business.
+              These Terms of Business set out the terms and conditions under which Antek Automation ("We", "Us", "Our", "Company") provides services to you ("Client", "You", "Your"). By engaging with us, you agree to be bound by these Terms of Business.
             </p>
           </section>
 
@@ -56,7 +56,7 @@ export function TermsOfBusinessPage() {
           <section>
             <h2 className="font-black text-2xl uppercase tracking-tight-lg mb-4 text-charcoal">4. Intellectual Property</h2>
             <p className="leading-relaxed">
-              All intellectual property rights in the services, software, and deliverables created by us shall remain the property of Antek Automation Ltd unless otherwise agreed in writing. You are granted a non-exclusive, non-transferable license to use the services for your business purposes.
+              All intellectual property rights in the services, software, and deliverables created by us shall remain the property of Antek Automation unless otherwise agreed in writing. You are granted a non-exclusive, non-transferable license to use the services for your business purposes.
             </p>
           </section>
 

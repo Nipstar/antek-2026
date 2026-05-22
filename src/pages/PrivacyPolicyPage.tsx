@@ -31,7 +31,7 @@ export function PrivacyPolicyPage() {
           <section>
             <h2 className="font-black text-2xl uppercase tracking-tight-lg mb-4 text-charcoal">1. Introduction</h2>
             <p className="leading-relaxed">
-              Antek Automation Ltd ("we", "us", "our", "Company") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
+              Antek Automation ("we", "us", "our", "Company") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website and use our services.
             </p>
           </section>
 

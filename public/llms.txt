@@ -2,11 +2,13 @@
 > UK AI automation agency building AI voice agents, chatbots and workflow automation for service businesses. Based in Hampshire, serving UK-wide.
 
 ## About
-- Company: Antek Automation Ltd
+- Trading name: Antek Automation (sole trader)
 - Founded by: Andy Norman (30+ years in technology)
 - Location: Chantry House, 38 Chantry Way, Andover, Hampshire SP10 1LZ
 - Phone: 0333 038 9960
 - Email: hello@antekautomation.com
+- ICO Registration: ZC133436
+- DUNS Number: 235593033
 - Certified Retell AI Partner, FSB Member
 - Target market: UK service businesses, tradespeople, SMEs and SMBs
 

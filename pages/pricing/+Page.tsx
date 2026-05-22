@@ -426,7 +426,7 @@ export default function Page() {
             {[
               { text: 'ICO data protection for businesses', url: 'https://ico.org.uk/for-organisations/guide-to-data-protection/', context: 'How UK law governs customer data collected by AI systems' },
               { text: 'Ofcom telecoms guidance', url: 'https://www.ofcom.org.uk/', context: 'UK regulator for communications services including AI call handling' },
-              { text: 'Companies House — Antek Automation Ltd', url: 'https://find-and-update.company-information.service.gov.uk/', context: 'Registered company information' },
+              { text: 'ICO Register — Antek Automation (ZC133436)', url: 'https://ico.org.uk/ESDWebPages/Entry/ZC133436', context: 'UK data protection registration' },
               { text: 'schema.org structured data', url: 'https://schema.org/', context: 'The vocabulary used in GEO audit schema recommendations' },
             ].map((link, i) => (
               <a

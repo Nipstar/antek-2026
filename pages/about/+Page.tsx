@@ -7,16 +7,26 @@ export default function Page() {
     <>
       {/* Hero */}
       <section className="bg-warm-beige border-b-3 border-charcoal py-20 md:py-28">
-        <div className="max-w-4xl mx-auto px-6 md:px-12">
-          <h1 className="font-black text-4xl md:text-5xl lg:text-6xl uppercase tracking-tight-xl text-charcoal mb-6">
-            About Antek Automation
-          </h1>
-          <p className="text-lg md:text-xl text-mid-gray max-w-2xl mb-4">
-            AI automation built by someone who's spent 30+ years solving technology problems for businesses. Not a tech startup. A business that understands yours.
-          </p>
-          <p className="text-sm text-mid-gray">
-            By Andy Norman, Founder | 30+ years in technology | Last updated March 2026
-          </p>
+        <div className="max-w-4xl mx-auto px-6 md:px-12 grid md:grid-cols-[1fr_auto] gap-10 items-center">
+          <div>
+            <h1 className="font-black text-4xl md:text-5xl lg:text-6xl uppercase tracking-tight-xl text-charcoal mb-6">
+              About Antek Automation
+            </h1>
+            <p className="text-lg md:text-xl text-mid-gray max-w-2xl mb-4">
+              AI automation built by someone who's spent 30+ years solving technology problems for businesses. Not a tech startup. A business that understands yours.
+            </p>
+            <p className="text-sm text-mid-gray">
+              By Andy Norman, Founder | 30+ years in technology | Last updated March 2026
+            </p>
+          </div>
+          <img
+            src="/andy-norman.webp"
+            alt="Andy Norman, founder of Antek Automation"
+            width={240}
+            height={240}
+            loading="eager"
+            className="w-48 h-48 md:w-60 md:h-60 border-3 border-charcoal shadow-brutal object-cover bg-soft-sage"
+          />
         </div>
       </section>
 
@@ -164,6 +174,8 @@ export default function Page() {
                 <li><span className="font-bold text-charcoal">Headquarters:</span> Chantry House, 38 Chantry Way, Andover, Hampshire, SP10 1LZ</li>
                 <li><span className="font-bold text-charcoal">Phone:</span> 0333 038 9960</li>
                 <li><span className="font-bold text-charcoal">Email:</span> hello@antekautomation.com</li>
+                <li><span className="font-bold text-charcoal">ICO Registration:</span> ZC133436</li>
+                <li><span className="font-bold text-charcoal">DUNS Number:</span> 235593033</li>
                 <li><span className="font-bold text-charcoal">Partnership:</span> Certified Retell AI Partner</li>
                 <li><span className="font-bold text-charcoal">Membership:</span> Federation of Small Businesses (FSB)</li>
                 <li><span className="font-bold text-charcoal">Services:</span> AI Voice Agents, AI Chatbots, Workflow Automation</li>

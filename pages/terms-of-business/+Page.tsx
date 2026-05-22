@@ -21,7 +21,7 @@ export default function Page() {
           <section>
             <h2 className="font-black text-2xl uppercase tracking-tight-lg mb-4 text-charcoal">1. Agreement</h2>
             <p className="leading-relaxed">
-              These Terms of Business ("Terms") set out the terms and conditions under which Antek Automation Ltd ("We", "Us", "Our", "Company"), registered at Chantry House, 38 Chantry Way, Andover SP10 1LZ, provides services to you ("Client", "You", "Your"). By engaging our services, you agree to be bound by these Terms.
+              These Terms of Business ("Terms") set out the terms and conditions under which Antek Automation ("We", "Us", "Our"), a sole trader based at Chantry House, 38 Chantry Way, Andover SP10 1LZ, provides services to you ("Client", "You", "Your"). By engaging our services, you agree to be bound by these Terms.
             </p>
             <p className="leading-relaxed mt-2">
               These Terms, together with any written proposal, statement of work, or service agreement, form the entire agreement between the parties. No variation of these Terms shall be effective unless agreed in writing by both parties.
@@ -76,7 +76,7 @@ export default function Page() {
           <section>
             <h2 className="font-black text-2xl uppercase tracking-tight-lg mb-4 text-charcoal">5. Intellectual Property</h2>
             <p className="leading-relaxed">
-              All intellectual property rights in the services, software, systems, and deliverables created by us shall remain the property of Antek Automation Ltd unless otherwise agreed in writing. Upon full payment of all fees, you are granted a non-exclusive, non-transferable licence to use the deliverables for your business purposes.
+              All intellectual property rights in the services, software, systems, and deliverables created by us shall remain the property of Antek Automation unless otherwise agreed in writing. Upon full payment of all fees, you are granted a non-exclusive, non-transferable licence to use the deliverables for your business purposes.
             </p>
             <p className="leading-relaxed mt-2">
               Any pre-existing intellectual property, frameworks, templates, or tools used in the delivery of services remain our property. You may not reverse-engineer, decompile, or attempt to extract the source code of any software or systems we provide.
@@ -173,7 +173,7 @@ export default function Page() {
           <section>
             <h2 className="font-black text-2xl uppercase tracking-tight-lg mb-4 text-charcoal">12. Indemnification</h2>
             <p className="leading-relaxed">
-              You agree to indemnify and hold harmless Antek Automation Ltd, its directors, employees, and agents from and against any claims, losses, damages, liabilities, and expenses (including reasonable legal fees) arising from your breach of these Terms, your use of the services, or your provision of inaccurate or unlawful content or data.
+              You agree to indemnify and hold harmless Antek Automation, its directors, employees, and agents from and against any claims, losses, damages, liabilities, and expenses (including reasonable legal fees) arising from your breach of these Terms, your use of the services, or your provision of inaccurate or unlawful content or data.
             </p>
           </section>
 
@@ -204,7 +204,7 @@ export default function Page() {
               If you have any questions about these Terms of Business, please contact us:
             </p>
             <div className="mt-4 space-y-1 leading-relaxed">
-              <p><strong>Antek Automation Ltd</strong></p>
+              <p><strong>Antek Automation</strong> (sole trader)</p>
               <p><strong>Email:</strong>{' '}
                 <a href="mailto:hello@antekautomation.com" className="text-terracotta hover:underline font-bold">hello@antekautomation.com</a>
               </p>
@@ -212,6 +212,8 @@ export default function Page() {
                 <a href="tel:03330389960" className="text-terracotta hover:underline font-bold">0333 038 9960</a>
               </p>
               <p><strong>Address:</strong> Chantry House, 38 Chantry Way, Andover SP10 1LZ</p>
+              <p><strong>ICO Registration:</strong> ZC133436</p>
+              <p><strong>DUNS Number:</strong> 235593033</p>
             </div>
           </section>
 
