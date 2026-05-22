@@ -1,4 +1,5 @@
 import { Button } from '../../src/components/Button'
+import { CalBooking } from '../../src/components/CalBooking'
 import { PricingCard } from '../../src/components/PricingCard'
 import { PricingComparisonTable } from '../../src/components/PricingComparisonTable'
 
@@ -446,16 +447,19 @@ export default function Page() {
 
       {/* Final CTA */}
       <section className="py-20 md:py-28">
-        <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
-          <h2 className="font-black text-4xl md:text-5xl uppercase tracking-tight-lg text-charcoal mb-6">
-            Not Sure Which Product?
-          </h2>
-          <p className="text-xl text-charcoal leading-normal mb-10 max-w-2xl mx-auto">
-            Book a free 15-minute call. We'll listen to what you're trying to fix and tell you honestly which product fits &mdash; or whether you need one at all.
-          </p>
-          <a href="/contact">
-            <Button variant="primary">Book a free 15-min chat</Button>
-          </a>
+        <div className="max-w-5xl mx-auto px-6 md:px-12">
+          <div className="text-center mb-10">
+            <h2 className="font-black text-4xl md:text-5xl uppercase tracking-tight-lg text-charcoal mb-6">
+              Not Sure Which Product?
+            </h2>
+            <p className="text-xl text-charcoal leading-normal mb-8 max-w-2xl mx-auto">
+              Book a free 30-minute call below. We&rsquo;ll listen to what you&rsquo;re trying to fix and tell you honestly which product fits &mdash; or whether you need one at all.
+            </p>
+            <a href="/contact">
+              <Button variant="primary">Or use the contact form</Button>
+            </a>
+          </div>
+          <CalBooking />
         </div>
       </section>
 

@@ -1,4 +1,5 @@
 import { Button } from '../../src/components/Button';
+import { CalBooking } from '../../src/components/CalBooking';
 import { Card } from '../../src/components/Card';
 import { Icon } from '../../src/components/Icon';
 
@@ -188,16 +189,19 @@ export default function Page() {
 
       {/* CTA */}
       <section className="bg-charcoal border-t-3 border-charcoal py-20 md:py-28">
-        <div className="max-w-3xl mx-auto px-6 md:px-12 text-center">
-          <h2 className="font-black text-3xl md:text-4xl uppercase tracking-tight-lg text-off-white mb-6">
-            Ready to Automate?
-          </h2>
-          <p className="text-gray-300 text-lg mb-10 max-w-xl mx-auto">
-            Book a free 30-minute call. We'll look at where AI can save you time and win you more business.
-          </p>
-          <a href="/contact">
-            <Button variant="primary">Book a free 15-min chat</Button>
-          </a>
+        <div className="max-w-5xl mx-auto px-6 md:px-12">
+          <div className="text-center mb-10">
+            <h2 className="font-black text-3xl md:text-4xl uppercase tracking-tight-lg text-off-white mb-6">
+              Ready to Automate?
+            </h2>
+            <p className="text-gray-300 text-lg mb-8 max-w-xl mx-auto">
+              Book a free 30-minute call. We'll look at where AI can save you time and win you more business.
+            </p>
+            <a href="/contact">
+              <Button variant="primary">Prefer the contact form?</Button>
+            </a>
+          </div>
+          <CalBooking />
         </div>
       </section>
     </>

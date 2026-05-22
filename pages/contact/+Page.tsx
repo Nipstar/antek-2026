@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from '../../src/components/Button';
 import { Card } from '../../src/components/Card';
+import { CalBooking } from '../../src/components/CalBooking';
 import { CONSTANTS } from '../../src/constants';
 import { SocialLinks } from '../../src/components/SocialLinks';
 
@@ -296,6 +297,19 @@ export default function Page() {
               </p>
             </form>
           </Card>
+        </div>
+
+        {/* Book a Call (Cal.com inline) */}
+        <div className="max-w-5xl mx-auto mt-16">
+          <div className="text-center mb-8">
+            <h2 className="font-black text-3xl md:text-4xl uppercase tracking-tight-xl text-charcoal mb-4">
+              Or Book a Free 30-Minute Call
+            </h2>
+            <p className="text-charcoal max-w-2xl mx-auto">
+              Pick a slot that works for you. We&rsquo;ll talk through what you&rsquo;re trying to fix and where AI can actually help.
+            </p>
+          </div>
+          <CalBooking />
         </div>
 
         {/* Contact Information Section */}
