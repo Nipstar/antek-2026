@@ -173,7 +173,7 @@ export default function Page() {
           <section>
             <h2 className="font-black text-2xl uppercase tracking-tight-lg mb-4 text-charcoal">12. Indemnification</h2>
             <p className="leading-relaxed">
-              You agree to indemnify and hold harmless Antek Automation, its directors, employees, and agents from and against any claims, losses, damages, liabilities, and expenses (including reasonable legal fees) arising from your breach of these Terms, your use of the services, or your provision of inaccurate or unlawful content or data.
+              You agree to indemnify and hold harmless Antek Automation (sole trader), its proprietor, employees, contractors, and agents from and against any claims, losses, damages, liabilities, and expenses (including reasonable legal fees) arising from your breach of these Terms, your use of the services, or your provision of inaccurate or unlawful content or data.
             </p>
           </section>
 
