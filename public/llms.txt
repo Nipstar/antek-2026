@@ -32,7 +32,7 @@
 - /ai-receptionist/electricians, /plumbers, /hvac, /accountants, /lawyers, /veterinary-practices, /dentists, /therapists - Industry-specific pages
 - /services - Services hub
 - /services/ai-voice-assistants, /ai-chatbots, /workflow-automation, /geo-audit - Service pages
-- /locations/ - Location pages (Hampshire, Southampton, Andover, London, Birmingham, Manchester, Leeds, Liverpool, Glasgow, Newcastle)
+- /locations/ - Location pages (Hampshire, Southampton, Andover, Salisbury, Newbury, London, Birmingham, Manchester, Leeds, Liverpool, Glasgow, Newcastle)
 - /about - About Andy Norman and Antek Automation
 - /contact - Contact and booking
 

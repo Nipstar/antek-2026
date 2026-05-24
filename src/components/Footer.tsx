@@ -83,6 +83,18 @@ export function Footer() {
                   {city.name}
                 </a>
               ))}
+              <a
+                href="/locations/salisbury"
+                className="text-off-white/80 hover:text-terracotta transition-colors text-sm"
+              >
+                Salisbury
+              </a>
+              <a
+                href="/locations/newbury"
+                className="text-off-white/80 hover:text-terracotta transition-colors text-sm"
+              >
+                Newbury
+              </a>
             </div>
           </div>
 

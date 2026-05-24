@@ -97,6 +97,8 @@ Headquartered in Andover, Hampshire. UK-wide remote delivery.
 - [Hampshire](https://www.antekautomation.com/locations/hampshire)
 - [Southampton](https://www.antekautomation.com/locations/southampton)
 - [Andover](https://www.antekautomation.com/locations/andover)
+- [Salisbury](https://www.antekautomation.com/locations/salisbury)
+- [Newbury](https://www.antekautomation.com/locations/newbury)
 - [London](https://www.antekautomation.com/locations/london)
 - [Birmingham](https://www.antekautomation.com/locations/birmingham)
 - [Manchester](https://www.antekautomation.com/locations/manchester)
