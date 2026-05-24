@@ -169,6 +169,18 @@
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.antekautomation.com/locations/salisbury</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.antekautomation.com/locations/newbury</loc>
+    <lastmod>2026-05-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.antekautomation.com/contact</loc>
     <lastmod>2026-03-20</lastmod>
     <changefreq>monthly</changefreq>
