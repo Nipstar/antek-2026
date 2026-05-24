@@ -200,7 +200,7 @@ export default function Page() {
             &mdash; book a quick chat and we&rsquo;ll give you a straight answer.
           </p>
           <a href="/contact">
-            <Button variant="primary">Book a 30-Min Chat</Button>
+            <Button variant="primary">Book a 30-Min Discovery Call</Button>
           </a>
         </div>
       </section>
@@ -283,7 +283,7 @@ export default function Page() {
           <AIReceptionistDemoCards />
           <div className="text-center mt-12">
             <a href="/contact">
-              <Button variant="primary">Book a 30-Min Chat</Button>
+              <Button variant="primary">Book a 30-Min Discovery Call</Button>
             </a>
           </div>
         </div>
@@ -337,13 +337,13 @@ export default function Page() {
             Stop Losing Customers to the Firm That Answered First
           </h2>
           <p className="text-lg md:text-xl text-off-white/90 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Try the demo. Book a 30-minute chat. We&rsquo;ll show you exactly how it would work for
+            Try the demo. Book a 30-minute discovery call. We&rsquo;ll show you exactly how it would work for
             your business.
           </p>
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
             <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
             <a href="/contact">
-              <Button variant="secondary">Book a 30-Min Chat</Button>
+              <Button variant="secondary">Book a 30-Min Discovery Call</Button>
             </a>
           </div>
         </div>

@@ -264,7 +264,7 @@ export default function Page() {
         'For businesses missing calls, losing website leads, or drowning in admin',
         'From £57/month — no contracts, no lock-in',
         'Voice and chat products live within 24–48 hours',
-        '<a href="/contact" class="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Book a free 30-min chat</a> to see which product fits your business',
+        '<a href="/contact" class="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Book a free 30-min discovery call</a> to see which product fits your business',
       ]} />
 
       <ResourcesCompliance links={[
@@ -279,12 +279,12 @@ export default function Page() {
             Want to See It in Action?
           </h2>
           <p className="text-lg md:text-xl text-off-white/90 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Try our demo voice agent right now — no signup needed. Or book a free 30-min chat and we'll show you exactly how it'd work for your business.
+            Try our demo voice agent right now — no signup needed. Or book a free 30-min discovery call and we'll show you exactly how it'd work for your business.
           </p>
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
             <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
             <a href="/contact">
-              <Button variant="secondary">Book a free 30-min chat</Button>
+              <Button variant="secondary">Book a free 30-min discovery call</Button>
             </a>
           </div>
         </div>

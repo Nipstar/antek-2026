@@ -126,7 +126,7 @@ export default function Page() {
               ))}
               <a href="/contact" className="block">
                 <button className="w-full font-black uppercase px-7 py-3 border-3 border-charcoal shadow-brutal-sm transition-all duration-200 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:shadow-brutal active:translate-x-[2px] active:translate-y-[2px] active:shadow-brutal-xs bg-terracotta text-off-white">
-                  Book a free 30-min chat about Voice AI
+                  Book a free 30-min discovery call about Voice AI
                 </button>
               </a>
             </div>
@@ -170,7 +170,7 @@ export default function Page() {
                 'Captures out-of-hours details so you can call back',
               ]}
               integrations="HubSpot, Google Calendar, Calendly, most tools via webhook"
-              cta="Book a free 30-min chat about Chatbots"
+              cta="Book a free 30-min discovery call about Chatbots"
               ctaHref="/contact"
             />
           </div>
@@ -211,7 +211,7 @@ export default function Page() {
                 'Ongoing retainer available if you want continued build and support',
               ]}
               integrations="Google Workspace, Xero, Stripe, HubSpot, Slack, WhatsApp, Shopify, Tradify, Jobber, ServiceM8, 400+ more"
-              cta="Book a free 30-min chat about Automation"
+              cta="Book a free 30-min discovery call about Automation"
               ctaHref="/contact"
             />
           </div>
@@ -389,7 +389,7 @@ export default function Page() {
               ))}
               <a href="/contact" className="block">
                 <button className="w-full font-black uppercase px-7 py-3 border-3 border-charcoal shadow-brutal-sm transition-all duration-200 hover:-translate-x-[2px] hover:-translate-y-[2px] hover:shadow-brutal active:translate-x-[2px] active:translate-y-[2px] active:shadow-brutal-xs bg-terracotta text-off-white">
-                  Book a free 30-min chat about AI Receptionist
+                  Book a free 30-min discovery call about AI Receptionist
                 </button>
               </a>
             </div>

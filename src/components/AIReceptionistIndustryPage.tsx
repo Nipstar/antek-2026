@@ -40,7 +40,7 @@ export function AIReceptionistIndustryPage({ industry }: Props) {
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
               <a href="/contact">
-                <Button variant="secondary">Book a 30-Min Chat</Button>
+                <Button variant="secondary">Book a 30-Min Discovery Call</Button>
               </a>
             </div>
             <p className="text-sm text-charcoal/70 mt-4 tracking-wide">
@@ -144,7 +144,7 @@ export function AIReceptionistIndustryPage({ industry }: Props) {
               </p>
               <a href="/contact">
                 <Button variant="primary" className="w-full">
-                  Book a 30-Min Chat
+                  Book a 30-Min Discovery Call
                 </Button>
               </a>
             </Card>
@@ -174,7 +174,7 @@ export function AIReceptionistIndustryPage({ industry }: Props) {
           <AIReceptionistDemoCards />
           <div className="text-center mt-12">
             <a href="/contact">
-              <Button variant="primary">Book a 30-Min Chat</Button>
+              <Button variant="primary">Book a 30-Min Discovery Call</Button>
             </a>
           </div>
         </div>
@@ -268,7 +268,7 @@ export function AIReceptionistIndustryPage({ industry }: Props) {
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
             <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
             <a href="/contact">
-              <Button variant="secondary">Book a 30-Min Chat</Button>
+              <Button variant="secondary">Book a 30-Min Discovery Call</Button>
             </a>
           </div>
         </div>

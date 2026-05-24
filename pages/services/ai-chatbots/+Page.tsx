@@ -327,7 +327,7 @@ export default function Page() {
             </Button>
             <a href="/contact">
               <Button variant="secondary" className="text-lg px-10">
-                Book a free 30-min chat
+                Book a free 30-min discovery call
               </Button>
             </a>
           </div>
