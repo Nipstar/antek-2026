@@ -65,13 +65,9 @@ export default function Page() {
             <p className="text-xl text-charcoal leading-normal mb-8">
               Fixed monthly plans for voice AI, chatbots, and AI receptionist. One-off projects for workflow automation and GEO audits. Voice plans start with 120 call minutes included. Chatbot conversations are unlimited. No hidden fees.
             </p>
-            <button
-              type="button"
-              onClick={() => openBookingPopup('pricing-hero')}
-              className="inline-block"
-            >
-              <Button variant="primary">Book a free 30-min discovery call</Button>
-            </button>
+            <Button variant="primary" onClick={() => openBookingPopup('pricing-hero')}>
+              Book a free 30-min discovery call
+            </Button>
             <TrustStrip className="mt-6" />
           </div>
         </div>

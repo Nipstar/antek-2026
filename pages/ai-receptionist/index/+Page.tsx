@@ -119,13 +119,9 @@ export default function Page() {
               <a href="#demo">
                 <Button variant="primary">Try the Demo</Button>
               </a>
-              <button
-                type="button"
-                onClick={() => openBookingPopup('ai-receptionist-hero')}
-                className="inline-block"
-              >
-                <Button variant="secondary">Book a 30-min discovery call</Button>
-              </button>
+              <Button variant="secondary" onClick={() => openBookingPopup('ai-receptionist-hero')}>
+                Book a 30-min discovery call
+              </Button>
             </div>
             <p className="text-sm text-charcoal/70 mt-4 tracking-wide">
               Plans from &pound;97/month &middot; Setup from &pound;249 &middot; 120 call minutes included per month — higher plans add more minutes and features

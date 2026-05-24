@@ -44,13 +44,9 @@ export default function Page() {
             </p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
-              <button
-                type="button"
-                onClick={() => openBookingPopup('hero-cta')}
-                className="inline-block"
-              >
-                <Button variant="secondary">Book a free 30-min discovery call</Button>
-              </button>
+              <Button variant="secondary" onClick={() => openBookingPopup('hero-cta')}>
+                Book a free 30-min discovery call
+              </Button>
             </div>
             <p className="text-sm text-charcoal/70 mt-4 tracking-wide">
               AI voice agents from &pound;97/month &middot; Workflow automation from &pound;250 &middot; <a href="/pricing" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">See full pricing</a>
