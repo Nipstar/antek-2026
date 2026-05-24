@@ -1,11 +1,56 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Button } from '../../src/components/Button';
 import { Card } from '../../src/components/Card';
 import { CalBooking } from '../../src/components/CalBooking';
 import { CONSTANTS } from '../../src/constants';
 import { SocialLinks } from '../../src/components/SocialLinks';
+import { trackEvent } from '../../src/utils/analytics';
 
 const CONTACT_WEBHOOK_URL = import.meta.env.VITE_CONTACT_WEBHOOK_URL || '';
+const GA_MEASUREMENT_ID = import.meta.env.VITE_GOOGLE_ANALYTICS_ID || '';
+
+function getUtmAndContext() {
+  if (typeof window === 'undefined') return {} as Record<string, string>;
+  const params = new URLSearchParams(window.location.search);
+  return {
+    utm_source: params.get('utm_source') || '',
+    utm_medium: params.get('utm_medium') || '',
+    utm_campaign: params.get('utm_campaign') || '',
+    utm_term: params.get('utm_term') || '',
+    utm_content: params.get('utm_content') || '',
+    referrer: document.referrer || 'direct',
+    page_url: window.location.href,
+    page_path: window.location.pathname,
+    session_pages: sessionStorage.getItem('antek_pages_viewed') || '1',
+  };
+}
+
+function getGaIds(): Promise<{ ga_client_id?: string; ga_session_id?: string }> {
+  return new Promise((resolve) => {
+    if (typeof window === 'undefined' || !window.gtag || !GA_MEASUREMENT_ID) {
+      resolve({});
+      return;
+    }
+    const out: { ga_client_id?: string; ga_session_id?: string } = {};
+    let pending = 2;
+    const done = () => {
+      if (--pending === 0) resolve(out);
+    };
+    try {
+      window.gtag('get', GA_MEASUREMENT_ID, 'client_id', (cid: string) => {
+        out.ga_client_id = cid;
+        done();
+      });
+      window.gtag('get', GA_MEASUREMENT_ID, 'session_id', (sid: string) => {
+        out.ga_session_id = sid;
+        done();
+      });
+      setTimeout(() => resolve(out), 800);
+    } catch {
+      resolve({});
+    }
+  });
+}
 
 export default function Page() {
   const [formData, setFormData] = useState({
@@ -26,6 +71,16 @@ export default function Page() {
     message: string;
   }>({ type: null, message: '' });
 
+  const pageStartRef = useRef<number>(Date.now());
+
+  useEffect(() => {
+    pageStartRef.current = Date.now();
+    if (typeof window !== 'undefined') {
+      const count = parseInt(sessionStorage.getItem('antek_pages_viewed') || '0', 10);
+      sessionStorage.setItem('antek_pages_viewed', String(count + 1));
+    }
+  }, []);
+
   const handleCheckboxChange = (value: string) => {
     setFormData((prev) => ({
       ...prev,
@@ -40,10 +95,16 @@ export default function Page() {
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: '' });
 
+    const gaIds = await getGaIds();
+    const ctx = getUtmAndContext();
     const payload = {
       ...formData,
       timestamp: new Date().toISOString(),
       source: CONSTANTS.WEBHOOK_SOURCE_CONTACT_FORM,
+      page_town: 'brand-hub',
+      time_on_page_s: Math.round((Date.now() - pageStartRef.current) / 1000),
+      ...ctx,
+      ...gaIds,
     };
 
     try {
@@ -58,6 +119,12 @@ export default function Page() {
         });
 
         if (response.ok) {
+          trackEvent('form_submit', {
+            page_town: 'brand-hub',
+            form_source: 'contact_form',
+            preferred_contact: formData.preferredContact,
+            interests_count: formData.interests.length,
+          });
           setSubmitStatus({
             type: 'success',
             message: "Thank you! We'll contact you within 2 hours.",
