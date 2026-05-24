@@ -180,7 +180,22 @@ export function ChatbotWidget() {
   return (
     <>
       <button
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => {
+          const next = !isOpen
+          setIsOpen(next)
+          if (next && messages.length === 0) {
+            const welcomeMessage: ChatMessage = {
+              id: `msg_${Date.now()}`,
+              sessionId,
+              message: CONSTANTS.CHATBOT_WELCOME_MESSAGE,
+              timestamp: new Date().toISOString(),
+              pageUrl: window.location.href,
+              source: CONSTANTS.WEBHOOK_SOURCE_CHATBOT,
+              isBot: true,
+            }
+            setMessages([welcomeMessage])
+          }
+        }}
         className="fixed bottom-8 right-8 w-16 h-16 bg-terracotta border-3 border-charcoal shadow-brutal rounded-full flex items-center justify-center hover:-translate-x-1 hover:-translate-y-1 hover:shadow-brutal-lg transition-all duration-200 z-50 group"
         style={{ bottom: 'calc(2rem + env(safe-area-inset-bottom))' }}
         aria-label={isOpen ? 'Close chat' : 'Open chat'}
@@ -235,7 +250,7 @@ export function ChatbotWidget() {
                 </div>
               </div>
             )}
-            {!startersUsed && !isLoading && messages.length > 0 && (
+            {!startersUsed && !isLoading && (
               <div className="pt-1">
                 <p className="text-[11px] uppercase tracking-wide text-charcoal/60 font-bold mb-2">
                   Quick questions
