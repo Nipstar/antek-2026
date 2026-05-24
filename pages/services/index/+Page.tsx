@@ -56,7 +56,7 @@ export default function Page() {
             </p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <a href="/contact">
-                <Button variant="primary">Book a free 15-min chat</Button>
+                <Button variant="primary">Book a free 30-min chat</Button>
               </a>
               <a href="/ai-receptionist">
                 <Button variant="secondary">See AI Receptionist</Button>
@@ -146,7 +146,7 @@ export default function Page() {
           </p>
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
             <a href="/contact">
-              <Button variant="primary">Book a free 15-min chat</Button>
+              <Button variant="primary">Book a free 30-min chat</Button>
             </a>
             <a href="tel:03330389960">
               <Button variant="secondary">Call 0333 038 9960</Button>

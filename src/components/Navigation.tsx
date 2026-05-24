@@ -85,7 +85,7 @@ export function Navigation() {
               href="/contact"
               className="px-4 py-2 md:px-5 md:py-2.5 lg:px-6 lg:py-3 bg-terracotta border-3 border-charcoal ring-1 ring-white ring-inset shadow-brutal font-black uppercase text-off-white text-xs md:text-sm hover:shadow-brutal-lg hover:scale-105 transition-all duration-300 whitespace-nowrap"
             >
-              Book a free 15-min chat
+              Book a free 30-min chat
             </a>
           </div>
 
@@ -130,7 +130,7 @@ export function Navigation() {
                 onClick={() => setIsOpen(false)}
                 className="w-full px-6 py-3 bg-terracotta border-3 border-charcoal ring-1 ring-white ring-inset shadow-brutal font-black uppercase text-off-white text-sm hover:shadow-brutal-lg hover:scale-105 transition-all duration-300 text-center block"
               >
-                Book a free 15-min chat
+                Book a free 30-min chat
               </a>
             </div>
           </div>

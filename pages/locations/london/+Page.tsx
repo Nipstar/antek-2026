@@ -34,7 +34,7 @@ export default function Page() {
             <p className="text-sm text-mid-gray mb-8">By <a href="/about" className="underline hover:text-terracotta transition-colors">Andy Norman</a>, Founder | 30+ years in technology</p>
             <div className="flex flex-col md:flex-row gap-4 md:gap-6">
               <a href="/contact">
-                <Button variant="primary">Book a free 15-min chat</Button>
+                <Button variant="primary">Book a free 30-min chat</Button>
               </a>
               <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
             </div>
@@ -256,12 +256,12 @@ export default function Page() {
             London Speed. Without London Prices.
           </h2>
           <p className="text-lg md:text-xl text-off-white/90 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Book a free 15-minute chat. We'll tell you exactly what AI can do for your London business &mdash; and what it can't.
+            Book a free 30-minute chat. We'll tell you exactly what AI can do for your London business &mdash; and what it can't.
           </p>
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
             <VoiceDemoButton onClick={() => setIsVoiceChatOpen(true)} />
             <a href="/contact">
-              <Button variant="secondary">Book a free 15-min chat</Button>
+              <Button variant="secondary">Book a free 30-min chat</Button>
             </a>
           </div>
         </div>

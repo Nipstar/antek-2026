@@ -502,7 +502,7 @@ export default function Page() {
             Find Out If AI&rsquo;s Recommending You (Or Just Your Competitors)
           </h2>
           <p className="text-lg md:text-xl text-off-white/90 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Book a free 15-minute AI visibility check. We&rsquo;ll run your business through ChatGPT and Perplexity live on the call. No pitch, no obligation.
+            Book a free 30-minute AI visibility check. We&rsquo;ll run your business through ChatGPT and Perplexity live on the call. No pitch, no obligation.
           </p>
           <div className="flex flex-col md:flex-row gap-4 md:gap-6 justify-center">
             <a href="/contact">

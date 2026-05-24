@@ -205,7 +205,7 @@ export function Head() {
         name: 'Do you offer discounts for multi-product bundles?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. Discounts are available when taking two or more products. Book a free 15-minute call to discuss.',
+          text: 'Yes. Discounts are available when taking two or more products. Book a free 30-minute call to discuss.',
         },
       },
       {
