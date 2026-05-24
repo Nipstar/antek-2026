@@ -58,6 +58,7 @@ export function StickyMobileCTA() {
   return (
     <div
       aria-hidden={!visible}
+      style={{ paddingBottom: 'env(safe-area-inset-bottom)' }}
       className={`md:hidden fixed bottom-0 left-0 right-0 z-[9998] grid grid-cols-2 border-t-3 border-charcoal bg-charcoal/95 backdrop-blur shadow-brutal transition-transform duration-200 ${
         visible ? 'translate-y-0' : 'translate-y-full pointer-events-none'
       }`}

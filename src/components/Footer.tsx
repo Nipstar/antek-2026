@@ -27,37 +27,37 @@ export function Footer() {
             <p className="font-black uppercase text-off-white text-sm tracking-tight-lg mb-6">Services</p>
             <ul className="space-y-4">
               <li>
-                <a href="/ai-receptionist" className="text-off-white/80 hover:text-terracotta transition-colors text-sm">
+                <a href="/ai-receptionist" className="text-off-white/80 hover:text-terracotta transition-colors text-sm inline-block min-h-[36px] py-1.5">
                   AI Receptionist
                 </a>
               </li>
               <li>
-                <a href="/services/ai-chatbots" className="text-off-white/80 hover:text-terracotta transition-colors text-sm">
+                <a href="/services/ai-chatbots" className="text-off-white/80 hover:text-terracotta transition-colors text-sm inline-block min-h-[36px] py-1.5">
                   AI Chatbots
                 </a>
               </li>
               <li>
-                <a href="/services/ai-voice-assistants" className="text-off-white/80 hover:text-terracotta transition-colors text-sm">
+                <a href="/services/ai-voice-assistants" className="text-off-white/80 hover:text-terracotta transition-colors text-sm inline-block min-h-[36px] py-1.5">
                   Voice AI
                 </a>
               </li>
               <li>
-                <a href="/services/workflow-automation" className="text-off-white/80 hover:text-terracotta transition-colors text-sm">
+                <a href="/services/workflow-automation" className="text-off-white/80 hover:text-terracotta transition-colors text-sm inline-block min-h-[36px] py-1.5">
                   Automation
                 </a>
               </li>
               <li>
-                <a href="/services/geo-audit" className="text-off-white/80 hover:text-terracotta transition-colors text-sm">
+                <a href="/services/geo-audit" className="text-off-white/80 hover:text-terracotta transition-colors text-sm inline-block min-h-[36px] py-1.5">
                   GEO Audit
                 </a>
               </li>
               <li>
-                <a href="/pricing" className="text-off-white/80 hover:text-terracotta transition-colors text-sm">
+                <a href="/pricing" className="text-off-white/80 hover:text-terracotta transition-colors text-sm inline-block min-h-[36px] py-1.5">
                   Pricing
                 </a>
               </li>
               <li>
-                <a href="https://blog.antekautomation.com" target="_blank" rel="noopener noreferrer" className="text-off-white/80 hover:text-terracotta transition-colors text-sm">
+                <a href="https://blog.antekautomation.com" target="_blank" rel="noopener noreferrer" className="text-off-white/80 hover:text-terracotta transition-colors text-sm inline-block min-h-[36px] py-1.5">
                   Blog
                 </a>
               </li>
@@ -78,20 +78,20 @@ export function Footer() {
                 <a
                   key={city.slug}
                   href={`/locations/${city.slug}`}
-                  className="text-off-white/80 hover:text-terracotta transition-colors text-sm"
+                  className="text-off-white/80 hover:text-terracotta transition-colors text-sm inline-block min-h-[36px] py-1.5"
                 >
                   {city.name}
                 </a>
               ))}
               <a
                 href="/locations/salisbury"
-                className="text-off-white/80 hover:text-terracotta transition-colors text-sm"
+                className="text-off-white/80 hover:text-terracotta transition-colors text-sm inline-block min-h-[36px] py-1.5"
               >
                 Salisbury
               </a>
               <a
                 href="/locations/newbury"
-                className="text-off-white/80 hover:text-terracotta transition-colors text-sm"
+                className="text-off-white/80 hover:text-terracotta transition-colors text-sm inline-block min-h-[36px] py-1.5"
               >
                 Newbury
               </a>
@@ -131,12 +131,12 @@ export function Footer() {
             <p className="font-black uppercase text-off-white text-sm tracking-tight-lg mb-6">Legal</p>
             <ul className="space-y-4">
               <li>
-                <a href="/terms-of-business" className="text-off-white/80 hover:text-terracotta transition-colors text-sm">
+                <a href="/terms-of-business" className="text-off-white/80 hover:text-terracotta transition-colors text-sm inline-block min-h-[36px] py-1.5">
                   Terms of Business
                 </a>
               </li>
               <li>
-                <a href="/privacy-policy" className="text-off-white/80 hover:text-terracotta transition-colors text-sm">
+                <a href="/privacy-policy" className="text-off-white/80 hover:text-terracotta transition-colors text-sm inline-block min-h-[36px] py-1.5">
                   Privacy Policy
                 </a>
               </li>

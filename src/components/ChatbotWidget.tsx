@@ -182,6 +182,7 @@ export function ChatbotWidget() {
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="fixed bottom-8 right-8 w-16 h-16 bg-terracotta border-3 border-charcoal shadow-brutal rounded-full flex items-center justify-center hover:-translate-x-1 hover:-translate-y-1 hover:shadow-brutal-lg transition-all duration-200 z-50 group"
+        style={{ bottom: 'calc(2rem + env(safe-area-inset-bottom))' }}
         aria-label={isOpen ? 'Close chat' : 'Open chat'}
         title={isOpen ? 'Close chat' : 'Chat with us'}
       >

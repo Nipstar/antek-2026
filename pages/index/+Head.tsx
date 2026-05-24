@@ -16,6 +16,10 @@ export function Head() {
     },
     "accessMode": ["textual", "visual"],
     "inLanguage": "en-GB",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".hero-description", ".snippet-bait", "h1"]
+    },
     "keywords": [
       "AI automation agency UK",
       "AI voice agents",
@@ -63,10 +67,13 @@ export function Head() {
       "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.antekautomation.com/#webpage" },
       "image": {
         "@type": "ImageObject",
-        "url": "https://www.antekautomation.com/logo.png",
-        "contentUrl": "https://www.antekautomation.com/logo.png",
-        "width": 200,
-        "height": 62
+        "url": "https://www.antekautomation.com/logo.svg",
+        "contentUrl": "https://www.antekautomation.com/logo.svg"
+      },
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.antekautomation.com/logo.svg",
+        "contentUrl": "https://www.antekautomation.com/logo.svg"
       },
       "name": "Antek Automation",
       "alternateName": ["Antek AI Automation"],
@@ -757,17 +764,6 @@ export function Head() {
     }
   };
 
-  const speakableWebPageSchema = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Antek Automation - AI Automation Agency UK",
-    "url": "https://antekautomation.com",
-    "speakable": {
-      "@type": "SpeakableSpecification",
-      "cssSelector": [".hero-description", ".snippet-bait", "h1"]
-    }
-  };
-
 
   return (
     <>
@@ -815,11 +811,6 @@ export function Head() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(geoServiceSchema) }}
       />
 
-      {/* JSON-LD: Speakable WebPage schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(speakableWebPageSchema) }}
-      />
     </>
   );
 }

@@ -2,11 +2,18 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist/client",
   "framework": null,
+  "trailingSlash": false,
+  "cleanUrls": true,
   "redirects": [
     {
       "source": "/(.*)",
       "has": [{ "type": "host", "value": "antekautomation.com" }],
       "destination": "https://www.antekautomation.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
       "permanent": true
     }
   ],
