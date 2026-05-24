@@ -12,6 +12,9 @@ import '../src/index.css'
 const ChatbotWidget = lazy(() =>
   import('../src/components/ChatbotWidget').then((m) => ({ default: m.ChatbotWidget }))
 )
+const BookingPopupCTA = lazy(() =>
+  import('../src/components/BookingPopupCTA').then((m) => ({ default: m.BookingPopupCTA }))
+)
 
 export function Layout({ children }: { children: React.ReactNode }) {
   const [chatbotReady, setChatbotReady] = useState(false)
@@ -100,6 +103,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       {chatbotReady && (
         <Suspense fallback={null}>
           <ChatbotWidget />
+          <BookingPopupCTA />
         </Suspense>
       )}
       <StickyMobileCTA />
