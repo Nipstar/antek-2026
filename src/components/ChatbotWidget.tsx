@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { X, Send, MessageCircle } from 'lucide-react';
 import { ChatMessage } from '../types';
 import { CONSTANTS } from '../constants';
+import { getStoredConsent } from '../utils/consent';
 
 const CHATBOT_WEBHOOK_URL = import.meta.env.VITE_CHATBOT_WEBHOOK_URL || '';
 
@@ -20,32 +21,43 @@ export function ChatbotWidget() {
   const [startersUsed, setStartersUsed] = useState(false);
   const [sessionId] = useState(() => `${CONSTANTS.SESSION_ID_PREFIX}_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`);
   const [hasAutoOpened, setHasAutoOpened] = useState(false);
+  const [consentDecided, setConsentDecided] = useState(() =>
+    typeof window === 'undefined' ? false : getStoredConsent() !== null
+  );
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const handler = () => setConsentDecided(true);
+    window.addEventListener('consentDecided', handler);
+    return () => window.removeEventListener('consentDecided', handler);
+  }, []);
+
+  useEffect(() => {
+    if (!consentDecided) return;
     const hasVisited = localStorage.getItem(CONSTANTS.CHATBOT_VISITED_KEY);
-    if (!hasVisited && !hasAutoOpened) {
-      const timer = setTimeout(() => {
-        setIsOpen(true);
-        setHasAutoOpened(true);
-        localStorage.setItem(CONSTANTS.CHATBOT_VISITED_KEY, 'true');
+    if (hasVisited || hasAutoOpened) return;
 
-        const welcomeMessage: ChatMessage = {
-          id: `msg_${Date.now()}`,
-          sessionId,
-          message: CONSTANTS.CHATBOT_WELCOME_MESSAGE,
-          timestamp: new Date().toISOString(),
-          pageUrl: window.location.href,
-          source: CONSTANTS.WEBHOOK_SOURCE_CHATBOT,
-          isBot: true,
-        };
-        setMessages([welcomeMessage]);
-      }, CONSTANTS.CHATBOT_AUTO_OPEN_DELAY_MS);
+    const timer = setTimeout(() => {
+      setIsOpen(true);
+      setHasAutoOpened(true);
+      localStorage.setItem(CONSTANTS.CHATBOT_VISITED_KEY, 'true');
 
-      return () => clearTimeout(timer);
-    }
-  }, [hasAutoOpened, sessionId]);
+      const welcomeMessage: ChatMessage = {
+        id: `msg_${Date.now()}`,
+        sessionId,
+        message: CONSTANTS.CHATBOT_WELCOME_MESSAGE,
+        timestamp: new Date().toISOString(),
+        pageUrl: window.location.href,
+        source: CONSTANTS.WEBHOOK_SOURCE_CHATBOT,
+        isBot: true,
+      };
+      setMessages([welcomeMessage]);
+    }, CONSTANTS.CHATBOT_AUTO_OPEN_DELAY_MS);
+
+    return () => clearTimeout(timer);
+  }, [consentDecided, hasAutoOpened, sessionId]);
 
   // Listen for custom event to open chatbot
   useEffect(() => {
@@ -214,7 +226,7 @@ export function ChatbotWidget() {
       </button>
 
       {isOpen && (
-        <div className="fixed bottom-24 left-4 right-4 md:bottom-24 md:right-6 md:left-auto w-auto md:w-[400px] max-h-[calc(100vh-150px)] md:h-[600px] bg-off-white border-3 border-charcoal shadow-brutal-chat flex flex-col z-50">
+        <div className="fixed bottom-24 left-4 right-4 xl:bottom-24 xl:right-6 xl:left-auto w-auto xl:w-[400px] max-h-[calc(100vh-150px)] xl:h-[600px] bg-off-white border-3 border-charcoal shadow-brutal-chat flex flex-col z-50">
           <div className="bg-warm-beige border-b-3 border-charcoal p-4 flex items-center justify-between">
             <div>
               <h3 className="font-black text-xl uppercase">Antek AI</h3>

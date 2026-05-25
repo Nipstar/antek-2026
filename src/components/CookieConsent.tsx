@@ -17,11 +17,13 @@ export function CookieConsent() {
   const accept = () => {
     setStoredConsent('accepted')
     setVisible(false)
+    window.dispatchEvent(new Event('consentDecided'))
   }
 
   const reject = () => {
     setStoredConsent('rejected')
     setVisible(false)
+    window.dispatchEvent(new Event('consentDecided'))
   }
 
   if (!visible) return null
@@ -31,7 +33,7 @@ export function CookieConsent() {
       role="dialog"
       aria-live="polite"
       aria-label="Cookie consent"
-      className="fixed bottom-4 left-4 right-4 md:left-auto md:right-6 md:bottom-6 md:max-w-md z-50 bg-charcoal border-3 border-charcoal shadow-brutal text-off-white p-5 md:p-6"
+      className="fixed bottom-28 left-4 right-4 xl:left-auto xl:right-6 xl:bottom-6 xl:max-w-md z-50 bg-charcoal border-3 border-charcoal shadow-brutal text-off-white p-5 md:p-6"
     >
       <h2 className="font-black uppercase tracking-tight-lg text-lg mb-2">
         Cookies

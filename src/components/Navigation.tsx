@@ -45,7 +45,7 @@ export function Navigation() {
             </span>
           </a>
 
-          <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
+          <div className="hidden xl:flex items-center space-x-6 lg:space-x-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
@@ -90,7 +90,7 @@ export function Navigation() {
           </div>
 
           <button
-            className="md:hidden p-2"
+            className="xl:hidden p-2"
             onClick={() => setIsOpen(!isOpen)}
             aria-label={isOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={isOpen}
@@ -100,7 +100,7 @@ export function Navigation() {
         </div>
 
         {isOpen && (
-          <div className="md:hidden border-t-3 border-charcoal bg-warm-beige">
+          <div className="xl:hidden border-t-3 border-charcoal bg-warm-beige">
             <div className="flex flex-col space-y-4 p-6">
               {navLinks.map((link) => (
                 <a
