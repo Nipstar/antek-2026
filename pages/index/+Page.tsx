@@ -6,7 +6,6 @@ import { VoiceDemoButton } from '../../src/components/VoiceDemoButton';
 import { CaseStudyCard } from '../../src/components/CaseStudyCard';
 import { QuickRecap } from '../../src/components/QuickRecap';
 import { ResourcesCompliance } from '../../src/components/ResourcesCompliance';
-import { QuickForm } from '../../src/components/QuickForm';
 import { TestimonialsStrip } from '../../src/components/TestimonialsStrip';
 import { TrustStrip } from '../../src/components/TrustStrip';
 import { openBookingPopup } from '../../src/components/BookingPopupCTA';
@@ -52,9 +51,6 @@ export default function Page() {
               AI voice agents from &pound;97/month &middot; Workflow automation from &pound;250 &middot; <a href="/pricing" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">See full pricing</a>
             </p>
             <TrustStrip className="mt-6" />
-            <div className="mt-8 max-w-2xl">
-              <QuickForm source="home-hero" pageTown="brand-hub" />
-            </div>
           </div>
         </div>
       </section>

@@ -2,7 +2,6 @@ import { Button } from '../../../src/components/Button';
 import { CalBooking } from '../../../src/components/CalBooking';
 import { Card } from '../../../src/components/Card';
 import { Icon } from '../../../src/components/Icon';
-import { QuickForm } from '../../../src/components/QuickForm';
 import { TrustStrip } from '../../../src/components/TrustStrip';
 
 export default function Page() {
@@ -299,9 +298,6 @@ export default function Page() {
               <a href="mailto:hello@antekautomation.com"><Button variant="secondary">Email hello@antekautomation.com</Button></a>
             </div>
             <TrustStrip className="justify-center mb-8" variant="light" />
-            <div className="max-w-2xl mx-auto mb-10">
-              <QuickForm source="newbury-final-cta" pageTown="newbury" />
-            </div>
           </div>
           <CalBooking />
         </div>

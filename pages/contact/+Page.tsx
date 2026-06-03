@@ -6,8 +6,11 @@ import { CONSTANTS } from '../../src/constants';
 import { SocialLinks } from '../../src/components/SocialLinks';
 import { trackEvent } from '../../src/utils/analytics';
 
-const CONTACT_WEBHOOK_URL = import.meta.env.VITE_CONTACT_WEBHOOK_URL || '';
 const GA_MEASUREMENT_ID = import.meta.env.VITE_GOOGLE_ANALYTICS_ID || '';
+const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY || '';
+// Submissions are routed through a Vercel serverless function that verifies the
+// reCAPTCHA token and forwards to n8n — the webhook URL stays server-side.
+const CONTACT_ENDPOINT = '/api/contact';
 
 function getUtmAndContext() {
   if (typeof window === 'undefined') return {} as Record<string, string>;
@@ -72,6 +75,8 @@ export default function Page() {
   }>({ type: null, message: '' });
 
   const pageStartRef = useRef<number>(Date.now());
+  const recaptchaRef = useRef<HTMLDivElement>(null);
+  const recaptchaWidgetId = useRef<number | null>(null);
 
   useEffect(() => {
     pageStartRef.current = Date.now();
@@ -79,6 +84,41 @@ export default function Page() {
       const count = parseInt(sessionStorage.getItem('antek_pages_viewed') || '0', 10);
       sessionStorage.setItem('antek_pages_viewed', String(count + 1));
     }
+  }, []);
+
+  // Load and render the reCAPTCHA v2 challenge (client-side only).
+  useEffect(() => {
+    if (!RECAPTCHA_SITE_KEY || typeof window === 'undefined') return;
+
+    const renderWidget = () => {
+      if (recaptchaWidgetId.current !== null) return;
+      if (typeof window.grecaptcha?.render !== 'function' || !recaptchaRef.current) return;
+      recaptchaWidgetId.current = window.grecaptcha.render(recaptchaRef.current, {
+        sitekey: RECAPTCHA_SITE_KEY,
+      });
+    };
+
+    if (typeof window.grecaptcha?.render === 'function') {
+      renderWidget();
+      return;
+    }
+
+    if (!document.querySelector('script[data-recaptcha]')) {
+      const script = document.createElement('script');
+      script.src = 'https://www.google.com/recaptcha/api.js?render=explicit';
+      script.async = true;
+      script.defer = true;
+      script.setAttribute('data-recaptcha', 'true');
+      document.head.appendChild(script);
+    }
+
+    const interval = window.setInterval(() => {
+      if (typeof window.grecaptcha?.render === 'function') {
+        window.clearInterval(interval);
+        renderWidget();
+      }
+    }, 200);
+    return () => window.clearInterval(interval);
   }, []);
 
   const handleCheckboxChange = (value: string) => {
@@ -92,6 +132,20 @@ export default function Page() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Require a solved reCAPTCHA challenge before doing anything else.
+    let recaptchaToken = '';
+    if (RECAPTCHA_SITE_KEY) {
+      recaptchaToken =
+        window.grecaptcha && recaptchaWidgetId.current !== null
+          ? window.grecaptcha.getResponse(recaptchaWidgetId.current)
+          : '';
+      if (!recaptchaToken) {
+        setSubmitStatus({ type: 'error', message: 'Please complete the reCAPTCHA challenge.' });
+        return;
+      }
+    }
+
     setIsSubmitting(true);
     setSubmitStatus({ type: null, message: '' });
 
@@ -108,45 +162,24 @@ export default function Page() {
     };
 
     try {
-      if (CONTACT_WEBHOOK_URL) {
-        const response = await fetch(CONTACT_WEBHOOK_URL, {
-          method: 'POST',
-          mode: 'cors',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(payload),
-        });
+      const response = await fetch(CONTACT_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ ...payload, recaptchaToken }),
+      });
 
-        if (response.ok) {
-          trackEvent('form_submit', {
-            page_town: 'brand-hub',
-            form_source: 'contact_form',
-            preferred_contact: formData.preferredContact,
-            interests_count: formData.interests.length,
-          });
-          setSubmitStatus({
-            type: 'success',
-            message: "Thank you! We'll contact you within 2 hours.",
-          });
-          setFormData({
-            name: '',
-            businessName: '',
-            phone: '',
-            email: '',
-            serviceType: '',
-            interests: [],
-            websiteUrl: '',
-            message: '',
-            preferredContact: 'either',
-          });
-        } else {
-          throw new Error('Webhook failed');
-        }
-      } else {
+      if (response.ok) {
+        trackEvent('form_submit', {
+          page_town: 'brand-hub',
+          form_source: 'contact_form',
+          preferred_contact: formData.preferredContact,
+          interests_count: formData.interests.length,
+        });
         setSubmitStatus({
           type: 'success',
-          message: `Thank you! We'll contact you within 2 hours. You can also reach us directly at ${CONSTANTS.CONTACT_EMAIL}`,
+          message: "Thank you! We'll contact you within 2 hours.",
         });
         setFormData({
           name: '',
@@ -159,6 +192,8 @@ export default function Page() {
           message: '',
           preferredContact: 'either',
         });
+      } else {
+        throw new Error('Submission failed');
       }
     } catch {
       setSubmitStatus({
@@ -167,6 +202,9 @@ export default function Page() {
       });
     } finally {
       setIsSubmitting(false);
+      if (RECAPTCHA_SITE_KEY && window.grecaptcha && recaptchaWidgetId.current !== null) {
+        window.grecaptcha.reset(recaptchaWidgetId.current);
+      }
     }
   };
 
@@ -345,6 +383,10 @@ export default function Page() {
                 ))}
               </div>
             </div>
+
+            {RECAPTCHA_SITE_KEY && (
+              <div ref={recaptchaRef} className="flex justify-center" />
+            )}
 
             {submitStatus.type && (
               <div
