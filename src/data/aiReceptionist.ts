@@ -477,8 +477,8 @@ export const industries: Record<string, IndustryData> = {
   therapists: {
     slug: 'therapists',
     name: 'Therapists',
-    metaTitle: 'AI Receptionist for Therapists | Handle Enquiries Between Sessions',
-    metaDescription: 'AI phone answering for therapists and counsellors. Screens new client enquiries, captures presenting concerns, and books initial consultations. From \u00a397/month.',
+    metaTitle: 'AI Receptionist for Therapists | 24/7 Booking | Antek',
+    metaDescription: 'An AI receptionist for therapy practices \u2014 answers calls, books sessions and handles enquiries 24/7, so you never interrupt a session. Book a free demo.',
     iconName: 'Brain',
     gridDescription: 'AI phone answering that handles enquiries and books consultations while you\u2019re in session.',
 

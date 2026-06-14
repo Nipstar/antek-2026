@@ -131,20 +131,20 @@ export function Head() {
 
   return (
     <>
-      <title>AI Receptionist for UK Businesses | Never Miss a Call Again</title>
+      <title>AI Receptionist UK | Never Miss a Call Again | Antek</title>
       <meta
         name="description"
-        content="AI receptionist that answers your phone 24/7, screens callers, captures details, and books appointments. Built for UK trades, professional services, and healthcare. From £97/month."
+        content="An AI receptionist that answers every call 24/7, books appointments and sends summaries. For UK trades and service businesses. Less than a part-timer."
       />
       <link rel="canonical" href={canonical} />
 
       <meta
         property="og:title"
-        content="AI Receptionist for UK Businesses | Never Miss a Call Again"
+        content="AI Receptionist UK | Never Miss a Call Again | Antek"
       />
       <meta
         property="og:description"
-        content="AI receptionist that answers your phone 24/7, screens callers, captures details, and books appointments. From £97/month."
+        content="An AI receptionist that answers every call 24/7, books appointments and sends summaries. For UK trades and service businesses. Less than a part-timer."
       />
       <meta property="og:url" content={canonical} />
       <meta property="og:type" content="website" />
@@ -153,11 +153,11 @@ export function Head() {
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:title"
-        content="AI Receptionist for UK Businesses | Never Miss a Call Again"
+        content="AI Receptionist UK | Never Miss a Call Again | Antek"
       />
       <meta
         name="twitter:description"
-        content="AI receptionist that answers your phone 24/7, screens callers, captures details, and books appointments. From £97/month."
+        content="An AI receptionist that answers every call 24/7, books appointments and sends summaries. For UK trades and service businesses. Less than a part-timer."
       />
 
       <script

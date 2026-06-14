@@ -766,19 +766,19 @@ export function Head() {
 
   return (
     <>
-      <title>AI Automation for UK Businesses | Antek Automation</title>
-      <meta name="description" content="We build AI voice agents, chatbots &amp; workflow automation for UK businesses. Stop missing calls. Start capturing leads 24/7. Based in Hampshire." />
+      <title>AI Automation Agency UK | Stop Missing Calls | Antek</title>
+      <meta name="description" content="Hampshire-based AI automation agency. Voice agents, chatbots and workflow automation that answer calls and capture leads 24/7. Certified Retell partner." />
       <link rel="canonical" href="https://www.antekautomation.com/" />
 
       {/* Open Graph */}
-      <meta property="og:title" content="AI Automation for UK Businesses | Antek Automation" />
-      <meta property="og:description" content="We build AI voice agents, chatbots &amp; workflow automation for UK businesses. Stop missing calls. Start capturing leads 24/7. Based in Hampshire." />
+      <meta property="og:title" content="AI Automation Agency UK | Stop Missing Calls | Antek" />
+      <meta property="og:description" content="Hampshire-based AI automation agency. Voice agents, chatbots and workflow automation that answer calls and capture leads 24/7. Certified Retell partner." />
       <meta property="og:url" content="https://www.antekautomation.com/" />
       <meta property="og:type" content="website" />
 
       {/* Twitter Card */}
-      <meta name="twitter:title" content="AI Automation for UK Businesses | Antek Automation" />
-      <meta name="twitter:description" content="We build AI voice agents, chatbots &amp; workflow automation for UK businesses. Stop missing calls. Start capturing leads 24/7. Based in Hampshire." />
+      <meta name="twitter:title" content="AI Automation Agency UK | Stop Missing Calls | Antek" />
+      <meta name="twitter:description" content="Hampshire-based AI automation agency. Voice agents, chatbots and workflow automation that answer calls and capture leads 24/7. Certified Retell partner." />
 
       {/* JSON-LD: WebPage + Organization schema */}
       <script

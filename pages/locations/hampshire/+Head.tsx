@@ -1,19 +1,19 @@
 export function Head() {
   return (
     <>
-      <title>AI Automation Services Hampshire | Voice Agents &amp; Chatbots</title>
-      <meta name="description" content="Hampshire-based AI automation agency. We build voice agents, chatbots & workflow automation for local service businesses. Book a free 30-min discovery call with Andy." />
+      <title>AI Agency Hampshire | Voice Agents &amp; Automation | Antek</title>
+      <meta name="description" content="Hampshire's specialist AI automation agency, based in Andover. Voice agents and chatbots that answer every call and capture every lead. Book a free call." />
       <link rel="canonical" href="https://www.antekautomation.com/locations/hampshire" />
 
       {/* Open Graph */}
-      <meta property="og:title" content="AI Automation Services Hampshire | Voice Agents & Chatbots" />
-      <meta property="og:description" content="Hampshire-based AI automation agency. We build voice agents, chatbots & workflow automation for local service businesses. Book a free 30-min discovery call with Andy." />
+      <meta property="og:title" content="AI Agency Hampshire | Voice Agents & Automation | Antek" />
+      <meta property="og:description" content="Hampshire's specialist AI automation agency, based in Andover. Voice agents and chatbots that answer every call and capture every lead. Book a free call." />
       <meta property="og:url" content="https://www.antekautomation.com/locations/hampshire" />
       <meta property="og:type" content="website" />
 
       {/* Twitter Card */}
-      <meta name="twitter:title" content="AI Automation Services Hampshire | Voice Agents & Chatbots" />
-      <meta name="twitter:description" content="Hampshire-based AI automation agency. We build voice agents, chatbots & workflow automation for local service businesses. Book a free 30-min discovery call with Andy." />
+      <meta name="twitter:title" content="AI Agency Hampshire | Voice Agents & Automation | Antek" />
+      <meta name="twitter:description" content="Hampshire's specialist AI automation agency, based in Andover. Voice agents and chatbots that answer every call and capture every lead. Book a free call." />
 
       {/* BreadcrumbList Schema */}
       <script
