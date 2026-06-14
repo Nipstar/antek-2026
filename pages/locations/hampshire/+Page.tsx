@@ -218,6 +218,16 @@ export default function Page() {
                 Most voice agents are live within 5&ndash;7 working days from our first call. For Hampshire businesses, we can usually do a face-to-face kickoff meeting the same week if you prefer, which speeds things up even further.
               </div>
             </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                What does it cost for a Hampshire business?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                AI voice agents start from &pound;97/month and chatbots from &pound;57/month, with setup from &pound;249. Most Hampshire businesses recover that within the first few captured calls. Book a free call for an exact quote.
+              </div>
+            </details>
           </div>
         </div>
       </section>

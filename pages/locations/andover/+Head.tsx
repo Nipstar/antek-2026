@@ -129,7 +129,7 @@ export function Head() {
                 name: 'Do you work with businesses outside Andover?',
                 acceptedAnswer: {
                   '@type': 'Answer',
-                  text: "Absolutely. We serve all of Hampshire and the UK. Andover is our base, but AI automation works remotely — we've got clients from Glasgow to Southampton. That said, we do have a soft spot for local businesses and can usually meet face-to-face within the week.",
+                  text: "Absolutely. We serve all of Hampshire and the UK. Andover is our base, but AI automation works remotely — we've got clients right across the UK, from here in Hampshire down to Southampton. That said, we do have a soft spot for local businesses and can usually meet face-to-face within the week.",
                 },
               },
               {
@@ -146,6 +146,14 @@ export function Head() {
                 acceptedAnswer: {
                   '@type': 'Answer',
                   text: 'AI voice agents start from £97/month. For an Andover tradesperson missing even 3-4 calls a week, the return on investment is usually clear within the first couple of weeks.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'How quickly can you get me set up?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: "Most Andover businesses are live within 5-7 working days of our first call. If you'd rather kick off in person, we can usually meet the same week — being on your doorstep keeps things quick.",
                 },
               },
             ],

@@ -80,6 +80,53 @@ export function Head() {
     },
   };
 
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Who runs Antek Automation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Antek is led by founder Andy Norman, who has 30+ years in technology. You deal with him directly — not an account manager or an offshore call centre.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Where are you based?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We are based in Andover, Hampshire, and work with businesses across Hampshire and the whole UK remotely.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Are you a certified partner?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Antek is a Certified Retell AI Partner and a member of the Federation of Small Businesses (FSB).',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does Antek actually build?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'AI voice agents, website chatbots, and workflow automation — plus GEO audits that check how AI search engines like ChatGPT see your business.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I get started?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Book a free 30-minute discovery call. We will look at where AI can save you time and capture more leads — no obligation, no jargon.',
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <title>About Antek Automation | AI Automation Agency UK</title>
@@ -127,6 +174,12 @@ export function Head() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+
+      {/* FAQPage Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
     </>
   );

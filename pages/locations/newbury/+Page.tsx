@@ -239,7 +239,7 @@ export default function Page() {
             FAQs — AI Automation in Newbury
           </h2>
           <div className="space-y-6">
-            <Card>
+            <Card data-faq-item>
               <h3 className="font-black text-base uppercase text-charcoal mb-3">Do you serve businesses in Newbury from your Hampshire base?</h3>
               <p className="text-mid-gray text-sm leading-relaxed">
                 Yes — Andover to Newbury is 18 miles straight up the A34, around 25 minutes. We
@@ -247,14 +247,14 @@ export default function Page() {
                 person whenever it adds value.
               </p>
             </Card>
-            <Card>
+            <Card data-faq-item>
               <h3 className="font-black text-base uppercase text-charcoal mb-3">How quickly can you visit Newbury for in-person meetings?</h3>
               <p className="text-mid-gray text-sm leading-relaxed">
                 Usually same week, often same day for existing clients. Discovery calls are
                 remote by default to save time on both sides.
               </p>
             </Card>
-            <Card>
+            <Card data-faq-item>
               <h3 className="font-black text-base uppercase text-charcoal mb-3">What does an AI voice agent cost for a Newbury small business?</h3>
               <p className="text-mid-gray text-sm leading-relaxed">
                 Setup from £497, then £97/month for the voice agent on standard plans. Pricing
@@ -262,7 +262,7 @@ export default function Page() {
                 <a className="underline hover:text-terracotta" href="/pricing">pricing page</a>.
               </p>
             </Card>
-            <Card>
+            <Card data-faq-item>
               <h3 className="font-black text-base uppercase text-charcoal mb-3">Do you work with Newbury and Lambourn equestrian businesses?</h3>
               <p className="text-mid-gray text-sm leading-relaxed">
                 Yes. Voice agents handling stable enquiries and chatbots for racing-related
@@ -270,7 +270,7 @@ export default function Page() {
                 knowledge base to the business.
               </p>
             </Card>
-            <Card>
+            <Card data-faq-item>
               <h3 className="font-black text-base uppercase text-charcoal mb-3">Are you used to working with larger Newbury employers and their supply chains?</h3>
               <p className="text-mid-gray text-sm leading-relaxed">
                 We work with SME suppliers into larger Newbury employers including telecoms and

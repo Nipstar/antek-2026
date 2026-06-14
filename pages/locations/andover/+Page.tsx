@@ -235,6 +235,16 @@ export default function Page() {
                 AI voice agents start from &pound;97/month. For an Andover tradesperson missing even 3&ndash;4 calls a week, the return on investment is usually clear within the first couple of weeks.
               </div>
             </details>
+
+            <details className="border-3 border-charcoal bg-white shadow-brutal-sm group">
+              <summary className="font-black text-lg text-charcoal px-6 py-5 cursor-pointer list-none flex justify-between items-center">
+                How quickly can you get me set up?
+                <span className="text-terracotta text-2xl group-open:rotate-45 transition-transform">+</span>
+              </summary>
+              <div className="px-6 pb-6 text-charcoal leading-relaxed border-t-3 border-charcoal pt-4">
+                Most Andover businesses are live within 5&ndash;7 working days of our first call. If you&rsquo;d rather kick off in person, we can usually meet the same week &mdash; being on your doorstep keeps things quick.
+              </div>
+            </details>
           </div>
         </div>
       </section>

@@ -239,6 +239,7 @@ export const industries: Record<string, IndustryData> = {
       { question: 'Can it handle both heating and cooling enquiries?', answer: 'Yes. You define your service range \u2014 boilers, heat pumps, air conditioning, underfloor heating, commercial HVAC \u2014 and it screens accordingly.' },
       { question: 'What about F-Gas and refrigerant handling questions?', answer: 'It doesn\u2019t give technical advice. It captures system type, refrigerant concerns, and fault symptoms, then routes the information to you for assessment.' },
       { question: 'We do maintenance contracts \u2014 can it capture renewal enquiries?', answer: 'Yes. It can identify existing contract holders, capture renewal interest from new callers, and flag commercial maintenance opportunities separately from one-off repair calls.' },
+      { question: 'What happens when someone calls with no heating in winter?', answer: 'It treats loss of heating as a priority. It captures the property details, system type, and how urgent the situation is, then flags the call to you straight away so genuine breakdowns jump the queue during a cold snap.' },
       { question: 'How much does it cost?', answer: 'Plans from \u00a397/month with 120 call minutes included. Setup from \u00a3249. Additional minutes at £0.18/min. Book a quick call for an exact quote.' },
     ],
 
@@ -296,6 +297,7 @@ export const industries: Record<string, IndustryData> = {
       { question: 'Can it handle calls from existing clients too?', answer: 'Yes. It identifies existing clients and either takes a message, transfers the call, or captures what they need \u2014 depending on your preference. New enquiries get the full screening treatment.' },
       { question: 'What about confidentiality?', answer: 'All calls are encrypted. You control what questions are asked and what information is captured. It doesn\u2019t access your systems or client data \u2014 it just handles the front door.' },
       { question: 'We specialise in specific sectors \u2014 can it filter for that?', answer: 'Absolutely. If you only work with property landlords and construction businesses, it can screen for sector fit and politely decline enquiries outside your specialisation.' },
+      { question: 'Can it handle the rush around tax deadlines?', answer: 'Yes. During self-assessment and year-end peaks it answers every call at once, screens new enquiries, and books consultations into your diary, so deadline season no longer means missed calls and lost instructions.' },
       { question: 'How much does it cost?', answer: 'Plans from \u00a397/month with 120 call minutes included. Setup from \u00a3249. Additional minutes at £0.18/min. Book a quick call for an exact quote.' },
     ],
 
@@ -467,6 +469,7 @@ export const industries: Record<string, IndustryData> = {
       { question: 'Can it handle NHS vs private patient screening?', answer: 'Yes. It asks whether they\u2019re looking for NHS or private treatment and screens accordingly. If you\u2019re not accepting NHS patients currently, it can let them know politely.' },
       { question: 'What about nervous patients calling to enquire?', answer: 'The AI is patient and reassuring. It doesn\u2019t rush the conversation. For callers who mention dental anxiety, it can highlight any nervous patient services you offer.' },
       { question: 'We have multiple practitioners \u2014 can it book into specific diaries?', answer: 'Yes. Hygiene appointments go to the hygienist\u2019s diary. Emergency slots go to the duty dentist. New patient check-ups go wherever you want them.' },
+      { question: 'Can it deal with out-of-hours dental emergencies?', answer: 'Yes. Outside opening hours it captures the caller\u2019s details and symptoms, explains your emergency policy, and flags genuine emergencies so you can follow up first thing rather than losing them to another practice overnight.' },
       { question: 'How much does it cost?', answer: 'Plans from \u00a397/month with 120 call minutes included. Setup from \u00a3249. Additional minutes at £0.18/min. Book a quick call for an exact quote.' },
     ],
 

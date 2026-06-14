@@ -227,7 +227,7 @@ export default function Page() {
             FAQs — AI Automation in Salisbury
           </h2>
           <div className="space-y-6">
-            <Card>
+            <Card data-faq-item>
               <h3 className="font-black text-base uppercase text-charcoal mb-3">Do you serve businesses in Salisbury from your Hampshire base?</h3>
               <p className="text-mid-gray text-sm leading-relaxed">
                 Yes — Andover to Salisbury is 18 miles up the A303, around 30 minutes. We work
@@ -235,14 +235,14 @@ export default function Page() {
                 whenever it adds value.
               </p>
             </Card>
-            <Card>
+            <Card data-faq-item>
               <h3 className="font-black text-base uppercase text-charcoal mb-3">How quickly can you visit Salisbury for in-person meetings?</h3>
               <p className="text-mid-gray text-sm leading-relaxed">
                 Usually same week, often same day for existing clients. Discovery calls are remote
                 by default to save time on both sides.
               </p>
             </Card>
-            <Card>
+            <Card data-faq-item>
               <h3 className="font-black text-base uppercase text-charcoal mb-3">What does an AI voice agent cost for a Salisbury small business?</h3>
               <p className="text-mid-gray text-sm leading-relaxed">
                 Setup from £497, then £97/month for the voice agent on standard plans. Pricing
@@ -250,14 +250,14 @@ export default function Page() {
                 <a className="underline hover:text-terracotta" href="/pricing">pricing page</a>.
               </p>
             </Card>
-            <Card>
+            <Card data-faq-item>
               <h3 className="font-black text-base uppercase text-charcoal mb-3">Can you build automation for defence supply chain companies?</h3>
               <p className="text-mid-gray text-sm leading-relaxed">
                 Yes. We've worked with regulated supply chains and understand the data handling
                 and audit requirements. We can build to your security and compliance baseline.
               </p>
             </Card>
-            <Card>
+            <Card data-faq-item>
               <h3 className="font-black text-base uppercase text-charcoal mb-3">Do you work with Salisbury tourism and hospitality businesses?</h3>
               <p className="text-mid-gray text-sm leading-relaxed">
                 Regularly. AI chatbots for booking enquiries and voice agents for after-hours
