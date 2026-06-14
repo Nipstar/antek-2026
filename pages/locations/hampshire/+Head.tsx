@@ -1,19 +1,19 @@
 export function Head() {
   return (
     <>
-      <title>AI Automation Agency Hampshire | Antek Automation</title>
-      <meta name="description" content="Hampshire's specialist AI automation agency, based in Andover. Voice agents and chatbots that answer every call and capture every lead. Book a free call." />
+      <title>AI Agency Hampshire | Voice Agents &amp; Automation | Antek</title>
+      <meta name="description" content="Andover-based AI agency for Hampshire trades and service businesses. Voice agents and chatbots that answer every call and capture leads. Book a free call." />
       <link rel="canonical" href="https://www.antekautomation.com/locations/hampshire" />
 
       {/* Open Graph */}
-      <meta property="og:title" content="AI Automation Agency Hampshire | Antek Automation" />
-      <meta property="og:description" content="Hampshire's specialist AI automation agency, based in Andover. Voice agents and chatbots that answer every call and capture every lead. Book a free call." />
+      <meta property="og:title" content="AI Agency Hampshire | Voice Agents & Automation | Antek" />
+      <meta property="og:description" content="Andover-based AI agency for Hampshire trades and service businesses. Voice agents and chatbots that answer every call and capture leads. Book a free call." />
       <meta property="og:url" content="https://www.antekautomation.com/locations/hampshire" />
       <meta property="og:type" content="website" />
 
       {/* Twitter Card */}
-      <meta name="twitter:title" content="AI Automation Agency Hampshire | Antek Automation" />
-      <meta name="twitter:description" content="Hampshire's specialist AI automation agency, based in Andover. Voice agents and chatbots that answer every call and capture every lead. Book a free call." />
+      <meta name="twitter:title" content="AI Agency Hampshire | Voice Agents & Automation | Antek" />
+      <meta name="twitter:description" content="Andover-based AI agency for Hampshire trades and service businesses. Voice agents and chatbots that answer every call and capture leads. Book a free call." />
 
       {/* BreadcrumbList Schema */}
       <script

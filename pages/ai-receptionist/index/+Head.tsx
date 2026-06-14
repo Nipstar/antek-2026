@@ -131,20 +131,20 @@ export function Head() {
 
   return (
     <>
-      <title>AI Receptionist UK | Never Miss a Call | Antek Automation</title>
+      <title>AI Receptionist UK | Answer Every Call 24/7 | Antek</title>
       <meta
         name="description"
-        content="An AI receptionist that answers every call 24/7, books appointments and sends summaries. For UK trades and service businesses. Less than a part-timer."
+        content="An AI receptionist that answers every call 24/7, books appointments and captures leads for UK businesses. Certified Retell partner. Hear a live demo."
       />
       <link rel="canonical" href={canonical} />
 
       <meta
         property="og:title"
-        content="AI Receptionist UK | Never Miss a Call | Antek Automation"
+        content="AI Receptionist UK | Answer Every Call 24/7 | Antek"
       />
       <meta
         property="og:description"
-        content="An AI receptionist that answers every call 24/7, books appointments and sends summaries. For UK trades and service businesses. Less than a part-timer."
+        content="An AI receptionist that answers every call 24/7, books appointments and captures leads for UK businesses. Certified Retell partner. Hear a live demo."
       />
       <meta property="og:url" content={canonical} />
       <meta property="og:type" content="website" />
@@ -153,11 +153,11 @@ export function Head() {
       <meta name="twitter:card" content="summary_large_image" />
       <meta
         name="twitter:title"
-        content="AI Receptionist UK | Never Miss a Call | Antek Automation"
+        content="AI Receptionist UK | Answer Every Call 24/7 | Antek"
       />
       <meta
         name="twitter:description"
-        content="An AI receptionist that answers every call 24/7, books appointments and sends summaries. For UK trades and service businesses. Less than a part-timer."
+        content="An AI receptionist that answers every call 24/7, books appointments and captures leads for UK businesses. Certified Retell partner. Hear a live demo."
       />
 
       <script

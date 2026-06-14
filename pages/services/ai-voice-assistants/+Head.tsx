@@ -1,18 +1,18 @@
 export function Head() {
   return (
     <>
-      <title>AI Voice Agents UK | 24/7 Call Answering | Antek Automation</title>
+      <title>AI Voice Agents UK | 24/7 Call Answering | Antek</title>
       <meta
         name="description"
-        content="AI voice agents that answer every call, qualify leads and book appointments 24/7. Built for UK service businesses. Certified Retell AI partner."
+        content="AI voice agents with a natural British voice that answer every call, qualify leads and book appointments 24/7. For UK businesses. Certified Retell partner."
       />
       <link rel="canonical" href="https://www.antekautomation.com/services/ai-voice-assistants" />
 
       {/* Open Graph */}
-      <meta property="og:title" content="AI Voice Agents UK | 24/7 Call Answering | Antek Automation" />
+      <meta property="og:title" content="AI Voice Agents UK | 24/7 Call Answering | Antek" />
       <meta
         property="og:description"
-        content="AI voice agents that answer every call, qualify leads and book appointments 24/7. Built for UK service businesses. Certified Retell AI partner."
+        content="AI voice agents with a natural British voice that answer every call, qualify leads and book appointments 24/7. For UK businesses. Certified Retell partner."
       />
       <meta property="og:url" content="https://www.antekautomation.com/services/ai-voice-assistants" />
       <meta property="og:type" content="website" />
@@ -20,10 +20,10 @@ export function Head() {
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="AI Voice Agents UK | 24/7 Call Answering | Antek Automation" />
+      <meta name="twitter:title" content="AI Voice Agents UK | 24/7 Call Answering | Antek" />
       <meta
         name="twitter:description"
-        content="AI voice agents that answer every call, qualify leads and book appointments 24/7. Built for UK service businesses. Certified Retell AI partner."
+        content="AI voice agents with a natural British voice that answer every call, qualify leads and book appointments 24/7. For UK businesses. Certified Retell partner."
       />
 
       {/* BreadcrumbList Schema */}
