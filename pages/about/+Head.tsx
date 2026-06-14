@@ -13,7 +13,7 @@ export function Head() {
       '@id': 'https://www.antekautomation.com/#organization',
       name: 'Antek Automation',
       url: 'https://www.antekautomation.com',
-      foundingDate: '2024',
+      foundingDate: '2025',
       numberOfEmployees: {
         '@type': 'QuantitativeValue',
         value: 1,
