@@ -306,7 +306,6 @@ export function Head() {
           "https://about.me/andynorman"
         ]
       },
-      "logo": { "@id": "https://www.antekautomation.com/#logo" },
       "hasCredential": {
         "@type": "EducationalOccupationalCredential",
         "credentialCategory": "certification",
@@ -595,7 +594,7 @@ export function Head() {
       {
         "@type": "Dataset",
         "name": "AI Workflow Automation Datasets",
-        "description": "Datasets exploring AI workflow automation including process optimization, task orchestration, enterprise automation pipelines, and intelligent workflows.",
+        "description": "Datasets exploring AI workflow automation including process optimisation, task orchestration, enterprise automation pipelines, and intelligent workflows.",
         "headline": "AI Workflow Automation Datasets",
         "url": "https://datasetsearch.research.google.com/search?src=0&query=AI%20Workflow%20automation&docid=L2cvMTF2d2psX2MzbQ%3D%3D",
         "license": "https://schema.org/license",
