@@ -8,7 +8,7 @@ import { QuickRecap } from '../../src/components/QuickRecap';
 import { ResourcesCompliance } from '../../src/components/ResourcesCompliance';
 import { TestimonialsStrip } from '../../src/components/TestimonialsStrip';
 import { TrustStrip } from '../../src/components/TrustStrip';
-import { openBookingPopup } from '../../src/components/BookingPopupCTA';
+import { openBookingPopup } from '../../src/utils/bookingPopup';
 import { caseStudies } from '../../src/data/caseStudies';
 
 const VoiceChat = lazy(() => import('../../src/components/VoiceChat').then(m => ({ default: m.VoiceChat })));

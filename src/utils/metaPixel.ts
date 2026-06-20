@@ -28,8 +28,8 @@ export function initializeMetaPixel() {
     })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js')
     /* eslint-enable */
 
-    window.fbq('init', PIXEL_ID)
-    window.fbq('track', 'PageView')
+    window.fbq!('init', PIXEL_ID)
+    window.fbq!('track', 'PageView')
   }
 
   if ('requestIdleCallback' in window) {
@@ -41,7 +41,7 @@ export function initializeMetaPixel() {
 
 declare global {
   interface Window {
-    fbq: any
-    _fbq: any
+    fbq?: (...args: unknown[]) => void
+    _fbq?: unknown
   }
 }

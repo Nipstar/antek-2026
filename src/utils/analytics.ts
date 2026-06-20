@@ -12,9 +12,8 @@ export const initializeGoogleAnalytics = (gtagId: string) => {
 
   const loadGA = () => {
     window.dataLayer = window.dataLayer || []
-    function gtag(..._args: unknown[]) {
-      // eslint-disable-next-line prefer-rest-params
-      window.dataLayer.push(arguments)
+    function gtag(...args: unknown[]) {
+      window.dataLayer.push(args)
     }
     window.gtag = gtag as (...args: unknown[]) => void
 

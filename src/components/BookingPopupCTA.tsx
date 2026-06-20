@@ -1,13 +1,7 @@
 import { useEffect, useState } from 'react'
 import { CalBooking } from './CalBooking'
 import { trackEvent } from '../utils/analytics'
-
-export const BOOKING_POPUP_EVENT = 'antek:open-booking-popup'
-
-export function openBookingPopup(source?: string) {
-  if (typeof window === 'undefined') return
-  window.dispatchEvent(new CustomEvent(BOOKING_POPUP_EVENT, { detail: { source } }))
-}
+import { BOOKING_POPUP_EVENT } from '../utils/bookingPopup'
 
 export function BookingPopupCTA() {
   const [open, setOpen] = useState(false)

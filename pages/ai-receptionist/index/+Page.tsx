@@ -17,7 +17,7 @@ import { QuickRecap } from '../../../src/components/QuickRecap'
 import { ResourcesCompliance } from '../../../src/components/ResourcesCompliance'
 import { RetellDemoCards } from '../../../src/components/RetellDemoCards'
 import { TrustStrip } from '../../../src/components/TrustStrip'
-import { openBookingPopup } from '../../../src/components/BookingPopupCTA'
+import { openBookingPopup } from '../../../src/utils/bookingPopup'
 import { getAllIndustries, type IndustryData } from '../../../src/data/aiReceptionist'
 
 const VoiceChat = lazy(() =>

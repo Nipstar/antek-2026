@@ -6,7 +6,7 @@ const check: Check = {
   name: 'canonical-pricing.json exists and is valid',
   description: 'Checks that canonical-pricing.json exists at the repo root and contains at least one product with a price',
   introducedInPhase: 2,
-  async run({ config }) {
+  async run() {
     // canonical-pricing.json sits at repo root (two levels up from scripts/audit/)
     const candidates = [
       path.resolve(process.cwd(), 'canonical-pricing.json'),

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { trackEvent } from '../utils/analytics'
-import { openBookingPopup } from './BookingPopupCTA'
+import { openBookingPopup } from '../utils/bookingPopup'
 
 const PHONE_TEL = '03330389960'
 

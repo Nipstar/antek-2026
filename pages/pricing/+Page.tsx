@@ -3,7 +3,7 @@ import { CalBooking } from '../../src/components/CalBooking'
 import { PricingCard } from '../../src/components/PricingCard'
 import { PricingComparisonTable } from '../../src/components/PricingComparisonTable'
 import { TrustStrip } from '../../src/components/TrustStrip'
-import { openBookingPopup } from '../../src/components/BookingPopupCTA'
+import { openBookingPopup } from '../../src/utils/bookingPopup'
 
 const faq = [
   {

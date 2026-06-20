@@ -6,9 +6,15 @@ interface CalBookingProps {
   className?: string
 }
 
+type CalApi = ((...args: unknown[]) => void) & {
+  ns: Record<string, (...args: unknown[]) => void>
+  loaded?: boolean
+  q?: unknown[]
+}
+
 declare global {
   interface Window {
-    Cal?: any
+    Cal?: CalApi
   }
 }
 
@@ -23,6 +29,7 @@ export function CalBooking({
   useEffect(() => {
     if (typeof window === 'undefined') return
 
+    /* eslint-disable */
     ;(function (C: any, A: string, L: string) {
       const p = function (a: any, ar: any) { a.q.push(ar) }
       const d = C.document
@@ -51,8 +58,9 @@ export function CalBooking({
         p(cal, ar)
       }
     })(window, 'https://app.cal.com/embed/embed.js', 'init')
+    /* eslint-enable */
 
-    const Cal = window.Cal
+    const Cal = window.Cal!
     Cal('init', namespace, { origin: 'https://app.cal.com' })
     Cal.ns[namespace]('inline', {
       elementOrSelector: `#${elementId}`,

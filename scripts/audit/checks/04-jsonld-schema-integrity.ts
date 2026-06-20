@@ -7,7 +7,7 @@ const check: Check = {
   name: 'JSON-LD schema integrity',
   description: 'Validates all ld+json blocks: valid JSON, @context/@type present, no self-serving reviews on Org/LocalBusiness, NAP matches',
   introducedInPhase: 1,
-  async run({ document, url }) {
+  async run({ document }) {
     const scripts = document.querySelectorAll('script[type="application/ld+json"]')
     if (scripts.length === 0) {
       return { status: 'warn', detail: 'No JSON-LD schema blocks found' }
