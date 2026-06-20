@@ -76,6 +76,7 @@ export function Head() {
               { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI Voice Agents' } },
               { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'AI Chatbots' } },
               { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Workflow Automation' } },
+              { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'GEO Audit' } },
             ],
           }),
         }}
@@ -101,6 +102,7 @@ export function Head() {
                 'Workflow automation',
                 'Business process automation',
                 'Lead capture',
+                'Generative Engine Optimization (GEO)',
               ],
               founder: { '@type': 'Person', name: 'Andy Norman' },
             },
