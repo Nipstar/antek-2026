@@ -29,7 +29,7 @@ export default function Page() {
               Book More Andover Jobs While You&rsquo;re on the Tools
             </h1>
             <p className="text-lg md:text-xl text-charcoal leading-relaxed mb-8 max-w-3xl">
-              AI that answers your phone, captures the lead and handles the admin. Built and run from our Andover HQ by <a href="/about" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Andy Norman</a>, at Chantry House in the middle of town.
+              AI that answers the phone while you&rsquo;re on the tools, books the job and handles the admin. Built and run from our Andover HQ by <a href="/about" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Andy Norman</a>, at Chantry House in the middle of town.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
               <a href="/contact">

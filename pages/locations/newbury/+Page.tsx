@@ -27,7 +27,7 @@ export default function Page() {
               Give Your Newbury Team Back Its Evenings
             </h1>
             <p className="text-lg md:text-xl text-charcoal leading-relaxed mb-8 max-w-3xl">
-              AI that answers your phone, captures the lead and handles the admin. Built by <a href="/about" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Andy Norman</a>, just up the A34 in Andover.
+              AI that handles the admin and follow-ups, answers the phone and captures the lead. Built by <a href="/about" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Andy Norman</a>, just up the A34 in Andover.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
               <a href="/contact">

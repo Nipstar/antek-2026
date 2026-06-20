@@ -2,18 +2,18 @@ export function Head() {
   return (
     <>
       <title>AI Automation Newbury | Voice Agents &amp; Chatbots</title>
-      <meta name="description" content="Stop losing Newbury enquiries to missed calls. AI voice agents, chatbots and automation, built by a founder just up the A34 in Andover. Book a free call." />
+      <meta name="description" content="Get your Newbury evenings back. AI that handles admin and follow-ups, answers your calls and captures leads, built just up the A34 in Andover. Book a free call." />
       <link rel="canonical" href="https://www.antekautomation.com/locations/newbury" />
 
       {/* Open Graph */}
       <meta property="og:title" content="AI Automation Newbury | Voice Agents & Chatbots" />
-      <meta property="og:description" content="Stop losing Newbury enquiries to missed calls. AI voice agents, chatbots and automation, built by a founder just up the A34 in Andover. Book a free call." />
+      <meta property="og:description" content="Get your Newbury evenings back. AI that handles admin and follow-ups, answers your calls and captures leads, built just up the A34 in Andover. Book a free call." />
       <meta property="og:url" content="https://www.antekautomation.com/locations/newbury" />
       <meta property="og:type" content="website" />
 
       {/* Twitter Card */}
       <meta name="twitter:title" content="AI Automation Newbury | Voice Agents & Chatbots" />
-      <meta name="twitter:description" content="Stop losing Newbury enquiries to missed calls. AI voice agents, chatbots and automation, built by a founder just up the A34 in Andover. Book a free call." />
+      <meta name="twitter:description" content="Get your Newbury evenings back. AI that handles admin and follow-ups, answers your calls and captures leads, built just up the A34 in Andover. Book a free call." />
 
       {/* BreadcrumbList Schema */}
       <script

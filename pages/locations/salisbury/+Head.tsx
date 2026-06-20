@@ -2,18 +2,18 @@ export function Head() {
   return (
     <>
       <title>AI Automation Salisbury | Voice Agents &amp; Chatbots</title>
-      <meta name="description" content="Stop losing Salisbury jobs to missed calls. AI voice agents, chatbots and automation, built by a founder down the A303 in Andover. Book a free 30-min call." />
+      <meta name="description" content="Stop drowning in Salisbury admin. AI that chases quotes and follow-ups, answers your calls and captures leads, built down the A303 in Andover. Book a free call." />
       <link rel="canonical" href="https://www.antekautomation.com/locations/salisbury" />
 
       {/* Open Graph */}
       <meta property="og:title" content="AI Automation Salisbury | Voice Agents & Chatbots" />
-      <meta property="og:description" content="Stop losing Salisbury jobs to missed calls. AI voice agents, chatbots and automation, built by a founder down the A303 in Andover. Book a free 30-min call." />
+      <meta property="og:description" content="Stop drowning in Salisbury admin. AI that chases quotes and follow-ups, answers your calls and captures leads, built down the A303 in Andover. Book a free call." />
       <meta property="og:url" content="https://www.antekautomation.com/locations/salisbury" />
       <meta property="og:type" content="website" />
 
       {/* Twitter Card */}
       <meta name="twitter:title" content="AI Automation Salisbury | Voice Agents & Chatbots" />
-      <meta name="twitter:description" content="Stop losing Salisbury jobs to missed calls. AI voice agents, chatbots and automation, built by a founder down the A303 in Andover. Book a free 30-min call." />
+      <meta name="twitter:description" content="Stop drowning in Salisbury admin. AI that chases quotes and follow-ups, answers your calls and captures leads, built down the A303 in Andover. Book a free call." />
 
       {/* BreadcrumbList Schema */}
       <script

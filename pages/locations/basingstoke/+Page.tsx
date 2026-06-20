@@ -24,10 +24,10 @@ export default function Page() {
               AI AUTOMATION &bull; BASINGSTOKE
             </p>
             <h1 className="font-black text-4xl md:text-5xl lg:text-6xl uppercase tracking-tight-xl text-charcoal mb-6 leading-tight">
-              Capture Every Basingstoke Lead, Even Mid-Job
+              Your Basingstoke Website, Open for Business at 2am
             </h1>
             <p className="text-lg md:text-xl text-charcoal leading-relaxed mb-8 max-w-3xl">
-              AI that answers your phone, captures the lead and handles the admin. Built by <a href="/about" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Andy Norman</a>, 20 minutes up the A303 in Andover.
+              AI that answers your website day and night, captures the lead and handles the admin. Built by <a href="/about" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Andy Norman</a>, 20 minutes up the A303 in Andover.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
               <a href="/contact">

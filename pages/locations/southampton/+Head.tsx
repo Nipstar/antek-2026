@@ -2,18 +2,18 @@ export function Head() {
   return (
     <>
       <title>AI Automation Southampton | Voice Agents &amp; Chatbots | Antek</title>
-      <meta name="description" content="Stop losing Southampton enquiries to missed calls. AI voice agents, chatbots and automation, built by a Hampshire founder in Andover. Book a free call." />
+      <meta name="description" content="Your Southampton website should never sleep. AI chatbots, voice agents and automation capturing leads around the clock, built near Andover. Book a free call." />
       <link rel="canonical" href="https://www.antekautomation.com/locations/southampton" />
 
       {/* Open Graph */}
       <meta property="og:title" content="AI Automation Southampton | Voice Agents & Chatbots | Antek" />
-      <meta property="og:description" content="Stop losing Southampton enquiries to missed calls. AI voice agents, chatbots and automation, built by a Hampshire founder in Andover. Book a free call." />
+      <meta property="og:description" content="Your Southampton website should never sleep. AI chatbots, voice agents and automation capturing leads around the clock, built near Andover. Book a free call." />
       <meta property="og:url" content="https://www.antekautomation.com/locations/southampton" />
       <meta property="og:type" content="website" />
 
       {/* Twitter Card */}
       <meta name="twitter:title" content="AI Automation Southampton | Voice Agents & Chatbots | Antek" />
-      <meta name="twitter:description" content="Stop losing Southampton enquiries to missed calls. AI voice agents, chatbots and automation, built by a Hampshire founder in Andover. Book a free call." />
+      <meta name="twitter:description" content="Your Southampton website should never sleep. AI chatbots, voice agents and automation capturing leads around the clock, built near Andover. Book a free call." />
 
       {/* BreadcrumbList Schema */}
       <script

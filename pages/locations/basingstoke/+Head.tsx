@@ -2,18 +2,18 @@ export function Head() {
   return (
     <>
       <title>AI Automation Basingstoke | Voice Agents &amp; Chatbots | Antek</title>
-      <meta name="description" content="Stop losing Basingstoke jobs to missed calls. AI voice agents, chatbots and automation, built by a founder just up the A303 in Andover. Book a free call." />
+      <meta name="description" content="Your Basingstoke website should book jobs at 2am. AI chatbots, voice agents and automation that capture every lead, built up the A303 in Andover. Book a call." />
       <link rel="canonical" href="https://www.antekautomation.com/locations/basingstoke" />
 
       {/* Open Graph */}
       <meta property="og:title" content="AI Automation Basingstoke | Voice Agents & Chatbots | Antek" />
-      <meta property="og:description" content="Stop losing Basingstoke jobs to missed calls. AI voice agents, chatbots and automation, built by a founder just up the A303 in Andover. Book a free call." />
+      <meta property="og:description" content="Your Basingstoke website should book jobs at 2am. AI chatbots, voice agents and automation that capture every lead, built up the A303 in Andover. Book a call." />
       <meta property="og:url" content="https://www.antekautomation.com/locations/basingstoke" />
       <meta property="og:type" content="website" />
 
       {/* Twitter Card */}
       <meta name="twitter:title" content="AI Automation Basingstoke | Voice Agents & Chatbots | Antek" />
-      <meta name="twitter:description" content="Stop losing Basingstoke jobs to missed calls. AI voice agents, chatbots and automation, built by a founder just up the A303 in Andover. Book a free call." />
+      <meta name="twitter:description" content="Your Basingstoke website should book jobs at 2am. AI chatbots, voice agents and automation that capture every lead, built up the A303 in Andover. Book a call." />
 
       {/* BreadcrumbList Schema */}
       <script
