@@ -4,6 +4,7 @@ import { Card } from '../../../src/components/Card'
 import { Icon } from '../../../src/components/Icon'
 import { QuickRecap } from '../../../src/components/QuickRecap'
 import { ResourcesCompliance } from '../../../src/components/ResourcesCompliance'
+import { RetellDemoCards } from '../../../src/components/RetellDemoCards'
 
 const VoiceChat = lazy(() =>
   import('../../../src/components/VoiceChat').then((m) => ({ default: m.VoiceChat }))
@@ -371,6 +372,12 @@ export default function Page() {
           </div>
         </div>
       </section>
+
+      {/* ── RETELL INDUSTRY DEMOS (pop-card orbs) ── */}
+      <RetellDemoCards
+        heading="Hear a Voice Agent in Action"
+        subhead="Tap an industry and talk to a live AI agent — the same kind we build for businesses like yours."
+      />
 
       {/* ── GEO CROSS-SELL (our 4th service — AI-search visibility) ── */}
       <section className="bg-warm-beige border-y-3 border-charcoal py-16 md:py-20">
