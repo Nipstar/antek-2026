@@ -7,6 +7,7 @@ export const pages: string[] = [
   '/services/geo-audit',
   '/ai-receptionist',
   '/ai-receptionist/plumbers',
-  '/locations/london',
   '/locations/southampton',
+  '/locations/basingstoke',
+  '/locations/winchester',
 ]

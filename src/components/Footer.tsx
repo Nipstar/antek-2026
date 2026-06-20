@@ -5,6 +5,8 @@ import { SocialLinks } from './SocialLinks';
 const FOOTER_LOCATIONS = [
   { name: 'Hampshire', slug: 'hampshire' },
   { name: 'Andover', slug: 'andover' },
+  { name: 'Basingstoke', slug: 'basingstoke' },
+  { name: 'Winchester', slug: 'winchester' },
   { name: 'Southampton', slug: 'southampton' },
   { name: 'Salisbury', slug: 'salisbury' },
   { name: 'Newbury', slug: 'newbury' },

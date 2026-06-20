@@ -413,6 +413,11 @@ export default function Page() {
               </Card>
             </a>
           </div>
+          <p className="text-center text-charcoal mt-8">
+            Local to us? See workflow automation for{' '}
+            <a href="/locations/basingstoke" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Basingstoke</a>{' '}and{' '}
+            <a href="/locations/winchester" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">Winchester</a>{' '}businesses.
+          </p>
         </div>
       </section>
     </div>

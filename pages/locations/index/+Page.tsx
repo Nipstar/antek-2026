@@ -11,6 +11,8 @@ const hampshireHub = {
 
 const localLocations = [
   { name: 'Andover', slug: 'andover', description: 'Our HQ. Chantry House, 38 Chantry Way. Happy to meet for a coffee if you\'re local.' },
+  { name: 'Basingstoke', slug: 'basingstoke', description: 'Hampshire\'s largest town, 20 minutes up the A303. Trades and service firms across Chineham, Old Basing and Hatch Warren.' },
+  { name: 'Winchester', slug: 'winchester', description: 'The county town and cathedral city. AI automation for professional firms, practices and hospitality.' },
   { name: 'Southampton', slug: 'southampton', description: 'Port city with 18,000+ businesses. Maritime economy, two major universities, and a hospitality sector that never sleeps.' },
   { name: 'Salisbury', slug: 'salisbury', description: 'Wiltshire cathedral city on Hampshire\'s western edge. Trades and service businesses across the Salisbury area.' },
   { name: 'Newbury', slug: 'newbury', description: 'Berkshire market town just up the A34. Close enough for a face-to-face, with the same 24/7 AI coverage.' },
