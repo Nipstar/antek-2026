@@ -369,6 +369,21 @@ export default function Page() {
         </div>
       </section>
 
+      {/* ── GEO CROSS-SELL (our 4th service — AI-search visibility) ── */}
+      <section className="bg-warm-beige border-y-3 border-charcoal py-16 md:py-20">
+        <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <h2 className="font-black text-3xl md:text-4xl uppercase tracking-tight-lg text-charcoal mb-6">
+            Your Admin&rsquo;s Automated. Is Your AI Visibility?
+          </h2>
+          <p className="text-lg text-charcoal leading-relaxed mb-6">
+            When buyers ask ChatGPT, Perplexity or Google&rsquo;s AI Overviews for a business like yours, our <a href="/services/geo-audit" className="underline underline-offset-4 decoration-terracotta decoration-2 hover:text-terracotta transition-colors">GEO Audit</a> shows whether you&rsquo;re cited &mdash; and gives you a clear plan to get there. From &pound;247.
+          </p>
+          <a href="/services/geo-audit">
+            <Button variant="primary">Check Your AI Visibility &rarr;</Button>
+          </a>
+        </div>
+      </section>
+
       {/* Internal Links */}
       <section className="py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-6 md:px-12">
