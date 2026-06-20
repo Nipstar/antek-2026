@@ -15,7 +15,7 @@ import { Card } from '../../../src/components/Card'
 import { VoiceDemoButton } from '../../../src/components/VoiceDemoButton'
 import { QuickRecap } from '../../../src/components/QuickRecap'
 import { ResourcesCompliance } from '../../../src/components/ResourcesCompliance'
-import { AIReceptionistDemoCards } from '../../../src/components/AIReceptionistDemoCards'
+import { RetellDemoCards } from '../../../src/components/RetellDemoCards'
 import { TrustStrip } from '../../../src/components/TrustStrip'
 import { openBookingPopup } from '../../../src/components/BookingPopupCTA'
 import { getAllIndustries, type IndustryData } from '../../../src/data/aiReceptionist'
@@ -265,25 +265,11 @@ export default function Page() {
       </section>
 
       {/* ── DEMO ── */}
-      <section id="demo" className="bg-peach border-y-3 border-charcoal py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 md:px-12">
-          <div className="text-center mb-12">
-            <h2 className="font-black text-4xl md:text-5xl uppercase tracking-tight-lg text-charcoal mb-6">
-              Hear It For Yourself
-            </h2>
-            <p className="text-lg text-charcoal max-w-2xl mx-auto">
-              Dial any of our live demo agents below. Real phone numbers. Real conversations. Pick
-              one, give it a go, then imagine it running on your number.
-            </p>
-          </div>
-          <AIReceptionistDemoCards />
-          <div className="text-center mt-12">
-            <a href="/contact">
-              <Button variant="primary">Book a 30-Min Discovery Call</Button>
-            </a>
-          </div>
-        </div>
-      </section>
+      <div id="demo">
+        <RetellDemoCards
+          subhead="Tap any industry and talk to a real AI voice agent right in your browser — pick one, give it a go, then imagine it on your number."
+        />
+      </div>
 
       <QuickRecap items={[
         'An AI receptionist that answers every call, screens callers against your criteria, and books appointments 24/7',

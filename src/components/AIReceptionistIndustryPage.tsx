@@ -3,7 +3,6 @@ import { Button } from './Button'
 import { Card } from './Card'
 import { Icon } from './Icon'
 import { VoiceDemoButton } from './VoiceDemoButton'
-import { AIReceptionistDemoCards } from './AIReceptionistDemoCards'
 import { RetellDemoCards } from './RetellDemoCards'
 import { QuickRecap } from './QuickRecap'
 import { ResourcesCompliance } from './ResourcesCompliance'
@@ -169,35 +168,13 @@ export function AIReceptionistIndustryPage({ industry }: Props) {
         </div>
       </section>
 
-      {/* ── DEMO ── */}
-      <section id="demo" className="bg-peach border-y-3 border-charcoal py-20 md:py-28">
-        <div className="max-w-6xl mx-auto px-6 md:px-12">
-          <div className="text-center mb-12">
-            <h2 className="font-black text-4xl md:text-5xl uppercase tracking-tight-lg text-charcoal mb-6">
-              Hear It For Yourself
-            </h2>
-            <p className="text-lg text-charcoal max-w-2xl mx-auto">
-              Dial any of our live demo agents below. Real phone numbers. Real conversations.
-              Pick one, give it a go, then imagine it running on your line.
-            </p>
-          </div>
-          <AIReceptionistDemoCards />
-          <div className="text-center mt-12">
-            <a href="/contact">
-              <Button variant="primary">Book a 30-Min Discovery Call</Button>
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* ── BROWSER VOICE DEMO (Retell orb for this industry) ── */}
-      {orbKeys && (
+      {/* ── DEMO (live Retell voice orbs) ── */}
+      <div id="demo">
         <RetellDemoCards
           industries={orbKeys}
-          heading="Talk to a Live AI Agent in Your Browser"
-          subhead={`No phone needed — tap below and speak to a demo built for ${industry.name.toLowerCase()}.`}
+          subhead="Tap a card and talk to a real AI voice agent right in your browser — the same kind we build for your business."
         />
-      )}
+      </div>
 
       {/* ── ALSO POPULAR WITH ── */}
       {related.length > 0 && (
