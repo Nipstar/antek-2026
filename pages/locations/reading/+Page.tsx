@@ -23,7 +23,7 @@ export default function Page() {
               AI AUTOMATION &bull; READING
             </p>
             <h1 className="font-black text-4xl md:text-5xl lg:text-6xl uppercase tracking-tight-xl text-charcoal mb-6 leading-tight">
-              AI Automation for Reading&rsquo;s Thames Valley Firms
+              Your Reading Office, Answered at Thames Valley Pace
             </h1>
             <p className="text-lg md:text-xl text-charcoal leading-relaxed mb-8 max-w-3xl">
               Reading runs at Thames Valley speed &mdash; so the firm that answers first wins the work. AI voice agents, chatbots and{' '}

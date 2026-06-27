@@ -23,7 +23,7 @@ export default function Page() {
               AI AUTOMATION &bull; BERKSHIRE
             </p>
             <h1 className="font-black text-4xl md:text-5xl lg:text-6xl uppercase tracking-tight-xl text-charcoal mb-6 leading-tight">
-              AI Automation for Berkshire &amp; the M4 Corridor
+              Win Back the Hours Your Berkshire Office Loses to Admin
             </h1>
             <p className="text-lg md:text-xl text-charcoal leading-relaxed mb-8 max-w-3xl">
               From the M4 corridor through the Thames Valley, we build AI voice agents, chatbots and workflow automation that answer enquiries, qualify leads and clear the admin &mdash; so your Berkshire team spends its hours on the work that pays.
