@@ -23,7 +23,7 @@ export default function Page() {
               AI AUTOMATION &bull; BOURNEMOUTH
             </p>
             <h1 className="font-black text-4xl md:text-5xl lg:text-6xl uppercase tracking-tight-xl text-charcoal mb-6 leading-tight">
-              AI Automation for Bournemouth Businesses
+              AI Automation for Bournemouth, Poole &amp; the Dorset Coast
             </h1>
             <p className="text-lg md:text-xl text-charcoal leading-relaxed mb-8 max-w-3xl">
               From the seafront to the BCP finance offices, AI voice agents, chatbots and{' '}
